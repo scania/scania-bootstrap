@@ -1,6 +1,7 @@
+@import url("/resources/fonts/corporate-icons/style.css");
 @import url('/vendors/frameworks/dojo/1.7.4/dijit/themes/dijit.css');
 .compiled_at {
-  content: "Thu Nov 13 2014 10:24:46 GMT+0100 (W. Europe Standard Time)";
+  content: "Tue Nov 18 2014 15:53:14 GMT+0100 (W. Europe Standard Time)";
 }
 .bootstrap .loading:after,
 .bootstrap .table-selectable > tbody > tr.expandable > td:first-child:before,
@@ -327,6 +328,185 @@
 }
 .dbootstrap .dijitEditorIconOutdent:before {
   content: "\e783";
+}
+.bootstrap .loading:after,
+.bootstrap .table-selectable > tbody > tr.expandable > td:first-child:before,
+.bootstrap .table tbody tr.row-selectable > td:first-child:before,
+[class^="icon-"]:before,
+[class*=" icon-"]:before,
+.dijitIcon:before,
+.dbootstrap .dijitIcon:before,
+.dbootstrap *[class*=dijitIcon]:before,
+.dbootstrap .dijitMenuArrowCell .dijitMenuExpand:before,
+.dbootstrap .dijitTabStripIcon:before,
+.dbootstrap .dijitArrowButtonInner:before,
+.dbootstrap .dijitCheckBox:before,
+.dbootstrap .dijitCalendarIncrementControl:before,
+.dbootstrap .dijitTreeExpando:before,
+.dbootstrap .dijitTitlePane .dijitArrowNode:before,
+.dbootstrap .dgrid-sort-arrow:before,
+.dbootstrap .pageIdNode:before,
+.dbootstrap .dijitMenuPopup .list-dotted .dijitMenuItem:not(.empty) .dijitMenuItemIconCell:before,
+.dbootstrap .dijitComboButton .dijitArrowButton:before,
+.dbootstrap .dijitComboBox .dijitArrowButton:before,
+.dbootstrap .dijitSelect .dijitArrowButton:before,
+.dbootstrap .dijitComboButton .dijitButtonNode.dijitArrowButton:before,
+.dbootstrap .dijitComboBox .dijitButtonNode.dijitArrowButton:before,
+.dbootstrap .dijitSelect .dijitButtonNode.dijitArrowButton:before,
+.dbootstrap .dijitComboButton .dijitButtonNode.dijitArrowButton:before,
+.dbootstrap .dijitComboBox .dijitButtonNode.dijitArrowButton:before,
+.dbootstrap .dijitSelect .dijitButtonNode.dijitArrowButton:before,
+.dbootstrap .dijitMenuTable .dijitMenuItem .dijitSelectedMenuItemIconChar:before,
+.dbootstrap .input-group .input-group-btn .dijitSelectBox .dijitInputField .dijitButtonText .dijitSelectLabel:after,
+.dbootstrap .dijitButton .dijitArrowButtonChar:before,
+.dbootstrap .dijitDropDownButton .dijitArrowButtonChar:before,
+.dbootstrap .dijitComboButton .dijitArrowButtonChar:before,
+.dbootstrap .dgrid .dgrid-header-scroll .dgrid-hider-toggle:before,
+.dbootstrap .dgrid.table-selectable .collapsable > .dgrid-row-table .dgrid-cell:first-child:before,
+.dbootstrap .dgrid.table-clickable .collapsable > .dgrid-row-table .dgrid-cell:first-child:before,
+.dbootstrap .dgrid.clickable-table .collapsable > .dgrid-row-table .dgrid-cell:first-child:before,
+.dbootstrap .dgrid.table-selectable .collapsable > div > .dgrid-row-table .dgrid-cell:first-child:before,
+.dbootstrap .dgrid.table-clickable .collapsable > div > .dgrid-row-table .dgrid-cell:first-child:before,
+.dbootstrap .dgrid.clickable-table .collapsable > div > .dgrid-row-table .dgrid-cell:first-child:before,
+.dbootstrap .dijitPopup .dijitCalendar .dijitCalendarIncrementControl + span:before,
+.dbootstrap .popover .dijitCalendar .dijitCalendarIncrementControl + span:before,
+.dbootstrap .dijitTitlePane .dijitTitlePaneTitle .dijitTitlePaneTextNode:before,
+.dbootstrap div[id^=dojox_widget_Standby_] div[dojoattachpoint=_underlayNode]:before,
+.dbootstrap div[id^=_basicStandby] div[dojoattachpoint=_underlayNode]:before,
+.dbootstrap div.standby div[dojoattachpoint=_underlayNode]:before,
+.dbootstrap .sport-standby:after,
+.dbootstrap .mpp-standby:after,
+.dbootstrap .dijitTreeContainer .dijitTreeRow.branch .dijitTreeExpando:before,
+.dbootstrap .dijitTreeContainer .dijitTreeRow.branch .dijitTreeExpando.dijitTreeExpandoLoading + .dijitExpandoText:before,
+.dbootstrap .dijitRadio:before,
+.dbootstrap .dijitTitlePane .dijitTitlePaneTitle .dijitTitlePaneTextNodeParent > *:before,
+.dbootstrap .chzn-container .chzn-single div b:before,
+.dbootstrap .chzn-container .chzn-single div b:before {
+  font-weight: normal;
+  font-style: normal;
+  text-decoration: inherit;
+  -webkit-font-smoothing: antialiased;
+  *margin-right: .3em;
+}
+.dbootstrap .dijitIcon:before,
+.dbootstrap *[class*=dijitIcon]:before,
+.dbootstrap .pageIdNode:before,
+.dbootstrap .dijitMenuPopup .list-dotted .dijitMenuItem:not(.empty) .dijitMenuItemIconCell:before,
+.dbootstrap .dijitComboButton .dijitArrowButton:before,
+.dbootstrap .dijitComboBox .dijitArrowButton:before,
+.dbootstrap .dijitSelect .dijitArrowButton:before,
+.dbootstrap .dijitComboButton .dijitButtonNode.dijitArrowButton:before,
+.dbootstrap .dijitComboBox .dijitButtonNode.dijitArrowButton:before,
+.dbootstrap .dijitSelect .dijitButtonNode.dijitArrowButton:before,
+.dbootstrap .dijitComboButton .dijitButtonNode.dijitArrowButton:before,
+.dbootstrap .dijitComboBox .dijitButtonNode.dijitArrowButton:before,
+.dbootstrap .dijitSelect .dijitButtonNode.dijitArrowButton:before,
+.dbootstrap .dijitMenuTable .dijitMenuItem .dijitSelectedMenuItemIconChar:before,
+.dbootstrap .input-group .input-group-btn .dijitSelectBox .dijitInputField .dijitButtonText .dijitSelectLabel:after,
+.dbootstrap .dijitButton .dijitArrowButtonChar:before,
+.dbootstrap .dijitDropDownButton .dijitArrowButtonChar:before,
+.dbootstrap .dijitComboButton .dijitArrowButtonChar:before,
+.dbootstrap .dgrid .dgrid-header-scroll .dgrid-hider-toggle:before,
+.dbootstrap .dgrid.table-selectable .collapsable > .dgrid-row-table .dgrid-cell:first-child:before,
+.dbootstrap .dgrid.table-clickable .collapsable > .dgrid-row-table .dgrid-cell:first-child:before,
+.dbootstrap .dgrid.clickable-table .collapsable > .dgrid-row-table .dgrid-cell:first-child:before,
+.dbootstrap .dgrid.table-selectable .collapsable > div > .dgrid-row-table .dgrid-cell:first-child:before,
+.dbootstrap .dgrid.table-clickable .collapsable > div > .dgrid-row-table .dgrid-cell:first-child:before,
+.dbootstrap .dgrid.clickable-table .collapsable > div > .dgrid-row-table .dgrid-cell:first-child:before,
+.dbootstrap .dijitPopup .dijitCalendar .dijitCalendarIncrementControl + span:before,
+.dbootstrap .popover .dijitCalendar .dijitCalendarIncrementControl + span:before,
+.dbootstrap .dijitTitlePane .dijitTitlePaneTitle .dijitTitlePaneTextNode:before,
+.dbootstrap div[id^=dojox_widget_Standby_] div[dojoattachpoint=_underlayNode]:before,
+.dbootstrap div[id^=_basicStandby] div[dojoattachpoint=_underlayNode]:before,
+.dbootstrap div.standby div[dojoattachpoint=_underlayNode]:before,
+.dbootstrap .sport-standby:after,
+.dbootstrap .mpp-standby:after,
+.dbootstrap .dijitTreeContainer .dijitTreeRow.branch .dijitTreeExpando:before,
+.dbootstrap .dijitTreeContainer .dijitTreeRow.branch .dijitTreeExpando.dijitTreeExpandoLoading + .dijitExpandoText:before,
+.dbootstrap .dijitTitlePane .dijitTitlePaneTitle .dijitTitlePaneTextNodeParent > *:before,
+.dbootstrap .chzn-container .chzn-single div b:before,
+.dbootstrap .chzn-container .chzn-single div b:before {
+  text-decoration: inherit;
+  display: inline-block;
+  speak: none;
+}
+.bootstrap .loading:after,
+.bootstrap .table-selectable > tbody > tr.expandable > td:first-child:before,
+.bootstrap .table tbody tr.row-selectable > td:first-child:before,
+[class^="icon-"]:before,
+[class*=" icon-"]:before,
+.dijitIcon:before,
+.dbootstrap .dijitIcon:before,
+.dbootstrap *[class*=dijitIcon]:before,
+.dbootstrap .dijitMenuArrowCell .dijitMenuExpand:before,
+.dbootstrap .dijitTabStripIcon:before,
+.dbootstrap .dijitArrowButtonInner:before,
+.dbootstrap .dijitCheckBox:before,
+.dbootstrap .dijitCalendarIncrementControl:before,
+.dbootstrap .dijitTreeExpando:before,
+.dbootstrap .dijitTitlePane .dijitArrowNode:before,
+.dbootstrap .dgrid-sort-arrow:before,
+.dbootstrap .pageIdNode:before,
+.dbootstrap .dijitMenuPopup .list-dotted .dijitMenuItem:not(.empty) .dijitMenuItemIconCell:before,
+.dbootstrap .dijitComboButton .dijitArrowButton:before,
+.dbootstrap .dijitComboBox .dijitArrowButton:before,
+.dbootstrap .dijitSelect .dijitArrowButton:before,
+.dbootstrap .dijitComboButton .dijitButtonNode.dijitArrowButton:before,
+.dbootstrap .dijitComboBox .dijitButtonNode.dijitArrowButton:before,
+.dbootstrap .dijitSelect .dijitButtonNode.dijitArrowButton:before,
+.dbootstrap .dijitComboButton .dijitButtonNode.dijitArrowButton:before,
+.dbootstrap .dijitComboBox .dijitButtonNode.dijitArrowButton:before,
+.dbootstrap .dijitSelect .dijitButtonNode.dijitArrowButton:before,
+.dbootstrap .dijitMenuTable .dijitMenuItem .dijitSelectedMenuItemIconChar:before,
+.dbootstrap .input-group .input-group-btn .dijitSelectBox .dijitInputField .dijitButtonText .dijitSelectLabel:after,
+.dbootstrap .dijitButton .dijitArrowButtonChar:before,
+.dbootstrap .dijitDropDownButton .dijitArrowButtonChar:before,
+.dbootstrap .dijitComboButton .dijitArrowButtonChar:before,
+.dbootstrap .dgrid .dgrid-header-scroll .dgrid-hider-toggle:before,
+.dbootstrap .dgrid.table-selectable .collapsable > .dgrid-row-table .dgrid-cell:first-child:before,
+.dbootstrap .dgrid.table-clickable .collapsable > .dgrid-row-table .dgrid-cell:first-child:before,
+.dbootstrap .dgrid.clickable-table .collapsable > .dgrid-row-table .dgrid-cell:first-child:before,
+.dbootstrap .dgrid.table-selectable .collapsable > div > .dgrid-row-table .dgrid-cell:first-child:before,
+.dbootstrap .dgrid.table-clickable .collapsable > div > .dgrid-row-table .dgrid-cell:first-child:before,
+.dbootstrap .dgrid.clickable-table .collapsable > div > .dgrid-row-table .dgrid-cell:first-child:before,
+.dbootstrap .dijitPopup .dijitCalendar .dijitCalendarIncrementControl + span:before,
+.dbootstrap .popover .dijitCalendar .dijitCalendarIncrementControl + span:before,
+.dbootstrap .dijitTitlePane .dijitTitlePaneTitle .dijitTitlePaneTextNode:before,
+.dbootstrap div[id^=dojox_widget_Standby_] div[dojoattachpoint=_underlayNode]:before,
+.dbootstrap div[id^=_basicStandby] div[dojoattachpoint=_underlayNode]:before,
+.dbootstrap div.standby div[dojoattachpoint=_underlayNode]:before,
+.dbootstrap .sport-standby:after,
+.dbootstrap .mpp-standby:after,
+.dbootstrap .dijitTreeContainer .dijitTreeRow.branch .dijitTreeExpando:before,
+.dbootstrap .dijitTreeContainer .dijitTreeRow.branch .dijitTreeExpando.dijitTreeExpandoLoading + .dijitExpandoText:before,
+.dbootstrap .dijitRadio:before,
+.dbootstrap .dijitTitlePane .dijitTitlePaneTitle .dijitTitlePaneTextNodeParent > *:before,
+.dbootstrap .chzn-container .chzn-single div b:before,
+.dbootstrap .chzn-container .chzn-single div b:before {
+  display: inline;
+  width: auto;
+  height: auto;
+  line-height: normal;
+  vertical-align: baseline;
+  background-image: none;
+  background-position: 0% 0%;
+  background-repeat: repeat;
+  margin-top: 0;
+}
+.bootstrap .loading:after,
+.dbootstrap .dijitTreeExpandoLoading,
+.dbootstrap .dijitIconLoading:before,
+.dbootstrap div[id^=dojox_widget_Standby_] div[dojoattachpoint=_underlayNode]:before,
+.dbootstrap div[id^=_basicStandby] div[dojoattachpoint=_underlayNode]:before,
+.dbootstrap div.standby div[dojoattachpoint=_underlayNode]:before,
+.dbootstrap .sport-standby:after,
+.dbootstrap .mpp-standby:after,
+.dbootstrap .dijitTreeContainer .dijitTreeRow.branch .dijitTreeExpando.dijitTreeExpandoLoading + .dijitExpandoText {
+  display: inline-block;
+  -moz-animation: spin 2s infinite linear;
+  -o-animation: spin 2s infinite linear;
+  -webkit-animation: spin 2s infinite linear;
+  animation: spin 2s infinite linear;
 }
 .bootstrap h1.portlet-header,
 .bootstrap h2.portlet-header,
@@ -748,6 +928,7 @@ ol {
 }
 .dbootstrap.bootstrap.mpp .wpthemeLayoutContainers > table .LoginWrapper input.wpsButtonText {
   color: #ffffff;
+  background-image: none;
   background-color: #418bca;
   border-color: #357ebd;
   text-shadow: none;
@@ -1690,9 +1871,11 @@ ol {
   line-height: 20px;
 }
 .dbootstrap div.checkbox label .dijitCheckBox {
+  display: inline-block;
+  min-height: 0;
   margin-top: -2px;
   margin-left: -20px;
-  margin-right: 10px;
+  margin-right: 3px;
 }
 .dbootstrap div.checkbox label .dijitCheckBox input {
   margin: 0;
@@ -2391,7 +2574,7 @@ ol {
   box-shadow: none;
 }
 .dbootstrap .dgrid .dgrid-header-scroll .dgrid-hider-toggle {
-  background-color: transparent;
+  background: transparent;
   color: transparent;
   border: 0;
   margin: 0;
@@ -2409,10 +2592,12 @@ ol {
   padding-left: 2px;
 }
 .dbootstrap .dgrid .dgrid-hider-menu {
+  background: #fff;
+  top: 12px;
+  right: 24px;
   border-radius: 3px;
   border-color: #ddd;
   padding: 12px 8px;
-  background: #fff;
 }
 .dbootstrap .dgrid .dgrid-scroller {
   width: auto;
@@ -3033,10 +3218,17 @@ ol {
 .dbootstrap .dijitTabContainer .dijitTabController .dijitTabListWrapper .dijitTabContainerTop-tabs .dijitTab .dijitTabButtonIcon {
   display: none;
 }
+.dbootstrap .dijitTabContainer .dijitTabController.tabs-top-level .dijitTabListWrapper .dijitTabContainerTop-tabs .dijitTab.dijitChecked {
+  background-color: #f8f8f8;
+}
+.dbootstrap .dijitTabContainer .dijitTabController.tabs-top-level .dijitTabListWrapper .dijitTabContainerTop-tabs .dijitTab.dijitChecked:first-child .dijitTabContent {
+  border-left-width: 1px;
+}
 .dbootstrap .dijitTabContainer .dijitTabPaneWrapper {
   position: relative !important;
   height: auto !important;
   width: auto !important;
+  top: auto !important;
   border: 0;
 }
 .dbootstrap .dijitTabContainer .dijitAlignClient {

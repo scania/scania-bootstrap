@@ -14,13 +14,13 @@
 @import (less, reference) '@{root_path}vendors/frameworks/bootstrap/3.2.0/css/bootstrap.css';
 
 //Modules needing to be outside .bootstrap enclosure.
+@import 'variables.less'; //Scania Bootstrap Variables
 @import 'html.less';
 @import 'maximize.less';
 
 //Scania Bootstrap & Modules
 .bootstrap{
   //SCANIA BOOTSTRAP
-  @import 'variables.less'; //Scania Bootstrap Variables
   @import 'mixins.less';
   @import 'reset.less';
   @import 'misc.less';
@@ -32,9 +32,6 @@
   @import 'dropdowns.less';
   @import 'progressbars.less';
   @import 'typography.less';
-  
-  @import 'bootstrap-app.less';
-  @import 'bootstrap-wcm.less';
 
   @import 'navigation.less';
   @import 'panels-wells.less';
@@ -54,6 +51,9 @@
 
   @import 'global-sidebar.less'; //Global Sidebar
 }
+
+@import 'bootstrap-app.less';
+@import 'bootstrap-wcm.less';
 
 @import 'global-header.less'; //Global Header
 

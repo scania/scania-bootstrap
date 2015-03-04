@@ -1,9 +1,8 @@
 // ----------------------- APP -------------------------
 .portlet-application, 
-.bootstrap-app,
-&.bootstrap-app {
+.bootstrap-app {
 
-  h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+  h1, h2, h3, h4, h5, h6 {
     font-family: "Open Sans", Arial, sans-serif;
     font-weight: bold;
     line-height: 1.1;
@@ -33,27 +32,27 @@
   }
 }
 
-.bootstrap-app {
+.bootstrap .bootstrap-app {
   background-color: #fff;
   padding: 15px;
   margin-bottom: 15px;
 }
 
 h1.portlet-header { 
-  &:extend(.bootstrap .portlet-application h1);
+  &:extend(.bootstrap-app h1);
 }
 h2.portlet-header { 
-  &:extend(.bootstrap .portlet-application h2);
+  &:extend(.bootstrap-app h2);
 }
 h3.portlet-header { 
-  &:extend(.bootstrap .portlet-application h3);
+  &:extend(.bootstrap-app h3);
 }
 h4.portlet-header { 
-  &:extend(.bootstrap .portlet-application h4);
+  &:extend(.bootstrap-app h4);
 }
 h5.portlet-header { 
-  &:extend(.bootstrap .portlet-application h5);
+  &:extend(.bootstrap-app h5);
 }
 h6.portlet-header { 
-  &:extend(.bootstrap .portlet-application h6);
+  &:extend(.bootstrap-app h6);
 }

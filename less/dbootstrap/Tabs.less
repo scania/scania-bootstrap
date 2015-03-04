@@ -75,11 +75,23 @@
 				}
 			}
 		}
+
+		&.tabs-top-level {
+
+			.dijitTabListWrapper .dijitTabContainerTop-tabs .dijitTab.dijitChecked {
+				background-color: #f8f8f8;
+
+				&:first-child .dijitTabContent {
+					border-left-width: 1px;
+				}
+			}
+		}
 	}
 	.dijitTabPaneWrapper {
 		position: relative !important;
 		height: auto !important;
 		width: auto !important;
+		top: auto !important;
 		border: 0;
 	}
 	.dijitAlignClient {
