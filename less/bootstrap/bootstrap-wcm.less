@@ -27,12 +27,6 @@
   h6 small { font-size: ceil(@h6-font-size * 0.8); font-family: "Arial", sans-serif }
 }
 
-body {
-  .bootstrap-wcm;
-}
-
-.bootstrap .bootstrap-wcm {
-  background-color: #fff;
-  padding: 15px;
-  margin-bottom: 15px;
+.bootstrap {
+  &:extend(.bootstrap-wcm all);
 }

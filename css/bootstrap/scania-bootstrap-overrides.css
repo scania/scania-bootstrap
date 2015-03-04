@@ -1,6 +1,6 @@
 @import url("/resources/fonts/corporate-icons/style.css");
 .compiled_at {
-  content: "Tue Nov 18 2014 16:54:22 GMT+0100 (W. Europe Standard Time)";
+  content: "Thu Nov 20 2014 13:41:53 GMT+0100 (W. Europe Standard Time)";
 }
 .bootstrap .loading:after,
 .bootstrap .table-selectable > tbody > tr.expandable > td:first-child:before,
@@ -3164,20 +3164,21 @@ h6.portlet-header {
 @media (min-width: 1600px) {
   .portlet-application .container,
   .bootstrap-app .container {
-    max-width: 1420px;
+    width: 1420px;
   }
-}
-.bootstrap .bootstrap-app {
-  background-color: #fff;
-  padding: 15px;
-  margin-bottom: 15px;
 }
 .bootstrap-wcm h1,
 .bootstrap-wcm h2,
 .bootstrap-wcm h3,
 .bootstrap-wcm h4,
 .bootstrap-wcm h5,
-.bootstrap-wcm h6 {
+.bootstrap-wcm h6,
+.bootstrap h1,
+.bootstrap h2,
+.bootstrap h3,
+.bootstrap h4,
+.bootstrap h5,
+.bootstrap h6 {
   font-family: "Open Sans", Arial, sans-serif;
   font-weight: 300;
   line-height: 1.1;
@@ -3186,120 +3187,65 @@ h6.portlet-header {
   border-bottom: 0;
   padding-bottom: 0;
 }
-.bootstrap-wcm h1 {
+.bootstrap-wcm h1,
+.bootstrap h1 {
   font-size: 32px;
   font-weight: 400;
 }
-.bootstrap-wcm h2 {
+.bootstrap-wcm h2,
+.bootstrap h2 {
   font-size: 22px;
   font-weight: 300;
 }
-.bootstrap-wcm h3 {
+.bootstrap-wcm h3,
+.bootstrap h3 {
   font-size: 16px;
   font-weight: 300;
 }
-.bootstrap-wcm h4 {
+.bootstrap-wcm h4,
+.bootstrap h4 {
   font-size: 14px;
   font-weight: 600;
 }
-.bootstrap-wcm h5 {
+.bootstrap-wcm h5,
+.bootstrap h5 {
   font-size: 12px;
   font-weight: 600;
 }
-.bootstrap-wcm h6 {
+.bootstrap-wcm h6,
+.bootstrap h6 {
   font-size: 11px;
   font-weight: 600;
 }
-.bootstrap-wcm h1 small {
+.bootstrap-wcm h1 small,
+.bootstrap h1 small {
   font-size: 26px;
   font-family: "Arial", sans-serif;
 }
-.bootstrap-wcm h2 small {
+.bootstrap-wcm h2 small,
+.bootstrap h2 small {
   font-size: 18px;
   font-family: "Arial", sans-serif;
 }
-.bootstrap-wcm h3 small {
+.bootstrap-wcm h3 small,
+.bootstrap h3 small {
   font-size: 13px;
   font-family: "Arial", sans-serif;
 }
-.bootstrap-wcm h4 small {
+.bootstrap-wcm h4 small,
+.bootstrap h4 small {
   font-size: 12px;
   font-family: "Arial", sans-serif;
 }
-.bootstrap-wcm h5 small {
+.bootstrap-wcm h5 small,
+.bootstrap h5 small {
   font-size: 10px;
   font-family: "Arial", sans-serif;
 }
-.bootstrap-wcm h6 small {
+.bootstrap-wcm h6 small,
+.bootstrap h6 small {
   font-size: 9px;
   font-family: "Arial", sans-serif;
-}
-body h1,
-body h2,
-body h3,
-body h4,
-body h5,
-body h6 {
-  font-family: "Open Sans", Arial, sans-serif;
-  font-weight: 300;
-  line-height: 1.1;
-  color: #555;
-  margin-top: 15px;
-  border-bottom: 0;
-  padding-bottom: 0;
-}
-body h1 {
-  font-size: 32px;
-  font-weight: 400;
-}
-body h2 {
-  font-size: 22px;
-  font-weight: 300;
-}
-body h3 {
-  font-size: 16px;
-  font-weight: 300;
-}
-body h4 {
-  font-size: 14px;
-  font-weight: 600;
-}
-body h5 {
-  font-size: 12px;
-  font-weight: 600;
-}
-body h6 {
-  font-size: 11px;
-  font-weight: 600;
-}
-body h1 small {
-  font-size: 26px;
-  font-family: "Arial", sans-serif;
-}
-body h2 small {
-  font-size: 18px;
-  font-family: "Arial", sans-serif;
-}
-body h3 small {
-  font-size: 13px;
-  font-family: "Arial", sans-serif;
-}
-body h4 small {
-  font-size: 12px;
-  font-family: "Arial", sans-serif;
-}
-body h5 small {
-  font-size: 10px;
-  font-family: "Arial", sans-serif;
-}
-body h6 small {
-  font-size: 9px;
-  font-family: "Arial", sans-serif;
-}
-.bootstrap .bootstrap-wcm {
-  background-color: #fff;
-  padding: 15px;
-  margin-bottom: 15px;
 }
 /* This class is added to "#global_header" and "body" with JS after GH-header-status has been set via cookie, to avoid transition during first load */
 .gh-transition-active {
