@@ -2,7 +2,7 @@
 @import url("/resources/fonts/corporate-icons/style.css");
 @import url('/vendors/frameworks/dojo/1.7.4/dijit/themes/dijit.css');
 .compiled_at {
-  content: "Mon Feb 16 2015 17:25:35 GMT+0100 (W. Europe Standard Time)";
+  content: "Thu Feb 26 2015 14:41:22 GMT+0100 (Västeuropa, normaltid)";
 }
 .dbootstrap .dijitComboButton.dijitSearchTextBox .dijitButtonNode.dijitArrowButton:before,
 .dbootstrap .dijitComboBox.dijitSearchTextBox .dijitButtonNode.dijitArrowButton:before,
@@ -323,6 +323,11 @@
 .dbootstrap .dgrid.table-striped-reveresed .dgrid-row-even:hover .dgrid-cell {
   background-color: #eeeeee;
 }
+/*ul,
+ol {
+	margin: 0 0 10px 0;
+	padding-left: 40px;
+}*/
 .dbootstrap {
   /*.wpthemeControlBody,
 .wpthemeMainContent,
@@ -577,6 +582,9 @@
 }
 .dbootstrap .modal-title {
   font-size: 14px;
+}
+.dbootstrap .alert {
+  padding: 15px;
 }
 .dbootstrap .panel-body {
   font-size: 12px;
@@ -1807,9 +1815,11 @@
 .dbootstrap .dijitButton .dijitButtonText,
 .dbootstrap .dijitDropDownButton .dijitButtonText,
 .dbootstrap .dijitComboButton .dijitButtonText {
+  display: inline-block;
   padding: 0;
-  display: inline;
+  line-height: 1;
   font-size: 14px;
+  vertical-align: middle;
   white-space: normal;
 }
 .dbootstrap .dijitButton .dijitButtonText [class^="icon-"]:before,
@@ -1841,18 +1851,17 @@
 .dbootstrap .dijitDropDownButton .dijitArrowButtonChar,
 .dbootstrap .dijitComboButton .dijitArrowButtonChar {
   display: inline !important;
-  font-size: 0;
-  line-height: 11px;
   float: none;
-  vertical-align: middle;
+  vertical-align: inherit;
+  font-size: 0;
+  line-height: 1;
 }
 .dbootstrap .dijitButton .dijitArrowButtonChar:before,
 .dbootstrap .dijitDropDownButton .dijitArrowButtonChar:before,
 .dbootstrap .dijitComboButton .dijitArrowButtonChar:before {
   font-size: 14px;
-  vertical-align: top;
   text-align: right;
-  line-height: 1;
+  line-height: 1px;
   padding-left: 3px;
 }
 .dbootstrap table.dijitComboButton,
@@ -1903,13 +1912,16 @@
 .dbootstrap .dijitPopup .dijitCalendar .dijitDropDownButton .dijitButtonNode .dijitButtonText,
 .dbootstrap .popover .dijitCalendar .dijitDropDownButton .dijitButtonNode .dijitButtonText {
   font-size: 11px;
-  line-height: 15px;
 }
 .dbootstrap span.btn-sm .dijitButtonNode,
 .dbootstrap span.btn-xs .dijitButtonNode,
 .dbootstrap table.btn-sm .dijitButtonNode,
 .dbootstrap table.btn-xs .dijitButtonNode {
-  padding: 4px 6px;
+  line-height: inherit;
+  display: inherit;
+  vertical-align: inherit;
+  min-height: inherit;
+  padding: 5px 8px;
 }
 .dbootstrap span.btn,
 .dbootstrap span.btn-sm,
@@ -3074,7 +3086,7 @@
   border: 0;
 }
 .dbootstrap .dijitSlider.frequencySlider .dijitSliderBarContainerH {
-  background-image: linear-gradient(to bottom right, #000000 0%, #000000 45%, white 50%, #bbbbbb 55%, #bbbbbb 100%);
+  background-image: linear-gradient(to bottom right, #000000 0%, #000000 45%, #ffffff 50%, #bbbbbb 55%, #bbbbbb 100%);
   height: 14px;
   padding: 0 8%;
 }
@@ -3586,5 +3598,4 @@
     display: none !important;
   }
 }
-
 /*# sourceMappingURL=scania-dbootstrap-overrides.css.map */

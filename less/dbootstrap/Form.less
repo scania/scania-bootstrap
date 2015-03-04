@@ -586,9 +586,11 @@ div.checkbox {
     }
 
     .dijitButtonText {
+        display: inline-block;
         padding: 0;
-        display: inline;
+        line-height: 1;
         font-size: 14px;
+        vertical-align: middle;
         white-space: normal;
 
         [class^="icon-"]:before,
@@ -611,19 +613,18 @@ div.checkbox {
     }
     .dijitArrowButtonChar {
         display: inline !important;
-        font-size: 0;
-        line-height: 11px;
         float: none;
-        vertical-align: middle;
+        vertical-align: inherit;
+        font-size: 0;
+        line-height: 1;
 
         &:before {
             &:extend([class^="icon-"]:before);
             &:extend(.icon-sort-down:before);
             
             font-size: 14px;
-            vertical-align: top;
             text-align: right;
-            line-height: 1;
+            line-height: 1px;
             padding-left: 3px;
         }
     }
@@ -680,11 +681,14 @@ table.btn-xs {
 
         .dijitButtonText {
             font-size: 11px;
-            line-height: 15px;
         }
     }
     .dijitButtonNode {
-        padding: 4px 6px;
+        line-height: inherit;
+        display: inherit;
+        vertical-align: inherit;
+        min-height: inherit;
+        padding: 5px 8px;
     }
 }
 span.btn,
