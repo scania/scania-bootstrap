@@ -1,6 +1,6 @@
 @import url("/resources/fonts/corporate-icons/style.css");
 .compiled_at {
-  content: "Fri Feb 27 2015 13:21:43 GMT+0100 (Västeuropa, normaltid)";
+  content: "Mon Mar 02 2015 15:51:46 GMT+0100 (Västeuropa, normaltid)";
 }
 .bootstrap .loading:after,
 .bootstrap .table-selectable > tbody > tr.expandable > td:first-child:before,
@@ -802,6 +802,10 @@ body.bootstrap {
 }
 .bootstrap .popover-content .table tbody > tr > td {
   font-size: 85%;
+}
+.bootstrap .table-data tbody tr:first-child th,
+.bootstrap .table-data tbody tr:first-child td {
+  border-top: 0;
 }
 .bootstrap .table-data tbody tr > th {
   font-size: 10px;
