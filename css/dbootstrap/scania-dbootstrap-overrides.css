@@ -1,6 +1,24 @@
+@import url("/resources/fonts/corporate-icons/style.css");
 @import url('/vendors/frameworks/dojo/1.7.4/dijit/themes/dijit.css');
 .compiled_at {
-  content: "Mon Jan 19 2015 14:50:38 GMT+0100 (W. Europe Standard Time)";
+  content: "Fri Feb 06 2015 10:59:42 GMT+0100 (W. Europe Standard Time)";
+}
+.dbootstrap .dgrid.table-data .dgrid-row:hover td.dgrid-cell:first-child,
+.dbootstrap .dgrid.table-data .dgrid-row td.dgrid-cell:first-child {
+  font-size: 10px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #949494;
+}
+.dbootstrap .dgrid.table-data .dgrid-row:hover td.dgrid-cell,
+.dbootstrap .dgrid.table-data .dgrid-row td.dgrid-cell {
+  background-color: #f5f5f5;
+  font-weight: bold;
+  font-size: 12px;
+  font-family: 'Open Sans';
+  white-space: nowrap;
+  text-align: center;
+  padding: 0 20px;
 }
 .dbootstrap .dijitTreeExpandoLoading,
 .dbootstrap .dijitIconLoading:before,
@@ -559,11 +577,6 @@
 .dbootstrap .dgrid.table-striped-reveresed .dgrid-row-even:hover .dgrid-cell {
   background-color: #eeeeee;
 }
-/*ul,
-ol {
-	margin: 0 0 10px 0;
-	padding-left: 40px;
-}*/
 .dbootstrap {
   /*.wpthemeControlBody,
 .wpthemeMainContent,
@@ -592,6 +605,7 @@ ol {
   /* Add styling for segmented inputs and selectboxes */
   /* Button related style */
   /* Added scania theme based stuff, this should be picked from bootstrap theme later on */
+  /* Comented out by Andreas 2015-01-28 */
   /* input-addon */
   /* dGrid related stlye */
   /* Datepicker related style */
@@ -2035,6 +2049,14 @@ ol {
   font-size: 14px;
   white-space: normal;
 }
+.dbootstrap .dijitButton .dijitButtonText [class^="icon-"]:before,
+.dbootstrap .dijitDropDownButton .dijitButtonText [class^="icon-"]:before,
+.dbootstrap .dijitComboButton .dijitButtonText [class^="icon-"]:before,
+.dbootstrap .dijitButton .dijitButtonText [class*=" icon-"]:before,
+.dbootstrap .dijitDropDownButton .dijitButtonText [class*=" icon-"]:before,
+.dbootstrap .dijitComboButton .dijitButtonText [class*=" icon-"]:before {
+  display: inline;
+}
 .dbootstrap .dijitButton .dijitButtonNode,
 .dbootstrap .dijitDropDownButton .dijitButtonNode,
 .dbootstrap .dijitComboButton .dijitButtonNode,
@@ -2064,7 +2086,7 @@ ol {
 .dbootstrap .dijitButton .dijitArrowButtonChar,
 .dbootstrap .dijitDropDownButton .dijitArrowButtonChar,
 .dbootstrap .dijitComboButton .dijitArrowButtonChar {
-  display: inline-block !important;
+  display: inline !important;
   font-size: 0;
   line-height: 11px;
   float: none;
@@ -2076,8 +2098,8 @@ ol {
   font-size: 14px;
   vertical-align: top;
   text-align: right;
-  line-height: 3px;
-  padding-left: 6px;
+  line-height: 1;
+  padding-left: 3px;
 }
 .dbootstrap table.dijitComboButton,
 .dbootstrap table.dijitComboButton:hover {
@@ -2096,11 +2118,6 @@ ol {
 .dbootstrap table.dijitComboButton.btn-sm .dijitButtonNode,
 .dbootstrap table.dijitComboButton:hover.btn-sm .dijitButtonNode {
   height: 28px;
-}
-.dbootstrap .btn .caret {
-  margin-top: 5px;
-  margin-right: 8px;
-  float: right;
 }
 .dbootstrap span.btn .dijitButtonNode {
   padding: 6px 12px;
@@ -2138,7 +2155,7 @@ ol {
 .dbootstrap span.btn-xs .dijitButtonNode,
 .dbootstrap table.btn-sm .dijitButtonNode,
 .dbootstrap table.btn-xs .dijitButtonNode {
-  padding: 5px 8px;
+  padding: 4px 6px;
 }
 .dbootstrap span.btn,
 .dbootstrap span.btn-sm,
@@ -2325,6 +2342,7 @@ ol {
   padding: 12px 8px;
 }
 .dbootstrap .dgrid .dgrid-scroller {
+  max-height: 350px;
   width: auto;
   position: relative;
   overflow-y: visible;
@@ -2568,6 +2586,31 @@ ol {
 }
 .dbootstrap .dgrid.table-hs .dgrid-cell {
   width: 110px;
+}
+.dbootstrap .dgrid.table-data .dgrid-row:last-child td.dgrid-cell,
+.dbootstrap .dgrid.table-data .dgrid-row:last-child:hover td.dgrid-cell {
+  border-bottom: 0;
+}
+.dbootstrap .dgrid.table-data .dgrid-row:hover td.dgrid-cell,
+.dbootstrap .dgrid.table-data .dgrid-row td.dgrid-cell {
+  padding: 8px;
+  border-bottom: 1px solid #dddddd;
+}
+.dbootstrap .dgrid.table-data .dgrid-row:hover td.dgrid-cell small,
+.dbootstrap .dgrid.table-data .dgrid-row td.dgrid-cell small {
+  font-weight: normal;
+}
+.dbootstrap .dgrid.table-data .dgrid-row:hover td.dgrid-cell:first-child,
+.dbootstrap .dgrid.table-data .dgrid-row td.dgrid-cell:first-child {
+  background-color: #fff;
+}
+.dbootstrap .dgrid.table-data .dgrid-row:hover td.dgrid-cell.divider-right,
+.dbootstrap .dgrid.table-data .dgrid-row td.dgrid-cell.divider-right {
+  border-right: 2px solid #fff;
+}
+.dbootstrap .dgrid.table-data .dgrid-row:hover td.dgrid-cell.divider-left,
+.dbootstrap .dgrid.table-data .dgrid-row td.dgrid-cell.divider-left {
+  border-left: 2px solid #fff;
 }
 .dbootstrap .dijitPopup .dateFilterArea .dijitCalendar,
 .dbootstrap .popover .dateFilterArea .dijitCalendar {
@@ -3255,7 +3298,7 @@ ol {
   border: 0;
 }
 .dbootstrap .dijitSlider.frequencySlider .dijitSliderBarContainerH {
-  background-image: linear-gradient(to bottom right, #000000 0%, #000000 45%, #ffffff 50%, #bbbbbb 55%, #bbbbbb 100%);
+  background-image: linear-gradient(to bottom right, #000000 0%, #000000 45%, white 50%, #bbbbbb 55%, #bbbbbb 100%);
   height: 14px;
   padding: 0 8%;
 }
@@ -3767,4 +3810,5 @@ ol {
     display: none !important;
   }
 }
+
 /*# sourceMappingURL=scania-dbootstrap-overrides.css.map */

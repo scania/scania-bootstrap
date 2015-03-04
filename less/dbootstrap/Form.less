@@ -563,6 +563,11 @@ div.checkbox {
         display: inline;
         font-size: 14px;
         white-space: normal;
+
+        [class^="icon-"]:before,
+        [class*=" icon-"]:before {
+            display: inline;
+        }
     }
     .dijitButtonNode {
         text-transform: none;
@@ -583,7 +588,7 @@ div.checkbox {
         border-color: #b3b3b3;
     }
     .dijitArrowButtonChar {
-        display: inline-block !important;
+        display: inline !important;
         font-size: 0;
         line-height: 11px;
         float: none;
@@ -596,8 +601,8 @@ div.checkbox {
             font-size: 14px;
             vertical-align: top;
             text-align: right;
-            line-height: 3px;
-            padding-left: 6px;
+            line-height: 1;
+            padding-left: 3px;
         }
     }
 }
@@ -626,14 +631,15 @@ table.dijitComboButton:hover {
     }
 }
 
-.btn {
+/* Comented out by Andreas 2015-01-28 */
+// .btn {
 
-    .caret {
-        margin-top: 5px;
-        margin-right: 8px;
-        float: right;
-    }
-}
+//     .caret {
+//         margin-top: 5px;
+//         margin-right: 8px;
+//         float: right;
+//     }
+// }
 span.btn {
 
     .dijitButtonNode {
@@ -656,7 +662,7 @@ table.btn-xs {
         }
     }
     .dijitButtonNode {
-        padding: 5px 8px;
+        padding: 4px 6px;
     }
 }
 span.btn,

@@ -1,6 +1,6 @@
 @import url("/resources/fonts/corporate-icons/style.css");
 .compiled_at {
-  content: "Thu Jan 15 2015 16:21:51 GMT+0100 (W. Europe Standard Time)";
+  content: "Mon Feb 02 2015 19:10:59 GMT+0100 (Västeuropa, normaltid)";
 }
 .bootstrap .loading:after,
 .bootstrap .table-selectable > tbody > tr.expandable > td:first-child:before,
@@ -155,6 +155,21 @@ body.bootstrap {
 .bootstrap .container .container {
   width: auto;
 }
+.bootstrap .headline {
+  overflow: hidden;
+}
+.bootstrap .headline .button-container {
+  float: right;
+}
+.bootstrap .headline h1,
+.bootstrap .headline h2,
+.bootstrap .headline h3,
+.bootstrap .headline h4,
+.bootstrap .headline h5,
+.bootstrap .headline h6 {
+  margin-top: 0;
+  padding-bottom: 10px;
+}
 .bootstrap .loading {
   position: relative;
 }
@@ -176,6 +191,18 @@ body.bootstrap {
   margin-left: -15px;
   margin-top: -15px;
   z-index: 1051;
+}
+.bootstrap .loadingContainer {
+  position: relative !important;
+  overflow: hidden;
+}
+.bootstrap .loadingContainer > .loading {
+  position: static;
+}
+.bootstrap .loadingContainer > .loading:before {
+  width: inherit;
+  top: inherit;
+  left: inherit;
 }
 .bootstrap .scroller-container-xs,
 .bootstrap .scroller-container-sm,

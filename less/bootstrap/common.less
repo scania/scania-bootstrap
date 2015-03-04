@@ -6,6 +6,18 @@ hr {
   width: auto;
 }
 
+.headline {
+  overflow: hidden;
+
+  .button-container {
+    float: right;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    margin-top: 0;
+    padding-bottom: 10px;
+  }
+}
+
 .loading {
   position: relative;
 
@@ -32,6 +44,18 @@ hr {
     &:extend(.icon-spinner:before);
     &:extend(.icon-spin);
   }
+}
+.loadingContainer {
+  position: relative !important;
+  overflow: hidden;
+}
+.loadingContainer > .loading {
+  position: static;
+}
+.loadingContainer > .loading:before {
+  width: inherit;
+  top: inherit;
+  left: inherit;
 }
 
 /*** Scroller Container ***/
