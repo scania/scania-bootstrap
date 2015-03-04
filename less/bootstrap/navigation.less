@@ -2,47 +2,54 @@
 // NAVIGATION
 
 // NAV TABS
-ul.nav-tabs { border-bottom: 2px solid @framework-red; }
+ul.nav-tabs {
+  border-bottom: 2px solid @framework-red;
 
-ul.nav-tabs > li { margin-bottom: 0; }
+  > li {
+    margin-bottom: 0;
 
-ul.nav-tabs > li > a{
-  padding: 5px 15px;
-  text-transform: none;
-  font-weight: normal;
-  -webkit-border-radius: 0;
-  border-radius: 0;
-  margin-right: 0;
-  border-top: 1px solid #ddd;
-  border-left: 1px solid #ddd;
-  border-right: 1px solid #ddd;
-  position: relative;
-  top: 7px;
-  background-color: #fafafa;
-  color: @main-font-color;
-  font-size: 12px;
-}
+    > a {
+      padding: 5px 15px;
+      text-transform: none;
+      font-weight: normal;
+      -webkit-border-radius: 0;
+      border-radius: 0;
+      margin-right: 0;
+      border-top: 1px solid #ddd;
+      border-left: 1px solid #ddd;
+      border-right: 1px solid #ddd;
+      position: relative;
+      top: 7px;
+      background-color: #fafafa;
+      color: @main-font-color;
+      font-size: 12px;
 
-ul.nav-tabs > li > a:hover {
-  background-color: #eee;
-}
+      &:hover {
+        background-color: #eee;
+      }
+    }
 
-ul.nav-tabs > li.active > a,
-ul.nav-tabs > li.active > a:hover,
-ul.nav-tabs > li.active > a:focus {
-  padding: 8px 15px;
-  border-top: 2px solid @framework-red;
-  border-left: 1px solid #ddd;
-  border-right: 1px solid #ddd;
-  border-bottom: 1px solid #fff;
-  position: relative;
-  top: 2px;
-  background-color: #FFF;
-  border-radius: 0;
-}
+    &.active {
 
-ul.nav.nav-tabs > li.active:first-child a {
-  border-left: 0; 
+      > a,
+      > a:hover,
+      > a:focus {
+        padding: 8px 15px;
+        border-top: 2px solid @framework-red;
+        border-left: 1px solid #ddd;
+        border-right: 1px solid #ddd;
+        border-bottom: 1px solid #fff;
+        position: relative;
+        top: 2px;
+        background-color: #FFF;
+        border-radius: 0;
+      }
+    }
+
+    &:first-child a {
+      border-left: 0; 
+    }
+  }
 }
 
 // ul.nav.nav-tabs > li + li a {
@@ -68,27 +75,138 @@ ul.nav.nav-tabs > li.active:first-child a {
     position: static;
 
     .dropdown-menu {
-      left: auto;
+      width: 100%;
+      left: 0;
       padding: 15px;
+      font-size: 12px;
+      border: 1px solid #dddddd;
 
       h4 {
         margin-top: 0;
 
         a {
           color: inherit;
-
-          &:hover {
-            text-decoration: none;
-          }
         }
       }
       ul {
-        margin: 0;
+        margin: 0 0 20px;
+
+        li {
+          padding-bottom: 8px;
+          line-height: 14px;
+
+          &:last-child {
+            padding-bottom: 0;
+          }
+        }
+        ul {
+          padding-left: 10px;
+          border-left: 2px solid #ccc;
+          margin: 10px 0 0 5px;
+        }
+      }
+      > .row {
+        // This cancles out the ul bottom margin
+        margin-bottom: -20px;
+      }
+    }
+  }
+}
+
+
+// PORTAL NAVIGATION
+.navbar.portal-navigation,
+.navbar.navbar-scania {
+  background-color: @tab-bg-inactive;
+  border-radius: 0;
+  border: 0px;
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #ebebeb;
+
+  min-height: 10px;
+  //border-left: 1px solid @tab-border;
+  margin-bottom: 15px;
+
+  .navbar-nav {
+
+    > li {
+
+      > a {
+        color: #777;
+        font-weight: 700;
+        border-right: 1px solid @tab-border;
+        line-height: 8px;
+        font-size: 12px;
       }
 
-      &.full {
-        left: 0;
-        width: 100%;
+      &.active > a,
+      &.open > a {
+        background-color: #ebebeb;
+        border-color: #dddddd;
+        border-top-color: @framework-red;
+        border-top-width: 2px;
+        border-top-style: solid;
+        margin-top: -2px;
+
+        &:hover,
+        &:focus {
+          background-color: #ebebeb;
+        }
+      }
+    }
+    .navbar-collapse {
+      padding-left: 0px;
+      padding-right: 0px;
+    }
+
+    &:hover{
+      //background-color: lighten(#eee, 3%);
+    }
+  }
+
+  .nav > li > a {
+    padding: 14px 10px;
+  }
+
+  // Tier Two
+  .portal-nav-level-two {
+    background-color: #f3f3f3;
+
+    .nav > li {
+
+      > a {
+        padding: 10px 10px;
+        font-size: 11px;
+      }
+
+      &.active > a {
+        border-top: 0;
+        margin-top: 0;
+        background-color: #d9d9d9;
+      }
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .portal-navigation,
+  .navbar-scania {
+
+    .navbar-nav {
+      margin: 0;
+
+       > li {
+
+        > a {
+          line-height: 18px;
+          border-bottom: 1px solid #eee;
+        }
+
+        &.active > a {
+          border-top: 0;
+          border-left: 4px solid #7c1c1d;
+          margin-top: 0px;
+        }
       }
     }
   }
