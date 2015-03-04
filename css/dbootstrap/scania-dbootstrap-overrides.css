@@ -1,6 +1,6 @@
 @import url('/vendors/frameworks/dojo/1.7.4/dijit/themes/dijit.css');
 .compiled_at {
-  content: "Fri Dec 05 2014 11:30:47 GMT+0100 (W. Europe Standard Time)";
+  content: "Mon Dec 08 2014 13:55:31 GMT+0100 (W. Europe Standard Time)";
 }
 .dbootstrap .dijitTreeExpandoLoading,
 .dbootstrap .dijitIconLoading:before,
@@ -1673,6 +1673,9 @@ ol {
 .dbootstrap .dijitTextBox.dijitTextBoxReadOnly *,
 .dbootstrap .dijitTextBox.dijitTextBoxReadOnly.dijitTextBoxDisabled * {
   cursor: text;
+}
+.dbootstrap .dijitTextBox.dijitTextBoxError .dijitValidationContainer {
+  display: none;
 }
 .dbootstrap .dijitTextBox .dijitButtonNode,
 .dbootstrap .dijitTextBox .dijitInputField,
