@@ -1,0 +1,36 @@
+// Scania Dojo Bootstrap
+@compiled_at: `new Date()`;
+.compiled_at {content: "@{compiled_at}";}
+
+// This path is needed when pointing to less files that will be compiled
+@root_path: "../../../../";
+
+// Makes it possible to extend style from core bootstrap
+@import (reference) '@{root_path}vendors/frameworks/bootstrap/3.0.0/less/bootstrap';
+
+// Makes it possible to extend style from scania bootstrap complemented styles
+@import (reference) '../bootstrap/scania-bootstrap-index';
+
+// Makes it possible to extend style from dbootstrap
+@import (reference) '@{root_path}vendors/frameworks/dbootstrap/0.1.0/less/dbootstrap';
+
+@import 'Global';
+
+.dbootstrap {
+	@import 'PortalReset';
+
+	@import 'Common';
+	@import 'Form';
+	@import 'Dgrid';
+	@import 'Datepicker';
+	@import 'TitlePane';
+	@import 'Dialog';
+	@import 'Tabs';
+	@import 'Chosen';
+	@import 'Standby';
+	@import 'Slider';
+	@import 'Navbar';
+	@import 'Tree';
+}
+
+@import 'Print';

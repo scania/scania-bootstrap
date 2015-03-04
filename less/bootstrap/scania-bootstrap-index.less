@@ -1,14 +1,21 @@
+//Insert Compile Date
+@compiled_at: `new Date()`;
+.compiled_at {content: "@{compiled_at}";}
+
+@root_path: "../../../../";
+
+//Corporate Icons CSS - Include this css as a less-reference to get the ability to extend classes to set icons
+@import (less, reference) '/@{root_path}resources/fonts/corporate-icons/style.css';
+
+//BOOTSTRAP - Compiles from Bootstrap LESS-Source
+@import (reference) '@{root_path}vendors/frameworks/bootstrap/3.0.0/less/bootstrap';
+
 //Modules needing to be outside .bootstrap enclosure.
 @import 'html.less';
 @import 'maximize.less';
 
 //Scania Bootstrap & Modules
 .bootstrap{
-  //BOOTSTRAP - Compiles from Bootstrap LESS-Source
-  @import (reference) '@{root_path}vendors/frameworks/bootstrap/3.0.0/less/bootstrap'; // Bootstrap Dist (LESS-project)
-  //@import '@{root_path}vendors/frameworks/bootstrap/3.0.0/less/bootstrap.less'; // Bootstrap Dist (LESS-project)
-  //@import (css) 'bootstrap-native/bootstrap.less'; // Bootstrap Dist (LESS-project)
-
   //SCANIA BOOTSTRAP
   @import 'variables.less'; //Scania Bootstrap Variables
   @import 'mixins.less';
