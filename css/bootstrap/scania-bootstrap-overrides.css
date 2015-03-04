@@ -1,6 +1,6 @@
 @import url("/resources/fonts/corporate-icons/style.css");
 .compiled_at {
-  content: "Thu Dec 11 2014 16:59:29 GMT+0100 (W. Europe Standard Time)";
+  content: "Mon Dec 15 2014 14:16:34 GMT+0100 (W. Europe Standard Time)";
 }
 .bootstrap .loading:after,
 .bootstrap .table-selectable > tbody > tr.expandable > td:first-child:before,
@@ -954,6 +954,10 @@ body.bootstrap {
 }
 .bootstrap .nav .dropdown.megamenu .dropdown-menu > .row {
   margin-bottom: -20px;
+}
+.bootstrap .navbar.megamenu .nav .dropdown .dropdown-menu li > a {
+  font-size: 12px;
+  color: #428bca;
 }
 .bootstrap .navbar.portal-navigation,
 .bootstrap .navbar.navbar-scania {
