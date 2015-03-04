@@ -1,6 +1,6 @@
 @import url("/resources/fonts/corporate-icons/style.css");
 .compiled_at {
-  content: "Mon Dec 15 2014 14:16:34 GMT+0100 (W. Europe Standard Time)";
+  content: "Fri Dec 19 2014 12:10:39 GMT+0100 (W. Europe Standard Time)";
 }
 .bootstrap .loading:after,
 .bootstrap .table-selectable > tbody > tr.expandable > td:first-child:before,
@@ -1643,7 +1643,7 @@ body.bootstrap {
 .bootstrap .table.table-sm tr td,
 .bootstrap .table.table-md tr td,
 .bootstrap .table.table-lg tr td {
-  width: 10%;
+  width: 8%;
 }
 .bootstrap .table.table-sm tbody,
 .bootstrap .table.table-md tbody,
@@ -4706,7 +4706,7 @@ body.goshow {
   border-color: #CCC;
 }
 .bootstrap select.form-control + .chosen-container-multi .chosen-choices li.search-choice .search-choice-close {
-  top: 8px;
+  top: 6px;
   right: 6px;
 }
 .bootstrap select.form-control + .chosen-container-multi.chosen-container-active .chosen-choices,
@@ -4736,5 +4736,163 @@ body.goshow {
   border-left: 1px solid #ccc;
   border-top-right-radius: 0;
   border-bottom-right-radius: 0;
+}
+.bootstrap.albatross .btn,
+.bootstrap.albatross .btn-sm,
+.bootstrap.albatross .btn-lg {
+  border-radius: 0;
+  border: 0;
+}
+.bootstrap.albatross .btn-primary {
+  color: #fff;
+  background-color: #539ed0;
+}
+.bootstrap.albatross .btn-primary:hover,
+.bootstrap.albatross .btn-primary:focus {
+  background-color: #7bb5db;
+}
+.bootstrap.albatross .btn-success {
+  color: #fff;
+  background-color: #7ca750;
+}
+.bootstrap.albatross .btn-success:hover,
+.bootstrap.albatross .btn-success:focus {
+  background-color: #95ba70;
+}
+.bootstrap.albatross .btn-danger {
+  color: #fff;
+}
+.bootstrap.albatross .btn-info {
+  color: #fff;
+}
+.bootstrap.albatross .btn-default {
+  color: #666;
+  background-color: #eee;
+}
+.bootstrap.albatross .btn-default:hover,
+.bootstrap.albatross .btn-default:focus {
+  background-color: #fbfbfb;
+}
+.bootstrap.albatross .btn-link {
+  color: #d0ad53;
+}
+.bootstrap.albatross a {
+  color: #d0ad53;
+}
+.bootstrap.albatross .dropdown-menu {
+  border-radius: 0;
+}
+.bootstrap.albatross .dropdown-menu > li > a:hover,
+.bootstrap.albatross .dropdown-menu > li > a:focus {
+  background-color: #d0ad53;
+  color: #fff;
+}
+.bootstrap.albatross .popover {
+  border: 0;
+  padding: 0;
+  border-radius: 0;
+}
+.bootstrap.albatross .popover .popover-title {
+  border-radius: 0;
+  background-color: #555555;
+  color: white;
+}
+.bootstrap.albatross .modal-content {
+  border-radius: 0;
+}
+.bootstrap.albatross h1,
+.bootstrap.albatross h2 {
+  border-bottom: 4px solid #d0ad53;
+  text-transform: uppercase;
+}
+.bootstrap.albatross h3,
+.bootstrap.albatross h4 {
+  border-bottom: 2px solid #d0ad53;
+  text-transform: uppercase;
+}
+.bootstrap.albatross h5,
+.bootstrap.albatross h6 {
+  border-bottom: 1px solid #d0ad53;
+  text-transform: uppercase;
+}
+.bootstrap.albatross .panel-heading h1,
+.bootstrap.albatross .modal-header h1,
+.bootstrap.albatross .panel-heading h2,
+.bootstrap.albatross .modal-header h2,
+.bootstrap.albatross .panel-heading h3,
+.bootstrap.albatross .modal-header h3,
+.bootstrap.albatross .panel-heading h4,
+.bootstrap.albatross .modal-header h4,
+.bootstrap.albatross .panel-heading h5,
+.bootstrap.albatross .modal-header h5,
+.bootstrap.albatross .panel-heading h6,
+.bootstrap.albatross .modal-header h6 {
+  border: 0;
+}
+.bootstrap.albatross ul.nav-tabs {
+  border-bottom: 2px solid #d0ad53;
+}
+.bootstrap.albatross ul.nav-tabs > li.active > a {
+  background-color: #d0ad53;
+  border-top: 2px solid #d0ad53;
+  top: 3px;
+  color: #fff;
+  border-left: 0;
+  border-right: 0;
+}
+.bootstrap.albatross .label {
+  border-radius: 0;
+}
+.bootstrap.albatross .row-selected,
+.bootstrap.albatross .row-selected td {
+  background-color: #e6d3a3 !important;
+}
+.bootstrap.albatross .table-clickable > tbody > tr:hover > td,
+.bootstrap.albatross .table-clickable > tbody > tr:hover > th,
+.bootstrap.albatross .well .table-clickable > tbody > tr:hover > td,
+.bootstrap.albatross .well .table-clickable > tbody > tr:hover > th {
+  background-color: #f1e6cb;
+}
+.bootstrap.albatross #maximize-button {
+  color: #d0ad53;
+  background-color: transparent;
+  border: 0;
+}
+.bootstrap.albatross .navbar.navbar-default {
+  background-color: #555555;
+}
+.bootstrap.albatross .navbar.navbar-default li:hover {
+  background-color: #666;
+}
+.bootstrap.albatross .navbar.navbar-default li.active > a {
+  background-color: #d0ad53;
+  border-top: 0;
+  margin-top: 0;
+}
+.bootstrap.albatross .navbar.navbar-default .navbar-nav > li > a {
+  color: #fff;
+  font-family: 'open sans', arial, sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  border-right: 1px solid #757575;
+}
+.bootstrap.albatross .navbar.navbar-default .navbar-nav > li > a:hover,
+.bootstrap.albatross .navbar.navbar-default .navbar-nav > li > a:focus {
+  color: #ffffff;
+}
+.bootstrap.albatross .navbar.navbar-default .portal-nav-level-two {
+  background-color: #aaa;
+  border-top: 0;
+}
+.bootstrap.albatross .navbar.navbar-default .portal-nav-level-two .nav > li > a {
+  background-color: #aaa;
+}
+.bootstrap.albatross .navbar.navbar-default .portal-nav-level-two .navbar-nav > li.active > a {
+  background-color: #d0ad53;
+}
+.bootstrap.albatross .portal-heading {
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 28px;
 }
 /*# sourceMappingURL=scania-bootstrap-overrides.css.map */
