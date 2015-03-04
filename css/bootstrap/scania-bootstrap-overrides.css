@@ -1,6 +1,6 @@
 @import url("/resources/fonts/corporate-icons/style.css");
 .compiled_at {
-  content: "Mon Feb 16 2015 15:37:29 GMT+0100 (W. Europe Standard Time)";
+  content: "Fri Feb 27 2015 13:21:43 GMT+0100 (Västeuropa, normaltid)";
 }
 .bootstrap .loading:after,
 .bootstrap .table-selectable > tbody > tr.expandable > td:first-child:before,
@@ -384,6 +384,10 @@ body.bootstrap {
   -ms-user-select: none;
   -o-user-select: none;
   user-select: none;
+}
+.bootstrap .btn > [class*=icon],
+.bootstrap .btn > [class*=icon]:before {
+  line-height: inherit;
 }
 .bootstrap .btn:focus {
   outline: thin dotted #333;
@@ -4928,5 +4932,4 @@ body.goshow {
   text-transform: uppercase;
   font-size: 28px;
 }
-
 /*# sourceMappingURL=scania-bootstrap-overrides.css.map */

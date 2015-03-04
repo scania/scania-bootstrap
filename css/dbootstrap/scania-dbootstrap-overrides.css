@@ -2,7 +2,7 @@
 @import url("/resources/fonts/corporate-icons/style.css");
 @import url('/vendors/frameworks/dojo/1.7.4/dijit/themes/dijit.css');
 .compiled_at {
-  content: "Thu Feb 26 2015 14:41:22 GMT+0100 (Västeuropa, normaltid)";
+  content: "Fri Feb 27 2015 16:26:59 GMT+0100 (Västeuropa, normaltid)";
 }
 .dbootstrap .dijitComboButton.dijitSearchTextBox .dijitButtonNode.dijitArrowButton:before,
 .dbootstrap .dijitComboBox.dijitSearchTextBox .dijitButtonNode.dijitArrowButton:before,
@@ -1918,7 +1918,6 @@ ol {
 .dbootstrap table.btn-sm .dijitButtonNode,
 .dbootstrap table.btn-xs .dijitButtonNode {
   line-height: inherit;
-  display: inherit;
   vertical-align: inherit;
   min-height: inherit;
   padding: 5px 8px;
