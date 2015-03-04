@@ -1,0 +1,83 @@
+.dijitTabContainer {
+	overflow: visible;
+
+	.dijitTabController,
+	.dijitAlignClient {
+		position: relative !important;
+		top: -1px !important;
+		left: 0 !important;
+		height: auto !important;
+		width: auto !important;
+		border: 0;
+		z-index: 1;
+	}
+	.dijitAlignClient {
+		overflow: visible;
+	}
+	.tabStripButton {
+		display: none;
+	}
+	.dijitTabContainerTop-tabs {
+		border-bottom: 2px solid #7c1c1d;
+
+		.dijitTab {
+			top: 2px;
+			border-radius: 0;
+			margin: 0;
+			padding: 0;
+			border: 0;
+			color: #555;
+
+			[class*="icon-"] {
+				margin-left: 5px;
+				margin-right: -10px;
+			}
+			> div {
+				padding: 6px 20px 5px 14px;
+				border-width: 1px 0 0 1px;
+				border-style: solid;
+				border-color: #ccc;
+			}
+			&:last-child > div {
+				border-right-width: 1px;
+			}
+			&.dijitChecked {
+				top: auto;
+				bottom: -2px;
+				background-color: #fff; //Martin J 2014-08-21
+				font-weight: bold;
+				color: #7c1c1d;
+				border-width: 2px 0 0;
+				border-style: solid;
+				border-color: #7c1c1d;
+
+				> div {
+					padding: 8px 20px 7px 14px;
+					border-width: 0 1px;
+				}
+
+				+ div > div {
+					border-left: 0;
+				}
+				&:first-child { //Martin J 2014-08-21
+					> div {
+						border-width: 0 1px 0 0;
+					}
+				}
+			}
+			&.tabDisabled {
+				background-color: #efefef;
+				color: #aaa;
+			}
+			.dijitTabButtonIcon {
+				display: none;
+			}
+		}
+	}
+	.dijitContentPane {
+		padding: 0;
+		overflow: visible;
+		height: auto !important;
+		width: auto !important;
+	}
+}

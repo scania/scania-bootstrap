@@ -1,0 +1,83 @@
+// SCANIA BOOTSTRAP THEME
+// TYPOGRAPHY
+
+/* HEADERS */
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+  font-family: "Open Sans", Arial, sans-serif;
+  font-weight: bold;
+  line-height: 1.1;
+  color: #555;
+  margin-top: 15px;
+}
+
+// STANDARD HEADERS
+h1 { font-size: @h1-font-size; }
+h2 { font-size: @h2-font-size; }
+h3 { font-size: @h3-font-size; }
+h4 { font-size: @h4-font-size; }
+h5 { font-size: @h5-font-size; }
+h6 { font-size: @h6-font-size; }
+
+h1 small { font-size: ceil(@h1-font-size * 0.8); font-family: "Arial", sans-serif }
+h2 small { font-size: ceil(@h2-font-size * 0.8); font-family: "Arial", sans-serif }
+h3 small { font-size: ceil(@h3-font-size * 0.8); font-family: "Arial", sans-serif }
+h4 small { font-size: ceil(@h4-font-size * 0.8); font-family: "Arial", sans-serif }
+h5 small { font-size: ceil(@h5-font-size * 0.8); font-family: "Arial", sans-serif }
+h6 small { font-size: ceil(@h6-font-size * 0.8); font-family: "Arial", sans-serif }
+
+
+// PORTLET-APPLICATION HEADERS
+.portlet-application {
+  h1, .h1 { font-size: @h1-font-size; border-bottom: 2px solid @headline-color-level1; padding-bottom: 5px;}
+  h2, .h2 { font-size: @h2-font-size; border-bottom: 2px solid @headline-color-level1; padding-bottom: 5px;}
+  h3, .h3 { font-size: @h3-font-size; border-bottom: 2px solid @headline-color-level1; padding-bottom: 5px;}
+  h4, .h4 { font-size: @h4-font-size; border-bottom: 1px solid @headline-color-level1; padding-bottom: 5px;}
+  h5, .h5 { font-size: @h5-font-size; border-bottom: 1px solid @headline-color-level2; padding-bottom: 5px;}
+  h6, .h6 { font-size: @h6-font-size; border-bottom: 1px solid @headline-color-level2; padding-bottom: 5px;}
+
+  h1 small { font-size: ceil(@h1-font-size * 0.8); font-family: "Arial", sans-serif }
+  h2 small { font-size: ceil(@h2-font-size * 0.8); font-family: "Arial", sans-serif }
+  h3 small { font-size: ceil(@h3-font-size * 0.8); font-family: "Arial", sans-serif }
+  h4 small { font-size: ceil(@h4-font-size * 0.8); font-family: "Arial", sans-serif }
+  h5 small { font-size: ceil(@h5-font-size * 0.8); font-family: "Arial", sans-serif }
+  h6 small { font-size: ceil(@h6-font-size * 0.8); font-family: "Arial", sans-serif }
+}
+
+// For some strange less reason you cant inherit rules from a element name like h4 or 
+// span then you need to use extend...
+h1.portlet-header { .portlet-application .h1; }
+h2.portlet-header { .portlet-application .h2; }
+h3.portlet-header { .portlet-application .h3; }
+h4.portlet-header { .portlet-application .h4; }
+h5.portlet-header { .portlet-application .h5; }
+h6.portlet-header { .portlet-application .h6; }
+
+.page-header {
+  //padding-bottom: 4px;
+  //border-bottom: 2px solid @framework-red; 
+  margin: 15px 0;
+ 
+  h1 small {
+    margin: 0 6px;
+    font-size: 14px;
+    font-weight: normal;
+    color: #8089a0;
+  }
+}
+
+.text-muted {
+  color: @text-muted-color;
+}
+
+// Open Sans in Breadcrumbs and Leads
+.breadcrumbs,
+.lead {
+  font-family: "Open Sans", Arial, sans-serif;
+}
+
+.lead {
+  margin-bottom: 20px;
+  font-size: 16px;
+  font-weight: 200;
+  line-height: 1.4;
+}

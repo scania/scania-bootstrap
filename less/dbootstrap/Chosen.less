@@ -1,0 +1,198 @@
+.form-group {
+
+    .chzn-container {
+        width: 100% !important;
+        margin-left: 0;
+        min-height: 34px;
+    }
+}
+.chzn-container {
+    vertical-align: middle;
+    text-shadow: none;
+    font-weight: normal;
+
+    .chzn-single {
+        &:extend(.dbootstrap .dijitSelect);
+        &:extend(.dbootstrap .dijitSelect .dijitButtonText);
+        &:extend(.dj_webkit .dbootstrap .dijitInputContainer);
+
+        background: #fff none;
+        padding: 4px 12px;
+        font-size: 12px;
+
+        &:hover { text-decoration: none; }
+
+        > span {
+            text-transform: none;
+            line-height: inherit;
+            height: 100%;
+
+            &:extend(.dbootstrap .dijitButtonText);
+            &:extend(.dbootstrap .dijitSelect .dijitButtonText);
+        }
+        div {
+            &:extend(.dbootstrap .dijitTextBox .dijitButtonNode);
+            &:extend(.dbootstrap .dijitTextBox .dijitButtonNode.dijitArrowButton);
+
+            width: auto;
+            padding: 6px 10px;
+            line-height: 21px;
+
+            b {
+                font-size: 14px;
+                background: none;
+
+                &:before {
+                    &:extend(.dbootstrap .dijitSelect .dijitButtonNode.dijitArrowButton:before);
+                }
+            }
+        }
+    }
+    .chzn-choices {
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        background: none;
+        min-height: 34px;
+
+        .search-choice {
+            float: none;
+            display: inline-block;
+            margin: 6px 0 6px 6px;
+            padding: .2em .6em .3em;
+            font-size: 75%;
+            font-weight: bold;
+            text-align: center;
+            white-space: nowrap;
+            vertical-align: baseline;
+            border-radius: .25em;
+            background-color: #eee;
+            color: #888;
+            border: 1px solid #ddd;
+
+            .search-choice-close {
+                position: relative;
+                display: inline-block;
+                margin-left: 4px;
+                margin-top: -4px;
+            }
+        }
+        .search-field {
+            float: none;
+            display: none;
+        }
+        input {
+            margin: 0;
+            width: 75px !important; // This is used to not make the box go on two lines if multiple filter has already been added.
+            height: 29px;
+        }
+        .search-field:first-child,
+        &:hover .search-field {
+            display: inline-block;
+        }
+        .search-field:first-child,
+        .search-field:first-child input {
+            width: 100% !important;
+        }
+    }
+    .chzn-drop {
+        &:extend(.dbootstrap .dijitSelect);
+
+        margin-top: 2px;
+        border-radius: 4px;
+        -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+
+        &:after {
+            content: " ";
+            position: absolute;
+            padding: 10px;
+        }
+
+        .chzn-search {
+            &:after {
+                //&:extend(.dbootstrap .dijitTextBox.dijitSearchEmpty .dijitInputField:before);
+                margin-left: -20px;
+            }
+
+            input {
+                &:extend(.dbootstrap .dijitTextBox);
+                &:extend(.dbootstrap .form-group .dijitTextBox);
+
+                box-shadow: none;
+                background: none;
+            }
+        }
+        .chzn-extra {
+            margin: 0;
+            padding: 6px;
+            border-bottom: 1px solid #ccc;
+        }
+        .chzn-results {
+            padding: 5px 0;
+            margin: 5px 0;
+
+            li {
+                text-transform: none;
+                line-height: inherit;
+                padding: 4px 6px;
+
+                em {
+                    background: #f3ee6f;
+                }
+            }
+        }
+    }
+
+    &.chzn-container-active {
+
+        .chzn-choices,
+        .chzn-single {
+            -webkit-border-radius: 4px;
+            -moz-border-radius: 4px;
+            border-radius: 4px;
+            border-color: #66AFE9;
+            -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(102, 175, 233, 0.6);
+            box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(102, 175, 233, 0.6);
+
+            .search-field {
+                display: inline-block;
+            }
+
+            &.chzn-single-with-drop {
+                -webkit-box-shadow: none;
+                box-shadow: none;
+                border-color: #ccc;
+            }
+        }
+        .chzn-drop {
+
+            .chzn-search input {
+                border-color: #66AFE9;
+                -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(102, 175, 233, 0.6);
+                box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(102, 175, 233, 0.6);
+            }
+        }
+    }
+}
+
+.chzn-done.readonly + .chzn-container {
+    opacity: 1 !important;
+    height: auto;
+    min-height: initial;
+
+    > *:first-child {
+        padding: 0;
+        border: 0;
+        box-shadow: none;
+        cursor: text;
+        //display: inline;
+        outline: none;
+        text-decoration: none;
+
+        > div {
+            display: none;
+        }
+        .search-choice-close {
+            display: none;
+        }
+    }
+}

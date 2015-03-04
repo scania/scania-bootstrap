@@ -1,0 +1,46 @@
+//Modules needing to be outside .bootstrap enclosure.
+@import 'html.less';
+@import 'maximize.less';
+
+//Scania Bootstrap & Modules
+.bootstrap{
+  //BOOTSTRAP - Compiles from Bootstrap LESS-Source
+  @import (reference) '@{root_path}vendors/frameworks/bootstrap/3.0.0/less/bootstrap'; // Bootstrap Dist (LESS-project)
+  //@import '@{root_path}vendors/frameworks/bootstrap/3.0.0/less/bootstrap.less'; // Bootstrap Dist (LESS-project)
+  //@import (css) 'bootstrap-native/bootstrap.less'; // Bootstrap Dist (LESS-project)
+
+  //SCANIA BOOTSTRAP
+  @import 'variables.less'; //Scania Bootstrap Variables
+  @import 'mixins.less';
+  @import 'reset.less';
+
+  @import 'misc.less';
+  @import 'common.less';
+  @import 'buttons.less';
+  @import 'tables.less';
+  @import 'badges-labels.less';
+  @import 'dropdowns.less';
+  @import 'progressbars.less';
+  @import 'typography.less';
+  @import 'navigation.less';
+  @import 'panels-wells.less';
+  @import 'alerts.less';
+  @import 'forms.less';
+  @import 'popovers.less';
+  @import 'tooltip.less';
+  @import 'grid.less';
+  @import 'pageid.less'; //Page-ID reference icon with popup - SPORT Only right now.
+  @import 'feedback.less'; //Scania Bootstrap Feedback messages and error handling
+  @import 'logos.less'; //Scania Logos
+  @import 'custom-classes.less'; //Scania Custom Classes
+  @import 'portal.less'; //Portal Specific
+  @import 'media-queries.less'; // Media Queries
+  @import 'word-break.less';
+  @import 'flex.less';
+
+  @import 'global-sidebar.less'; //Global Sidebar
+}
+
+@import 'global-header.less'; //Global Header
+
+@import 'chosen-phase-out.less'; //Chosen - Phase this one out

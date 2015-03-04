@@ -1,0 +1,38 @@
+// Scania Dojo Bootstrap
+@compiled_at: `new Date()`;
+.compiled_at {content: "@{compiled_at}";}
+
+// This path is needed when pointing to less files that will be compiled
+@root_path: "../../../";
+
+//Import Fonts
+@import url("/resources/fonts/external_fonts.css");
+@import url("/resources/fonts/font-awesome/font-awesome.css");
+
+// This includes core bootstrap
+@import url("/vendors/frameworks/bootstrap/3.0.0/css/bootstrap.css");
+
+// This includes scania bootstrap complemented styles
+@import url("/build/global/1.0.0/css/scania-bootstrap.css");
+
+// This includes core dbootstrap
+@import url("/vendors/frameworks/dbootstrap/0.1.0/css/dbootstrap.css");
+
+// This includes dbootstrap components
+@import url("/vendors/components/dojo/chosen/1.7/css/chosen.css");
+@import url("/vendors/components/dojo/dgrid/0.3.12/css/dgrid.css");
+@import url("/vendors/components/dojo/dgrid/0.3.12/css/extensions/ColumnHider.css");
+@import url("/vendors/components/dojo/dgrid/0.3.12/css/extensions/ColumnReorder.css");
+@import url("/vendors/components/dojo/dgrid/0.3.12/css/extensions/ColumnResizer.css");
+
+// Makes it possible to extend style from core bootstrap
+@import (reference) '@{root_path}vendors/frameworks/bootstrap/3.0.0/less/bootstrap';
+
+// Makes it possible to extend style from scania bootstrap complemented styles
+@import (reference) 'bootstrap/index';
+
+// Makes it possible to extend style from dbootstrap
+@import (reference) '@{root_path}vendors/frameworks/dbootstrap/0.1.0/less/dbootstrap';
+
+// This will complement and/or override the standard bootstrap style
+@import 'dbootstrap/Index';

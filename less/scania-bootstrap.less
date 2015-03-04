@@ -1,0 +1,26 @@
+/*!
+ * Scania Bootstrap
+ * Maintained and Developed by CDS (Common Design Service)
+ */
+
+//Insert Compile Date
+@compiled_at: `new Date()`;
+.compiled_at {content: "@{compiled_at}";}
+
+@root_path: "../../../";
+
+//Import Fonts
+@import url("/resources/fonts/external_fonts.css");
+@import url("/resources/fonts/font-awesome/font-awesome.css");
+
+// This includes core bootstrap
+@import url("/vendors/frameworks/bootstrap/3.0.0/css/bootstrap.css");
+
+//Corporate Icons CSS - Include this css as a less-reference to get the ability to extend classes to set icons
+@import (less, reference) '/@{root_path}resources/fonts/corporate-icons/style.css';
+
+//BOOTSTRAP - Compiles from Bootstrap LESS-Source
+@import (reference) '@{root_path}vendors/frameworks/bootstrap/3.0.0/less/bootstrap';
+
+//Bootstrap related stuff.
+@import 'bootstrap/index.less';

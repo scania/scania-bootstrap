@@ -1,0 +1,249 @@
+/*.wpthemeControlBody,
+.wpthemeMainContent,
+.wpthemeFrame,
+.wpthemeBanner,
+.wpthemeWrapper { background-color: transparent !important; }
+
+.container .wpthemeMainContent .wpthemeControlBody {
+	margin: 0 !important;
+	width: 100%;
+	overflow: visible;
+}
+.wpthemeControl,
+.wpthemeLayoutContainers,
+.wptheme1Col .wpthemeCol {
+	width: 100%;
+}
+.wpthemeLayoutContainers {
+	padding: 0;
+}*/
+
+&.bootstrap {
+
+	.wpthemeLayoutContainers {
+		width: 100% !important;
+		padding: 0 !important;
+		margin-top: 10px;
+	}
+
+	.wpthemeControlBody {
+		font-size: 14px;
+		line-height: 1.5;
+		padding: 0;
+	}
+
+	/* Mpp specific reset for login page */
+	&.mpp {
+
+		.scania-portal-logo {
+			padding-left: 60px;
+			line-height: 40px;
+			font-size: 20px;
+			font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+			color: #666;
+		}
+		.wpthemeBranding .wpthemeAltText:empty:after {
+			content: "MPP";
+		}
+		.wpthemeLayoutContainers {
+
+			 > table {
+				padding: 30px;
+				background-color: #fff;
+				width: 100%;
+
+				.wpthemeControl {
+					margin: 0;
+				}
+				table {
+					width: 100%;
+				}
+				.layoutRow > tbody > tr > td {
+					width: 50% !important;
+				}
+				.portlet-content {
+
+					img {
+						border-radius: 0;
+					}
+					.post-item-panel {
+						display: none;
+					}
+				}
+				.wpthemeControlBody {
+
+					h1 {
+						margin-top: 0;
+						font-size: 32px;
+						font-weight: 100;
+					}
+					p {
+						font-size: 16px;
+					}
+				}
+				.LoginWrapper {
+					float: right;
+					width: 70%;
+					background-color: #f8f8f8;
+					padding: 15px;
+
+					&:before {
+						content: "Login";
+						border-bottom: 1px solid #78292f;
+						width: 100%;
+						display: block;
+						margin-bottom: 15px;
+						font-weight: bold;
+					}
+
+					label {
+						display: inline-block;
+						margin-bottom: 5px;
+						font-size: 10px;
+						color: #aaaaaa;
+						text-transform: uppercase;
+						font-weight: bold;
+					}
+					input {
+						display: block;
+						width: 100%;
+						height: 34px;
+						padding: 4px 12px;
+						font-size: 12px;
+						line-height: 1.428571429;
+						color: #555555;
+						vertical-align: middle;
+						background-color: #ffffff;
+						border: 1px solid #cccccc;
+						border-radius: 4px;
+						-webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+						box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+						-webkit-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+						transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+
+						margin-bottom: 15px;
+
+						&.wpsButtonText {
+							color: #ffffff;
+							background-color: #418bca;
+							border-color: #357ebd;
+							text-shadow: none;
+
+							&:hover {
+								background-color: #69a3d5;
+								border-color: #5597d0;
+							}
+						}
+					}
+					.forgotPassword {
+						text-align: right;
+
+						.icon-lock {
+							display: none;
+						}
+					}
+				}
+			}
+		}
+		#wpthemeLogin,
+		#wps-portal-fullscreen,
+		.wpthemeFooter {
+			display: none;
+		}
+	}
+
+	.wpthemeTemplateLoading {
+		display: none;
+	}
+	.wpthemeMainContent {
+
+		.wpthemeControlBody,
+		.wpthemeCrumbTrail {
+			padding: 0;
+		}
+	}
+
+	.wpthemeBanner .wpthemeCommonActions {
+
+		/* For logo part */
+		> li {
+			padding: 0;
+
+			> a {
+				margin: 0;
+				padding: 0;
+				display: block;
+				height: auto;
+				border: 0;
+
+				&:hover {
+					text-decoration: none;
+				}
+
+				.wpthemeBranding {
+					background: transparent url("/resources/images/compressed/logotypes/logo_symbol_small.png") no-repeat;
+					width: auto;
+					padding: 5px 0 0 50px;
+					margin: 15px 0 0 0;
+					line-height: normal;
+					float: none;
+					height: 40px;
+
+					.wpthemeAltText {
+						margin: 0;
+						display: block;
+						border: 0;
+						font-size: 20px;
+						font-weight: 300;
+						margin-left: 8px;
+						border-left: 1px solid #bbb;
+						text-transform: none;
+					}
+				}
+			}
+		}
+
+		/* User navigation */
+		.commonActions {
+			margin: 25px 0 0;
+
+			> * {
+				color: #428bca;
+				border: 0;
+				background: none;
+				padding: 0 20px;
+				border-left: 1px solid #ddd;
+				font-size: 12px;
+				-webkit-box-shadow: none;
+				-moz-box-shadow: none;
+				box-shadow: none;
+
+				i {
+					margin-right: 3px;
+				}
+				i,
+				#wpContextMenu {
+					color: #428bca;
+				}
+
+				&:first-child {
+					border-left: 0;
+				}
+				&:hover,
+				#wpContextMenu:hover {
+					color: #2a6496;
+					text-decoration: underline;
+
+					i {
+						color: #2a6496;
+						text-decoration: none;
+					}
+				}
+				/*&#logoutlink {
+					margin-right: 0;
+					padding-right: 0;
+				}*/
+			}
+		}
+	}
+}

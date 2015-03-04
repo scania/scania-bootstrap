@@ -1,0 +1,66 @@
+// SCANIA BOOTSTRAP THEME
+// TABLES
+
+
+table { //This is to override the Boostrap standard of "collapse" on all table elements
+  border-collapse: separate;
+}
+
+.table{ //This is to set the border-collapse back to "collapse" for all Bootstrap-tables (.table)
+  border-collapse: collapse;
+}
+
+.table thead>tr>th, 
+.table tbody>tr>th, 
+.table tfoot>tr>th, 
+.table thead>tr>td, 
+.table tbody>tr>td, 
+.table tfoot>tr>td {
+  padding: @table-cell-padding;
+  }
+
+.table thead > tr > th {
+  vertical-align: bottom;
+  border-bottom: 2px solid #dddddd;
+  font-size: 10px;
+  color: @text-label-color;
+  text-transform: uppercase;
+}
+
+.table tbody > tr > td {
+  vertical-align: middle;
+}
+
+.table.table-striped thead>tr>th, 
+.table.table-striped tbody>tr>th, 
+.table.table-striped tfoot>tr>th, 
+.table.table-striped thead>tr>td, 
+.table.table-striped tbody>tr>td, 
+.table.table-striped tfoot>tr>td {
+  border-top: 0;
+}
+
+.table-striped>tbody>tr:nth-child(odd)>td, .table-striped>tbody>tr:nth-child(odd)>th {
+  background-color: #f6f6f6;
+}
+
+//Striped table inside well
+.well .table-striped>tbody>tr:nth-child(odd)>td, .well .table-striped>tbody>tr:nth-child(odd)>th {
+  background-color: #fdfdfd;
+}
+
+.table-hover > tbody > tr:hover > td,
+.table-hover > tbody > tr:hover > th,
+.well .table-hover > tbody > tr:hover > td,
+.well .table-hover > tbody > tr:hover > th {
+  background-color: #e3e3e3;
+}
+
+.table i {
+  white-space: nowrap;
+}
+
+.popover-content .table tbody>tr>td {
+  font-size: 85%;
+}
+
