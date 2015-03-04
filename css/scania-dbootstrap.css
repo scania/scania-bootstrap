@@ -1,11 +1,11 @@
 @import url("/resources/fonts/external_fonts.css");
 @import url("/resources/fonts/font-awesome/font-awesome.css");
-@import url("/vendors/frameworks/bootstrap/3.0.0/css/bootstrap.css");
-@import url("/build/global/1.0.1/css/bootstrap/scania-bootstrap-index.css");
+@import url("/vendors/frameworks/bootstrap/3.2.0/css/bootstrap.css");
+@import url("/build/global/1.0.1/css/bootstrap/scania-bootstrap-overrides.css");
 @import url("/vendors/frameworks/dbootstrap/0.1.0/css/dbootstrap.css");
 @import url("/vendors/components/dojo/chosen/1.7/css/chosen.css");
 @import url("/vendors/components/dojo/dgrid/0.3.12/css/dgrid.css");
 @import url("/vendors/components/dojo/dgrid/0.3.12/css/extensions/ColumnHider.css");
 @import url("/vendors/components/dojo/dgrid/0.3.12/css/extensions/ColumnReorder.css");
 @import url("/vendors/components/dojo/dgrid/0.3.12/css/extensions/ColumnResizer.css");
-@import url("dbootstrap/scania-dbootstrap-index.css");
+@import url("dbootstrap/scania-dbootstrap-overrides.css");

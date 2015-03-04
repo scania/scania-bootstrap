@@ -1,6 +1,8 @@
+@import url("/resources/fonts/corporate-icons/style.css");
 .compiled_at {
-  content: "Mon Nov 03 2014 14:26:41 GMT+0100 (W. Europe Standard Time)";
+  content: "Tue Nov 18 2014 14:09:10 GMT+0100 (W. Europe Standard Time)";
 }
+.bootstrap .loading:after,
 .bootstrap .table-selectable > tbody > tr.expandable > td:first-child:before,
 .bootstrap .table tbody tr.row-selectable > td:first-child:before {
   font-family: 'corporate-icons';
@@ -23,8 +25,40 @@
 .bootstrap .table tbody tr.row-selectable > td:first-child:before {
   content: "\e6c1";
 }
+.bootstrap .loading:after {
+  content: "\e6f3";
+}
 .bootstrap .icon-required-field:before {
   content: "\e664";
+}
+.bootstrap .loading:after,
+.bootstrap .table-selectable > tbody > tr.expandable > td:first-child:before,
+.bootstrap .table tbody tr.row-selectable > td:first-child:before {
+  font-weight: normal;
+  font-style: normal;
+  text-decoration: inherit;
+  -webkit-font-smoothing: antialiased;
+  *margin-right: .3em;
+}
+.bootstrap .loading:after,
+.bootstrap .table-selectable > tbody > tr.expandable > td:first-child:before,
+.bootstrap .table tbody tr.row-selectable > td:first-child:before {
+  display: inline;
+  width: auto;
+  height: auto;
+  line-height: normal;
+  vertical-align: baseline;
+  background-image: none;
+  background-position: 0% 0%;
+  background-repeat: repeat;
+  margin-top: 0;
+}
+.bootstrap .loading:after {
+  display: inline-block;
+  -moz-animation: spin 2s infinite linear;
+  -o-animation: spin 2s infinite linear;
+  -webkit-animation: spin 2s infinite linear;
+  animation: spin 2s infinite linear;
 }
 html {
   font-size: 62.5%;
@@ -55,7 +89,6 @@ body.maximized #prototype-header {
 }
 .bootstrap {
   /*** Scroller Container ***/
-  /* HEADERS */
   /*** COLOR CLASSES (Custom classes for labels, badges and other special effects / notifications) ***/
   /*** CURSOR ***/
   /*** PADDING CUSTOM CLASSES ***/
@@ -111,7 +144,7 @@ body.modal-open.bootstrap {
   width: 0;
   height: 0;
 }
-.bootstrap body {
+body.bootstrap {
   font-family: Arial, sans-serif;
   font-size: 14px;
   line-height: 1.428571429;
@@ -120,6 +153,32 @@ body.modal-open.bootstrap {
 }
 .bootstrap hr {
   margin: 10px 0;
+}
+.bootstrap .container .container {
+  width: auto;
+}
+.bootstrap .loading {
+  position: relative;
+}
+.bootstrap .loading:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.6);
+  cursor: wait;
+}
+.bootstrap .loading:after {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  font-size: 30px;
+  margin-left: -15px;
+  margin-top: -15px;
+  z-index: 1000;
 }
 .bootstrap .scroller-container-xs,
 .bootstrap .scroller-container-sm,
@@ -258,6 +317,28 @@ body.modal-open.bootstrap {
 }
 .bootstrap .h0neyp0t {
   display: none;
+}
+.bootstrap .content-panel {
+  background-color: #fff;
+  padding: 15px 25px;
+}
+.bootstrap kbd {
+  margin: 0px 0.1em;
+  padding: 0.1em 0.6em;
+  border-radius: 3px;
+  border: 1px solid #cccccc;
+  color: #333333;
+  line-height: 1.4;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 10px;
+  display: inline-block;
+  box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.2), inset 0px 0px 0px 2px #ffffff;
+  background-color: #f7f7f7;
+  -moz-box-shadow: 0 1px 0px rgba(0, 0, 0, 0.2), 0 0 0 2px #ffffff inset;
+  -webkit-box-shadow: 0 1px 0px rgba(0, 0, 0, 0.2), 0 0 0 2px #ffffff inset;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  text-shadow: 0 1px 0 #fff;
 }
 .bootstrap .btn {
   min-width: 34px;
@@ -775,168 +856,6 @@ body.modal-open.bootstrap {
 .bootstrap .progress-bar-danger {
   background-color: #9e2b22;
 }
-.bootstrap h1,
-.bootstrap h2,
-.bootstrap h3,
-.bootstrap h4,
-.bootstrap h5,
-.bootstrap h6,
-.bootstrap .h1,
-.bootstrap .h2,
-.bootstrap .h3,
-.bootstrap .h4,
-.bootstrap .h5,
-.bootstrap .h6 {
-  font-family: "Open Sans", Arial, sans-serif;
-  font-weight: bold;
-  line-height: 1.1;
-  color: #555;
-  margin-top: 15px;
-}
-.bootstrap h1 {
-  font-size: 20px;
-}
-.bootstrap h2 {
-  font-size: 18px;
-}
-.bootstrap h3 {
-  font-size: 14px;
-}
-.bootstrap h4 {
-  font-size: 13px;
-}
-.bootstrap h5 {
-  font-size: 12px;
-}
-.bootstrap h6 {
-  font-size: 12px;
-}
-.bootstrap h1 small {
-  font-size: 16px;
-  font-family: "Arial", sans-serif;
-}
-.bootstrap h2 small {
-  font-size: 15px;
-  font-family: "Arial", sans-serif;
-}
-.bootstrap h3 small {
-  font-size: 12px;
-  font-family: "Arial", sans-serif;
-}
-.bootstrap h4 small {
-  font-size: 11px;
-  font-family: "Arial", sans-serif;
-}
-.bootstrap h5 small {
-  font-size: 10px;
-  font-family: "Arial", sans-serif;
-}
-.bootstrap h6 small {
-  font-size: 10px;
-  font-family: "Arial", sans-serif;
-}
-.bootstrap .portlet-application h1,
-.bootstrap .portlet-application .h1 {
-  font-size: 20px;
-  border-bottom: 2px solid #7c1c1d;
-  padding-bottom: 5px;
-  font-weight: bold;
-}
-.bootstrap .portlet-application h2,
-.bootstrap .portlet-application .h2 {
-  font-size: 18px;
-  border-bottom: 2px solid #7c1c1d;
-  padding-bottom: 5px;
-  font-weight: bold;
-}
-.bootstrap .portlet-application h3,
-.bootstrap .portlet-application .h3 {
-  font-size: 14px;
-  border-bottom: 2px solid #7c1c1d;
-  padding-bottom: 5px;
-  font-weight: bold;
-}
-.bootstrap .portlet-application h4,
-.bootstrap .portlet-application .h4 {
-  font-size: 13px;
-  border-bottom: 1px solid #7c1c1d;
-  padding-bottom: 5px;
-  font-weight: bold;
-}
-.bootstrap .portlet-application h5,
-.bootstrap .portlet-application .h5 {
-  font-size: 12px;
-  border-bottom: 1px solid #cccccc;
-  padding-bottom: 5px;
-  font-weight: bold;
-}
-.bootstrap .portlet-application h6,
-.bootstrap .portlet-application .h6 {
-  font-size: 12px;
-  border-bottom: 1px solid #cccccc;
-  padding-bottom: 5px;
-  font-weight: bold;
-}
-.bootstrap .portlet-application h1 small {
-  font-size: 16px;
-  font-family: "Arial", sans-serif;
-}
-.bootstrap .portlet-application h2 small {
-  font-size: 15px;
-  font-family: "Arial", sans-serif;
-}
-.bootstrap .portlet-application h3 small {
-  font-size: 12px;
-  font-family: "Arial", sans-serif;
-}
-.bootstrap .portlet-application h4 small {
-  font-size: 11px;
-  font-family: "Arial", sans-serif;
-}
-.bootstrap .portlet-application h5 small {
-  font-size: 10px;
-  font-family: "Arial", sans-serif;
-}
-.bootstrap .portlet-application h6 small {
-  font-size: 10px;
-  font-family: "Arial", sans-serif;
-}
-.bootstrap h1.portlet-header {
-  font-size: 20px;
-  border-bottom: 2px solid #7c1c1d;
-  padding-bottom: 5px;
-  font-weight: bold;
-}
-.bootstrap h2.portlet-header {
-  font-size: 18px;
-  border-bottom: 2px solid #7c1c1d;
-  padding-bottom: 5px;
-  font-weight: bold;
-}
-.bootstrap h3.portlet-header {
-  font-size: 14px;
-  border-bottom: 2px solid #7c1c1d;
-  padding-bottom: 5px;
-  font-weight: bold;
-}
-.bootstrap h4.portlet-header {
-  font-size: 13px;
-  border-bottom: 1px solid #7c1c1d;
-  padding-bottom: 5px;
-  font-weight: bold;
-}
-.bootstrap h5.portlet-header {
-  font-size: 12px;
-  border-bottom: 1px solid #cccccc;
-  padding-bottom: 5px;
-  font-weight: bold;
-}
-.bootstrap h6.portlet-header {
-  font-size: 12px;
-  border-bottom: 1px solid #cccccc;
-  padding-bottom: 5px;
-  font-weight: bold;
-}
 .bootstrap .page-header {
   margin: 15px 0;
 }
@@ -958,6 +877,319 @@ body.modal-open.bootstrap {
   font-size: 16px;
   font-weight: 200;
   line-height: 1.4;
+}
+.bootstrap blockquote p {
+  font-family: "Open Sans", Arial, sans-serif;
+  font-weight: 400;
+}
+.bootstrap .portlet-application h1,
+.bootstrap .bootstrap-app h1,
+.bootstrap.bootstrap-app h1,
+.bootstrap .portlet-application h2,
+.bootstrap .bootstrap-app h2,
+.bootstrap.bootstrap-app h2,
+.bootstrap .portlet-application h3,
+.bootstrap .bootstrap-app h3,
+.bootstrap.bootstrap-app h3,
+.bootstrap .portlet-application h4,
+.bootstrap .bootstrap-app h4,
+.bootstrap.bootstrap-app h4,
+.bootstrap .portlet-application h5,
+.bootstrap .bootstrap-app h5,
+.bootstrap.bootstrap-app h5,
+.bootstrap .portlet-application h6,
+.bootstrap .bootstrap-app h6,
+.bootstrap.bootstrap-app h6,
+.bootstrap .portlet-application .h1,
+.bootstrap .bootstrap-app .h1,
+.bootstrap.bootstrap-app .h1,
+.bootstrap .portlet-application .h2,
+.bootstrap .bootstrap-app .h2,
+.bootstrap.bootstrap-app .h2,
+.bootstrap .portlet-application .h3,
+.bootstrap .bootstrap-app .h3,
+.bootstrap.bootstrap-app .h3,
+.bootstrap .portlet-application .h4,
+.bootstrap .bootstrap-app .h4,
+.bootstrap.bootstrap-app .h4,
+.bootstrap .portlet-application .h5,
+.bootstrap .bootstrap-app .h5,
+.bootstrap.bootstrap-app .h5,
+.bootstrap .portlet-application .h6,
+.bootstrap .bootstrap-app .h6,
+.bootstrap.bootstrap-app .h6,
+.bootstrap h1.portlet-header,
+.bootstrap h2.portlet-header,
+.bootstrap h3.portlet-header,
+.bootstrap h4.portlet-header,
+.bootstrap h5.portlet-header,
+.bootstrap h6.portlet-header {
+  font-family: "Open Sans", Arial, sans-serif;
+  font-weight: bold;
+  line-height: 1.1;
+  color: #555;
+  margin-top: 15px;
+}
+.bootstrap .portlet-application h1,
+.bootstrap .bootstrap-app h1,
+.bootstrap.bootstrap-app h1,
+.bootstrap h1.portlet-header {
+  font-size: 20px;
+  border-bottom: 2px solid #7c1c1d;
+  padding-bottom: 5px;
+}
+.bootstrap .portlet-application h2,
+.bootstrap .bootstrap-app h2,
+.bootstrap.bootstrap-app h2,
+.bootstrap h2.portlet-header {
+  font-size: 18px;
+  border-bottom: 2px solid #7c1c1d;
+  padding-bottom: 5px;
+}
+.bootstrap .portlet-application h3,
+.bootstrap .bootstrap-app h3,
+.bootstrap.bootstrap-app h3,
+.bootstrap h3.portlet-header {
+  font-size: 14px;
+  border-bottom: 2px solid #7c1c1d;
+  padding-bottom: 5px;
+}
+.bootstrap .portlet-application h4,
+.bootstrap .bootstrap-app h4,
+.bootstrap.bootstrap-app h4,
+.bootstrap h4.portlet-header {
+  font-size: 13px;
+  border-bottom: 1px solid #7c1c1d;
+  padding-bottom: 5px;
+}
+.bootstrap .portlet-application h5,
+.bootstrap .bootstrap-app h5,
+.bootstrap.bootstrap-app h5,
+.bootstrap h5.portlet-header {
+  font-size: 12px;
+  border-bottom: 1px solid #cccccc;
+  padding-bottom: 5px;
+}
+.bootstrap .portlet-application h6,
+.bootstrap .bootstrap-app h6,
+.bootstrap.bootstrap-app h6,
+.bootstrap h6.portlet-header {
+  font-size: 12px;
+  border-bottom: 1px solid #cccccc;
+  padding-bottom: 5px;
+}
+.bootstrap .portlet-application h1 small,
+.bootstrap .bootstrap-app h1 small,
+.bootstrap.bootstrap-app h1 small {
+  font-size: 16px;
+  font-family: "Arial", sans-serif;
+}
+.bootstrap .portlet-application h2 small,
+.bootstrap .bootstrap-app h2 small,
+.bootstrap.bootstrap-app h2 small {
+  font-size: 15px;
+  font-family: "Arial", sans-serif;
+}
+.bootstrap .portlet-application h3 small,
+.bootstrap .bootstrap-app h3 small,
+.bootstrap.bootstrap-app h3 small {
+  font-size: 12px;
+  font-family: "Arial", sans-serif;
+}
+.bootstrap .portlet-application h4 small,
+.bootstrap .bootstrap-app h4 small,
+.bootstrap.bootstrap-app h4 small {
+  font-size: 11px;
+  font-family: "Arial", sans-serif;
+}
+.bootstrap .portlet-application h5 small,
+.bootstrap .bootstrap-app h5 small,
+.bootstrap.bootstrap-app h5 small {
+  font-size: 10px;
+  font-family: "Arial", sans-serif;
+}
+.bootstrap .portlet-application h6 small,
+.bootstrap .bootstrap-app h6 small,
+.bootstrap.bootstrap-app h6 small {
+  font-size: 10px;
+  font-family: "Arial", sans-serif;
+}
+@media (min-width: 1600px) {
+  .bootstrap .portlet-application .container,
+  .bootstrap .bootstrap-app .container,
+  .bootstrap.bootstrap-app .container {
+    max-width: 1420px;
+  }
+}
+.bootstrap .bootstrap-app {
+  background-color: #fff;
+  padding: 15px;
+  margin-bottom: 15px;
+}
+.bootstrap .bootstrap-wcm h1,
+.bootstrap.bootstrap-wcm h1,
+.bootstrap .bootstrap-wcm h2,
+.bootstrap.bootstrap-wcm h2,
+.bootstrap .bootstrap-wcm h3,
+.bootstrap.bootstrap-wcm h3,
+.bootstrap .bootstrap-wcm h4,
+.bootstrap.bootstrap-wcm h4,
+.bootstrap .bootstrap-wcm h5,
+.bootstrap.bootstrap-wcm h5,
+.bootstrap .bootstrap-wcm h6,
+.bootstrap.bootstrap-wcm h6,
+.bootstrap .bootstrap-wcm .h1,
+.bootstrap.bootstrap-wcm .h1,
+.bootstrap .bootstrap-wcm .h2,
+.bootstrap.bootstrap-wcm .h2,
+.bootstrap .bootstrap-wcm .h3,
+.bootstrap.bootstrap-wcm .h3,
+.bootstrap .bootstrap-wcm .h4,
+.bootstrap.bootstrap-wcm .h4,
+.bootstrap .bootstrap-wcm .h5,
+.bootstrap.bootstrap-wcm .h5,
+.bootstrap .bootstrap-wcm .h6,
+.bootstrap.bootstrap-wcm .h6 {
+  font-family: "Open Sans", Arial, sans-serif;
+  font-weight: 300;
+  line-height: 1.1;
+  color: #555;
+  margin-top: 15px;
+  border-bottom: 0;
+  padding-bottom: 0;
+}
+.bootstrap .bootstrap-wcm h1,
+.bootstrap.bootstrap-wcm h1 {
+  font-size: 32px;
+  font-weight: 400;
+}
+.bootstrap .bootstrap-wcm h2,
+.bootstrap.bootstrap-wcm h2 {
+  font-size: 22px;
+  font-weight: 300;
+}
+.bootstrap .bootstrap-wcm h3,
+.bootstrap.bootstrap-wcm h3 {
+  font-size: 16px;
+  font-weight: 300;
+}
+.bootstrap .bootstrap-wcm h4,
+.bootstrap.bootstrap-wcm h4 {
+  font-size: 14px;
+  font-weight: 600;
+}
+.bootstrap .bootstrap-wcm h5,
+.bootstrap.bootstrap-wcm h5 {
+  font-size: 12px;
+  font-weight: 600;
+}
+.bootstrap .bootstrap-wcm h6,
+.bootstrap.bootstrap-wcm h6 {
+  font-size: 11px;
+  font-weight: 600;
+}
+.bootstrap .bootstrap-wcm h1 small,
+.bootstrap.bootstrap-wcm h1 small {
+  font-size: 26px;
+  font-family: "Arial", sans-serif;
+}
+.bootstrap .bootstrap-wcm h2 small,
+.bootstrap.bootstrap-wcm h2 small {
+  font-size: 18px;
+  font-family: "Arial", sans-serif;
+}
+.bootstrap .bootstrap-wcm h3 small,
+.bootstrap.bootstrap-wcm h3 small {
+  font-size: 13px;
+  font-family: "Arial", sans-serif;
+}
+.bootstrap .bootstrap-wcm h4 small,
+.bootstrap.bootstrap-wcm h4 small {
+  font-size: 12px;
+  font-family: "Arial", sans-serif;
+}
+.bootstrap .bootstrap-wcm h5 small,
+.bootstrap.bootstrap-wcm h5 small {
+  font-size: 10px;
+  font-family: "Arial", sans-serif;
+}
+.bootstrap .bootstrap-wcm h6 small,
+.bootstrap.bootstrap-wcm h6 small {
+  font-size: 9px;
+  font-family: "Arial", sans-serif;
+}
+body.bootstrap h1,
+body.bootstrap h2,
+body.bootstrap h3,
+body.bootstrap h4,
+body.bootstrap h5,
+body.bootstrap h6,
+body.bootstrap .h1,
+body.bootstrap .h2,
+body.bootstrap .h3,
+body.bootstrap .h4,
+body.bootstrap .h5,
+body.bootstrap .h6 {
+  font-family: "Open Sans", Arial, sans-serif;
+  font-weight: 300;
+  line-height: 1.1;
+  color: #555;
+  margin-top: 15px;
+  border-bottom: 0;
+  padding-bottom: 0;
+}
+body.bootstrap h1 {
+  font-size: 32px;
+  font-weight: 400;
+}
+body.bootstrap h2 {
+  font-size: 22px;
+  font-weight: 300;
+}
+body.bootstrap h3 {
+  font-size: 16px;
+  font-weight: 300;
+}
+body.bootstrap h4 {
+  font-size: 14px;
+  font-weight: 600;
+}
+body.bootstrap h5 {
+  font-size: 12px;
+  font-weight: 600;
+}
+body.bootstrap h6 {
+  font-size: 11px;
+  font-weight: 600;
+}
+body.bootstrap h1 small {
+  font-size: 26px;
+  font-family: "Arial", sans-serif;
+}
+body.bootstrap h2 small {
+  font-size: 18px;
+  font-family: "Arial", sans-serif;
+}
+body.bootstrap h3 small {
+  font-size: 13px;
+  font-family: "Arial", sans-serif;
+}
+body.bootstrap h4 small {
+  font-size: 12px;
+  font-family: "Arial", sans-serif;
+}
+body.bootstrap h5 small {
+  font-size: 10px;
+  font-family: "Arial", sans-serif;
+}
+body.bootstrap h6 small {
+  font-size: 9px;
+  font-family: "Arial", sans-serif;
+}
+.bootstrap.bootstrap .bootstrap-wcm {
+  background-color: #fff;
+  padding: 15px;
+  margin-bottom: 15px;
 }
 .bootstrap ul.nav-tabs {
   border-bottom: 2px solid #7c1c1d;
@@ -1118,7 +1350,7 @@ body.modal-open.bootstrap {
   font-size: 10px;
   color: #949494;
   text-transform: uppercase;
-  font-weight: bold;
+  font-weight: normal;
 }
 .bootstrap .form-horizontal .control-label,
 .bootstrap .form-horizontal .radio,
@@ -2034,13 +2266,19 @@ body.modal-open.bootstrap {
   line-height: 8px;
   font-size: 12px;
 }
-.bootstrap .portal-navigation .navbar-nav > li.active > a {
-  border-top: 2px solid #7c1c1d;
+.bootstrap .portal-navigation .navbar-nav > li.active > a,
+.bootstrap .portal-navigation .navbar-nav > li.open > a {
+  background-color: #ebebeb;
+  border-color: #dddddd;
+  border-top-color: #7c1c1d;
+  border-top-width: 2px;
+  border-top-style: solid;
   margin-top: -2px;
 }
-.bootstrap .portal-navigation.navbar-default .navbar-nav > .active > a,
-.bootstrap .portal-navigation.navbar-default .navbar-nav > .active > a:hover,
-.bootstrap .portal-navigation.navbar-default .navbar-nav > .active > a:focus {
+.bootstrap .portal-navigation .navbar-nav > li.active > a:hover,
+.bootstrap .portal-navigation .navbar-nav > li.open > a:hover,
+.bootstrap .portal-navigation .navbar-nav > li.active > a:focus,
+.bootstrap .portal-navigation .navbar-nav > li.open > a:focus {
   background-color: #ebebeb;
 }
 .bootstrap .portal-navigation .navbar-collapse {
@@ -2070,7 +2308,6 @@ body.modal-open.bootstrap {
 }
 .bootstrap .portal-nav-level-two {
   background-color: #f3f3f3;
-  border-top: 1px solid #000;
 }
 .bootstrap .portal-nav-level-two .nav > li > a {
   padding: 10px 10px;
@@ -2139,7 +2376,7 @@ body.modal-open.bootstrap {
 .bootstrap .header-links > li:first-child {
   border-left: none;
 }
-.bootstrap .container.portal-footer {
+.bootstrap .container .portal-footer {
   background-color: #ededed;
   color: #d1d3d4;
   font-size: 12px;
@@ -2151,11 +2388,6 @@ body.modal-open.bootstrap {
 @media (min-width: 768px) {
   .bootstrap .lead {
     font-size: 18px;
-  }
-}
-@media (min-width: 1600px) {
-  .bootstrap .container {
-    max-width: 1420px;
   }
 }
 .bootstrap .btn,

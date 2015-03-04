@@ -78,11 +78,7 @@
 	.dijitTreeContainer {
 		margin-bottom: 20px;
 
-		> .dijitTreeNode {
-
-			.dijitTreeRow {
-				overflow: hidden;
-			}
+		.dijitTreeNode {
 
 			&.readRoleTreeNode > .dijitTreeRow { //Added by Jernberg 2014-03-24 - to style text and child-elements on a read-only role-line in the tree.
 				color: #bbb;
@@ -99,6 +95,7 @@
 			}
 
 			> .dijitTreeRow {
+				//overflow: hidden;
 
 				&.dijitTreeRowHover {
 					background-color: transparent;

@@ -37,15 +37,19 @@
 }
 
 
-.portal-navigation .navbar-nav > li.active > a {
-  border-top: 2px solid @framework-red;
-  margin-top: -2px;
-}
-
-.portal-navigation.navbar-default .navbar-nav>.active>a, 
-.portal-navigation.navbar-default .navbar-nav>.active>a:hover, 
-.portal-navigation.navbar-default .navbar-nav>.active>a:focus {
+.portal-navigation .navbar-nav > li.active > a,
+.portal-navigation .navbar-nav > li.open > a {
   background-color: #ebebeb;
+  border-color: #dddddd;
+  border-top-color: @framework-red;
+  border-top-width: 2px;
+  border-top-style: solid;
+  margin-top: -2px;
+
+  &:hover,
+  &:focus {
+    background-color: #ebebeb;
+  }
 }
 
 .portal-navigation .navbar-collapse {
@@ -84,7 +88,6 @@
 // Tier Two
 .portal-nav-level-two {
   background-color: #f3f3f3;
-  border-top: 1px solid #000;
 }
 
 .portal-nav-level-two .nav > li > a {

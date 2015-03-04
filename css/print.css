@@ -1,0 +1,24 @@
+﻿body {
+    background-color:white  !important;
+}
+
+.navbar-right {
+    display: none !important;
+}
+
+.navbar {
+    display: none !important;
+}
+
+.left-menu {
+    display: none !important;
+}
+
+.header-page-menu {
+    display: none !important;
+}
+
+.portal-footer {
+    display: none !important;
+}
+

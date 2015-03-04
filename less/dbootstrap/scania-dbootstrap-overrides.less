@@ -6,10 +6,10 @@
 @root_path: "../../../../";
 
 // Makes it possible to extend style from core bootstrap
-@import (reference) '@{root_path}vendors/frameworks/bootstrap/3.0.0/less/bootstrap';
+@import (less, reference) '@{root_path}vendors/frameworks/bootstrap/3.2.0/css/bootstrap.css';
 
 // Makes it possible to extend style from scania bootstrap complemented styles
-@import (reference) '../bootstrap/scania-bootstrap-index';
+@import (reference) '../bootstrap/scania-bootstrap-overrides';
 
 // Makes it possible to extend style from dbootstrap
 @import (reference) '@{root_path}vendors/frameworks/dbootstrap/0.1.0/less/dbootstrap';

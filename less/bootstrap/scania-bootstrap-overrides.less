@@ -5,10 +5,13 @@
 @root_path: "../../../../";
 
 //Corporate Icons CSS - Include this css as a less-reference to get the ability to extend classes to set icons
-@import (less, reference) '/@{root_path}resources/fonts/corporate-icons/style.css';
+@import (less, reference) '@{root_path}resources/fonts/corporate-icons/style.css';
+
+//Font awesome includes helper classes like icon-spin that we might need
+@import (less, reference) '@{root_path}resources/fonts/font-awesome/font-awesome.css';
 
 //BOOTSTRAP - Compiles from Bootstrap LESS-Source
-@import (reference) '@{root_path}vendors/frameworks/bootstrap/3.0.0/less/bootstrap';
+@import (less, reference) '@{root_path}vendors/frameworks/bootstrap/3.2.0/css/bootstrap.css';
 
 //Modules needing to be outside .bootstrap enclosure.
 @import 'html.less';
@@ -20,8 +23,8 @@
   @import 'variables.less'; //Scania Bootstrap Variables
   @import 'mixins.less';
   @import 'reset.less';
-
   @import 'misc.less';
+
   @import 'common.less';
   @import 'buttons.less';
   @import 'tables.less';
@@ -29,6 +32,10 @@
   @import 'dropdowns.less';
   @import 'progressbars.less';
   @import 'typography.less';
+  
+  @import 'bootstrap-app.less';
+  @import 'bootstrap-wcm.less';
+
   @import 'navigation.less';
   @import 'panels-wells.less';
   @import 'alerts.less';
