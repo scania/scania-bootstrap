@@ -331,6 +331,17 @@
             }
         }
     }
+    &.table-noscroll {
+
+        .dgrid-scroller {
+            max-height: none;
+            overflow-y: auto;
+
+            .dgrid-cell:last-child {
+                padding-right: 24px;
+            }
+        }
+    }
     &.table-sm,
     &.table-md,
     &.table-lg {
@@ -378,6 +389,18 @@
     }
     &.table-data {
 
+        .dgrid-header {
+
+            th {
+                padding-bottom: 0;
+
+                h1, h2, h3, h4, h5, h6 {
+                    padding: 0;
+                    border: 0;
+                    text-transform: none;
+                }
+            }
+        }
         .dgrid-row {
 
             &:last-child,
@@ -398,8 +421,10 @@
                   font-weight: normal;
                 }
 
-                &:first-child {
+                &:first-child,
+                &.th {
                     background-color: #fff;
+                    text-align: left;
 
                     &:extend(.bootstrap .table-data tbody tr > th);
                 }

@@ -89,9 +89,15 @@
     &.dijitRadioDisabled {
         opacity: .50;
     }
-    /* Change standard boostrap radio button checked icon */
+}
+/* Change standard boostrap radio button */
+.dijitRadio {
+    border-radius: 6px;
+
     &.dijitRadioChecked:before {
         &:extend(.icon-circle:before);
+
+        font-size: 8px;
     }
 }
 div.checkbox {
@@ -165,7 +171,11 @@ div.checkbox {
     -o-transition: none;
     -ms-transition: none;
     transition: none;
+    padding: 4px 12px;
 
+    > .dijitReset {
+        padding: 0 !important; // Overridig all dojo case specific style
+    }
     /*&.dijitSearchEmpty .dijitInputField {
         text-align: right;
         padding-right: 20px;
@@ -317,7 +327,7 @@ div.checkbox {
 .form-group {
 
     .dijitTextBox {
-        width: 100% !important;
+        width: 100%; // Changed from being important, this could cause problem in mpp...
         position: relative;
 
         /*.dijitArrowButton {
@@ -350,8 +360,6 @@ div.checkbox {
         transition: none;
         box-shadow: none;
         line-height: inherit;
-        //z-index: 1;
-        border-right-width: 0;
 
         &.dijitTextBoxFocused + .input-group-addon,
         &.dijitTextBoxFocused.form-control {
@@ -369,6 +377,19 @@ div.checkbox {
         .dijitSpinnerButtonContainer {
             z-index: auto;
             padding: 7px 12px !important;
+        }
+    }
+
+    .input-group-addon,
+    .input-group-btn {
+        display: table-cell;
+        width: 1%;
+
+        .dijitInputField .dijitInputInner {
+            width: auto !important;
+        }
+        &:last-child > .dijitTextBox {
+            margin-left: -1px;
         }
     }
 
@@ -415,6 +436,12 @@ div.checkbox {
                     }
                 }
             }
+        }
+    }
+    .dijitButton {
+
+        > .dijitButtonNode {
+            &:extend(.bootstrap .input-group-btn:last-child > .btn);
         }
     }
     
@@ -576,12 +603,7 @@ div.checkbox {
         text-shdow: none !important;
         background-color: #fafafa;
         border-color: #ccc;
-        padding: 6px 12px;
         min-width: 27px;
-
-        > .dijitButtonContents {
-            line-height: 1;
-        }
     }
     .dijitButtonNode:hover {
         background-color: #e1e1e1;

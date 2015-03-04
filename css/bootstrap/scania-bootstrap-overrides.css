@@ -1,6 +1,6 @@
 @import url("/resources/fonts/corporate-icons/style.css");
 .compiled_at {
-  content: "Mon Feb 02 2015 19:10:59 GMT+0100 (Västeuropa, normaltid)";
+  content: "Mon Feb 16 2015 15:37:29 GMT+0100 (W. Europe Standard Time)";
 }
 .bootstrap .loading:after,
 .bootstrap .table-selectable > tbody > tr.expandable > td:first-child:before,
@@ -345,6 +345,7 @@ body.bootstrap {
 .bootstrap .content-panel {
   background-color: #fff;
   padding: 15px 25px;
+  margin-bottom: 15px;
 }
 .bootstrap kbd {
   margin: 0px 0.1em;
@@ -1204,23 +1205,8 @@ body.bootstrap {
 .bootstrap .form-horizontal .checkbox-inline {
   padding-top: 9px;
 }
-.bootstrap .input-group .form-control {
-  border-left: 0;
-}
-.bootstrap .input-group .form-control:not(:first-child):not(:last-child) {
-  border-radius: 0;
-  border-right: 0;
-}
 .bootstrap .input-group .form-control:first-child {
-  border-right: 0;
   box-shadow: none;
-  border-left: 1px solid #ccc;
-}
-.bootstrap .input-group-addon:first-child {
-  border-right: 0;
-}
-.bootstrap .input-group-addon:last-child {
-  border-left: 0;
 }
 .bootstrap .input-group-addon {
   background-color: #f6f6f6;
@@ -2168,20 +2154,6 @@ body.bootstrap {
   .bootstrap .lead {
     font-size: 18px;
   }
-}
-.bootstrap .btn,
-.bootstrap .control-label,
-.bootstrap .form-control-static,
-.bootstrap button,
-.bootstrap td,
-.bootstrap th,
-.bootstrap h1,
-.bootstrap h2,
-.bootstrap h3,
-.bootstrap h4,
-.bootstrap h5,
-.bootstrap h6 {
-  word-break: break-word;
 }
 .bootstrap input,
 .bootstrap .tooltip {
@@ -4956,4 +4928,5 @@ body.goshow {
   text-transform: uppercase;
   font-size: 28px;
 }
+
 /*# sourceMappingURL=scania-bootstrap-overrides.css.map */

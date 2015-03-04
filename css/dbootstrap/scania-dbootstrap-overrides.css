@@ -1,52 +1,88 @@
 @import url("/resources/fonts/corporate-icons/style.css");
+@import url("/resources/fonts/corporate-icons/style.css");
 @import url('/vendors/frameworks/dojo/1.7.4/dijit/themes/dijit.css');
 .compiled_at {
-  content: "Fri Feb 06 2015 10:59:42 GMT+0100 (W. Europe Standard Time)";
+  content: "Mon Feb 16 2015 17:25:35 GMT+0100 (W. Europe Standard Time)";
 }
-.dbootstrap .dgrid.table-data .dgrid-row:hover td.dgrid-cell:first-child,
-.dbootstrap .dgrid.table-data .dgrid-row td.dgrid-cell:first-child {
-  font-size: 10px;
-  font-weight: bold;
-  text-transform: uppercase;
-  color: #949494;
+.dbootstrap .dijitComboButton.dijitSearchTextBox .dijitButtonNode.dijitArrowButton:before,
+.dbootstrap .dijitComboBox.dijitSearchTextBox .dijitButtonNode.dijitArrowButton:before,
+.dbootstrap .dijitSelect.dijitSearchTextBox .dijitButtonNode.dijitArrowButton:before {
+  content: "\e602";
 }
-.dbootstrap .dgrid.table-data .dgrid-row:hover td.dgrid-cell,
-.dbootstrap .dgrid.table-data .dgrid-row td.dgrid-cell {
-  background-color: #f5f5f5;
-  font-weight: bold;
-  font-size: 12px;
-  font-family: 'Open Sans';
-  white-space: nowrap;
-  text-align: center;
-  padding: 0 20px;
+.dbootstrap .dijitComboButton.dijitDateTextBox .dijitButtonNode.dijitArrowButton:before,
+.dbootstrap .dijitComboBox.dijitDateTextBox .dijitButtonNode.dijitArrowButton:before,
+.dbootstrap .dijitSelect.dijitDateTextBox .dijitButtonNode.dijitArrowButton:before {
+  content: "\e66c";
 }
-.dbootstrap .dijitTreeExpandoLoading,
+.dbootstrap .dijitComboButton .dijitArrowButton:before,
+.dbootstrap .dijitComboBox .dijitArrowButton:before,
+.dbootstrap .dijitSelect .dijitArrowButton:before,
+.dbootstrap .dijitComboButton .dijitButtonNode.dijitArrowButton:before,
+.dbootstrap .dijitComboBox .dijitButtonNode.dijitArrowButton:before,
+.dbootstrap .dijitSelect .dijitButtonNode.dijitArrowButton:before,
+.dbootstrap .dijitComboButton .dijitButtonNode.dijitArrowButton:before,
+.dbootstrap .dijitComboBox .dijitButtonNode.dijitArrowButton:before,
+.dbootstrap .dijitSelect .dijitButtonNode.dijitArrowButton:before,
+.dbootstrap .input-group .input-group-btn .dijitSelectBox .dijitInputField .dijitButtonText .dijitSelectLabel:after,
+.dbootstrap .dgrid .dgrid-hider-toggle.ui-icon:after,
+.dbootstrap .dgrid.table-selectable .collapsable.expanded > .dgrid-row-table .dgrid-cell:first-child:before,
+.dbootstrap .dgrid.table-clickable .collapsable.expanded > .dgrid-row-table .dgrid-cell:first-child:before,
+.dbootstrap .dgrid.clickable-table .collapsable.expanded > .dgrid-row-table .dgrid-cell:first-child:before,
+.dbootstrap .dgrid.table-selectable .collapsable.expanded > div > .dgrid-row-table .dgrid-cell:first-child:before,
+.dbootstrap .dgrid.table-clickable .collapsable.expanded > div > .dgrid-row-table .dgrid-cell:first-child:before,
+.dbootstrap .dgrid.clickable-table .collapsable.expanded > div > .dgrid-row-table .dgrid-cell:first-child:before,
+.dbootstrap .dijitTitlePane .dijitTitlePaneTitle .dijitTitlePaneTextNode:before,
+.dbootstrap .dijitTitlePane .dijitTitlePaneTitle .dijitTitlePaneTextNodeParent > *:before,
+.dbootstrap .chzn-container .chzn-single div b:before,
+.dbootstrap .chzn-container .chzn-single div b:before {
+  content: "\e6be";
+}
+.dbootstrap .dijitPopup .dijitCalendar .dijitCalendarIncrementControl + span:before,
+.dbootstrap .popover .dijitCalendar .dijitCalendarIncrementControl + span:before {
+  content: "\e6c0";
+}
+.dbootstrap .dgrid.table-selectable .collapsable > .dgrid-row-table .dgrid-cell:first-child:before,
+.dbootstrap .dgrid.table-clickable .collapsable > .dgrid-row-table .dgrid-cell:first-child:before,
+.dbootstrap .dgrid.clickable-table .collapsable > .dgrid-row-table .dgrid-cell:first-child:before,
+.dbootstrap .dgrid.table-selectable .collapsable > div > .dgrid-row-table .dgrid-cell:first-child:before,
+.dbootstrap .dgrid.table-clickable .collapsable > div > .dgrid-row-table .dgrid-cell:first-child:before,
+.dbootstrap .dgrid.clickable-table .collapsable > div > .dgrid-row-table .dgrid-cell:first-child:before,
+.dbootstrap .dijitPopup .dijitCalendar .dijitCalendarIncrementControl.dijitCalendarIncrease + span:before,
+.dbootstrap .popover .dijitCalendar .dijitCalendarIncrementControl.dijitCalendarIncrease + span:before,
+.dbootstrap .dijitTitlePane .dijitTitlePaneTitle.dijitClosed .dijitTitlePaneTextNode:before,
+.dbootstrap .dijitTitlePane .dijitTitlePaneTitle.dijitFixedClosed .dijitTitlePaneTextNode:before,
+.dbootstrap .dijitTreeContainer .dijitTreeRow.branch .dijitTreeExpando:before,
+.dbootstrap .dijitTitlePane .dijitTitlePaneTitle.dijitClosed .dijitTitlePaneTextNodeParent > *:before,
+.dbootstrap .dijitTitlePane .dijitTitlePaneTitle.dijitFixedClosed .dijitTitlePaneTextNodeParent > *:before {
+  content: "\e6c1";
+}
+.dbootstrap .dgrid .dgrid-header-scroll .dgrid-hider-toggle:before {
+  content: "\e6c2";
+}
+.dbootstrap .dijitButton .dijitArrowButtonChar:before,
+.dbootstrap .dijitDropDownButton .dijitArrowButtonChar:before,
+.dbootstrap .dijitComboButton .dijitArrowButtonChar:before,
+.dbootstrap .dijitTreeContainer .dijitTreeRow.branch .dijitTreeExpando.dijitTreeExpandoOpened:before {
+  content: "\e6c4";
+}
+.dbootstrap .dijitMenuTable .dijitMenuItem .dijitSelectedMenuItemIconChar:before {
+  content: "\e6f0";
+}
+.dbootstrap .dijitTreeExpandoLoading:before,
 .dbootstrap .dijitIconLoading:before,
 .dbootstrap div[id^=dojox_widget_Standby_] div[dojoattachpoint=_underlayNode]:before,
 .dbootstrap div[id^=_basicStandby] div[dojoattachpoint=_underlayNode]:before,
 .dbootstrap div.standby div[dojoattachpoint=_underlayNode]:before,
 .dbootstrap .sport-standby:after,
 .dbootstrap .mpp-standby:after,
-.dbootstrap .dijitTreeContainer .dijitTreeRow.branch .dijitTreeExpando.dijitTreeExpandoLoading + .dijitExpandoText {
-  display: inline-block;
-  -moz-animation: spin 2s infinite linear;
-  -o-animation: spin 2s infinite linear;
-  -webkit-animation: spin 2s infinite linear;
-  animation: spin 2s infinite linear;
+.dbootstrap .dijitTreeContainer .dijitTreeRow.branch .dijitTreeExpando.dijitTreeExpandoLoading + .dijitExpandoText:before {
+  content: "\e6f3";
 }
-[class^="icon-"]:before,
-[class*=" icon-"]:before,
-.dijitIcon:before,
-.dbootstrap .dijitIcon:before,
-.dbootstrap *[class*=dijitIcon]:before,
-.dbootstrap .dijitMenuArrowCell .dijitMenuExpand:before,
-.dbootstrap .dijitTabStripIcon:before,
-.dbootstrap .dijitArrowButtonInner:before,
-.dbootstrap .dijitCheckBox:before,
-.dbootstrap .dijitCalendarIncrementControl:before,
-.dbootstrap .dijitTreeExpando:before,
-.dbootstrap .dijitTitlePane .dijitArrowNode:before,
-.dbootstrap .dgrid-sort-arrow:before,
+.dbootstrap .dijitMenuPopup .list-dotted .dijitMenuItem:not(.empty) .dijitMenuItemIconCell:before,
+.dbootstrap .dijitMenuTable .dijitMenuItem.factorsMenuItemSelected .dijitSelectedMenuItemIconChar:before,
+.dbootstrap .dijitRadio.dijitRadioChecked:before {
+  content: "\e6f4";
+}
 .dbootstrap .dijitMenuPopup .list-dotted .dijitMenuItem:not(.empty) .dijitMenuItemIconCell:before,
 .dbootstrap .dijitComboButton .dijitArrowButton:before,
 .dbootstrap .dijitComboBox .dijitArrowButton:before,
@@ -79,7 +115,99 @@
 .dbootstrap .mpp-standby:after,
 .dbootstrap .dijitTreeContainer .dijitTreeRow.branch .dijitTreeExpando:before,
 .dbootstrap .dijitTreeContainer .dijitTreeRow.branch .dijitTreeExpando.dijitTreeExpandoLoading + .dijitExpandoText:before,
-.dbootstrap .dijitRadio:before,
+.dbootstrap .dijitTitlePane .dijitTitlePaneTitle .dijitTitlePaneTextNodeParent > *:before,
+.dbootstrap .chzn-container .chzn-single div b:before,
+.dbootstrap .chzn-container .chzn-single div b:before {
+  text-decoration: inherit;
+  display: inline-block;
+  speak: none;
+}
+.dbootstrap .dijitTreeExpandoLoading,
+.dbootstrap .dijitIconLoading:before,
+.dbootstrap div[id^=dojox_widget_Standby_] div[dojoattachpoint=_underlayNode]:before,
+.dbootstrap div[id^=_basicStandby] div[dojoattachpoint=_underlayNode]:before,
+.dbootstrap div.standby div[dojoattachpoint=_underlayNode]:before,
+.dbootstrap .sport-standby:after,
+.dbootstrap .mpp-standby:after,
+.dbootstrap .dijitTreeContainer .dijitTreeRow.branch .dijitTreeExpando.dijitTreeExpandoLoading + .dijitExpandoText {
+  display: inline-block;
+  -moz-animation: spin 2s infinite linear;
+  -o-animation: spin 2s infinite linear;
+  -webkit-animation: spin 2s infinite linear;
+  animation: spin 2s infinite linear;
+}
+.dbootstrap .input-group .dijitButton > .dijitButtonNode {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+.dbootstrap .input-group .dijitButton > .dijitButtonNode {
+  margin-left: -1px;
+}
+.dbootstrap .dgrid.table-data .dgrid-row:hover td.dgrid-cell:first-child,
+.dbootstrap .dgrid.table-data .dgrid-row td.dgrid-cell:first-child,
+.dbootstrap .dgrid.table-data .dgrid-row:hover td.dgrid-cell.th,
+.dbootstrap .dgrid.table-data .dgrid-row td.dgrid-cell.th {
+  font-size: 10px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #949494;
+}
+.dbootstrap .dgrid.table-data .dgrid-row:hover td.dgrid-cell,
+.dbootstrap .dgrid.table-data .dgrid-row td.dgrid-cell {
+  background-color: #f5f5f5;
+  font-weight: bold;
+  font-size: 12px;
+  font-family: 'Open Sans';
+  white-space: nowrap;
+  text-align: center;
+  padding: 0 20px;
+}
+.dbootstrap .dijitTreeExpandoLoading,
+.dbootstrap .dijitIconLoading:before,
+.dbootstrap div[id^=dojox_widget_Standby_] div[dojoattachpoint=_underlayNode]:before,
+.dbootstrap div[id^=_basicStandby] div[dojoattachpoint=_underlayNode]:before,
+.dbootstrap div.standby div[dojoattachpoint=_underlayNode]:before,
+.dbootstrap .sport-standby:after,
+.dbootstrap .mpp-standby:after,
+.dbootstrap .dijitTreeContainer .dijitTreeRow.branch .dijitTreeExpando.dijitTreeExpandoLoading + .dijitExpandoText {
+  display: inline-block;
+  -moz-animation: spin 2s infinite linear;
+  -o-animation: spin 2s infinite linear;
+  -webkit-animation: spin 2s infinite linear;
+  animation: spin 2s infinite linear;
+}
+.dbootstrap .dijitMenuPopup .list-dotted .dijitMenuItem:not(.empty) .dijitMenuItemIconCell:before,
+.dbootstrap .dijitComboButton .dijitArrowButton:before,
+.dbootstrap .dijitComboBox .dijitArrowButton:before,
+.dbootstrap .dijitSelect .dijitArrowButton:before,
+.dbootstrap .dijitComboButton .dijitButtonNode.dijitArrowButton:before,
+.dbootstrap .dijitComboBox .dijitButtonNode.dijitArrowButton:before,
+.dbootstrap .dijitSelect .dijitButtonNode.dijitArrowButton:before,
+.dbootstrap .dijitComboButton .dijitButtonNode.dijitArrowButton:before,
+.dbootstrap .dijitComboBox .dijitButtonNode.dijitArrowButton:before,
+.dbootstrap .dijitSelect .dijitButtonNode.dijitArrowButton:before,
+.dbootstrap .dijitMenuTable .dijitMenuItem .dijitSelectedMenuItemIconChar:before,
+.dbootstrap .input-group .input-group-btn .dijitSelectBox .dijitInputField .dijitButtonText .dijitSelectLabel:after,
+.dbootstrap .dijitButton .dijitArrowButtonChar:before,
+.dbootstrap .dijitDropDownButton .dijitArrowButtonChar:before,
+.dbootstrap .dijitComboButton .dijitArrowButtonChar:before,
+.dbootstrap .dgrid .dgrid-header-scroll .dgrid-hider-toggle:before,
+.dbootstrap .dgrid.table-selectable .collapsable > .dgrid-row-table .dgrid-cell:first-child:before,
+.dbootstrap .dgrid.table-clickable .collapsable > .dgrid-row-table .dgrid-cell:first-child:before,
+.dbootstrap .dgrid.clickable-table .collapsable > .dgrid-row-table .dgrid-cell:first-child:before,
+.dbootstrap .dgrid.table-selectable .collapsable > div > .dgrid-row-table .dgrid-cell:first-child:before,
+.dbootstrap .dgrid.table-clickable .collapsable > div > .dgrid-row-table .dgrid-cell:first-child:before,
+.dbootstrap .dgrid.clickable-table .collapsable > div > .dgrid-row-table .dgrid-cell:first-child:before,
+.dbootstrap .dijitPopup .dijitCalendar .dijitCalendarIncrementControl + span:before,
+.dbootstrap .popover .dijitCalendar .dijitCalendarIncrementControl + span:before,
+.dbootstrap .dijitTitlePane .dijitTitlePaneTitle .dijitTitlePaneTextNode:before,
+.dbootstrap div[id^=dojox_widget_Standby_] div[dojoattachpoint=_underlayNode]:before,
+.dbootstrap div[id^=_basicStandby] div[dojoattachpoint=_underlayNode]:before,
+.dbootstrap div.standby div[dojoattachpoint=_underlayNode]:before,
+.dbootstrap .sport-standby:after,
+.dbootstrap .mpp-standby:after,
+.dbootstrap .dijitTreeContainer .dijitTreeRow.branch .dijitTreeExpando:before,
+.dbootstrap .dijitTreeContainer .dijitTreeRow.branch .dijitTreeExpando.dijitTreeExpandoLoading + .dijitExpandoText:before,
 .dbootstrap .dijitTitlePane .dijitTitlePaneTitle .dijitTitlePaneTextNodeParent > *:before,
 .dbootstrap .chzn-container .chzn-single div b:before,
 .dbootstrap .chzn-container .chzn-single div b:before {
@@ -93,259 +221,6 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-.dbootstrap .dijitIconSearch:before,
-.dbootstrap .dijitComboButton.dijitSearchTextBox .dijitButtonNode.dijitArrowButton:before,
-.dbootstrap .dijitComboBox.dijitSearchTextBox .dijitButtonNode.dijitArrowButton:before,
-.dbootstrap .dijitSelect.dijitSearchTextBox .dijitButtonNode.dijitArrowButton:before {
-  content: "\e602";
-}
-.dbootstrap .dijitIconBookmark:before {
-  content: "\e62c";
-}
-.dbootstrap .dijitIconPrint:before,
-.dbootstrap .dijitEditorIconPrint:before {
-  content: "\e62d";
-}
-.dbootstrap .dijitEditorIconJustifyRight:before {
-  content: "\e635";
-}
-.dbootstrap .dijitEditorIconJustifyFull:before {
-  content: "\e636";
-}
-.dbootstrap .dijitEditorIconIndent:before {
-  content: "\e638";
-}
-.dbootstrap .dijitEditorIconInsertImage:before {
-  content: "\e63b";
-}
-.dbootstrap .dijitIconEdit:before {
-  content: "\e640";
-}
-.dbootstrap .dijitTreeExpandoOpened:before {
-  content: "\e651";
-}
-.dbootstrap .dijitCalendarDecrease:before {
-  content: "\e65a";
-}
-.dbootstrap .dijitCalendarIncrease:before {
-  content: "\e65b";
-}
-.dbootstrap .dijitComboButton.dijitDateTextBox .dijitButtonNode.dijitArrowButton:before,
-.dbootstrap .dijitComboBox.dijitDateTextBox .dijitButtonNode.dijitArrowButton:before,
-.dbootstrap .dijitSelect.dijitDateTextBox .dijitButtonNode.dijitArrowButton:before {
-  content: "\e66c";
-}
-.dbootstrap .dijitTabStripMenuIcon:before {
-  content: "\e671";
-}
-.dbootstrap .dijitFolderClosed:before,
-.dbootstrap .dijitIconFolderClosed:before {
-  content: "\e674";
-}
-.dbootstrap .dijitFolderOpened:before,
-.dbootstrap .dijitIconFolderOpen:before {
-  content: "\e675";
-}
-.dbootstrap .dijitIconChart:before {
-  content: "\e678";
-}
-.dbootstrap .dijitIconKey:before {
-  content: "\e67c";
-}
-.dbootstrap .dijitIconTask:before {
-  content: "\e6a4";
-}
-.dbootstrap .dijitIconFilter:before {
-  content: "\e6a5";
-}
-.dbootstrap .dijitIconUsers:before {
-  content: "\e6a8";
-}
-.dbootstrap .dijitEditorIconCreateLink:before,
-.dbootstrap .dijitEditorIconUnlink:before {
-  content: "\e6a9";
-}
-.dbootstrap .dijitIconCut:before,
-.dbootstrap .dijitEditorIconCut:before {
-  content: "\e6ac";
-}
-.dbootstrap .dijitIconCopy:before,
-.dbootstrap .dijitEditorIconCopy:before {
-  content: "\e6ad";
-}
-.dbootstrap .dijitIconSave:before,
-.dbootstrap .dijitEditorIconSave:before {
-  content: "\e6af";
-}
-.dbootstrap .dijitTreeExpandoLeaf:before {
-  content: "\e6b0";
-}
-.dbootstrap .dijitArrowButtonInner:before,
-.dbootstrap .dijitTitlePane .dijitOpen .dijitArrowNode:before,
-.dbootstrap .dgrid-sort-arrow:before,
-.dbootstrap .dgrid-sort-down .dgrid-sort-arrow:before,
-.dbootstrap .dijitComboButton .dijitArrowButton:before,
-.dbootstrap .dijitComboBox .dijitArrowButton:before,
-.dbootstrap .dijitSelect .dijitArrowButton:before,
-.dbootstrap .dijitComboButton .dijitButtonNode.dijitArrowButton:before,
-.dbootstrap .dijitComboBox .dijitButtonNode.dijitArrowButton:before,
-.dbootstrap .dijitSelect .dijitButtonNode.dijitArrowButton:before,
-.dbootstrap .dijitComboButton .dijitButtonNode.dijitArrowButton:before,
-.dbootstrap .dijitComboBox .dijitButtonNode.dijitArrowButton:before,
-.dbootstrap .dijitSelect .dijitButtonNode.dijitArrowButton:before,
-.dbootstrap .input-group .input-group-btn .dijitSelectBox .dijitInputField .dijitButtonText .dijitSelectLabel:after,
-.dbootstrap .dgrid .dgrid-hider-toggle.ui-icon:after,
-.dbootstrap .dgrid.table-selectable .collapsable.expanded > .dgrid-row-table .dgrid-cell:first-child:before,
-.dbootstrap .dgrid.table-clickable .collapsable.expanded > .dgrid-row-table .dgrid-cell:first-child:before,
-.dbootstrap .dgrid.clickable-table .collapsable.expanded > .dgrid-row-table .dgrid-cell:first-child:before,
-.dbootstrap .dgrid.table-selectable .collapsable.expanded > div > .dgrid-row-table .dgrid-cell:first-child:before,
-.dbootstrap .dgrid.table-clickable .collapsable.expanded > div > .dgrid-row-table .dgrid-cell:first-child:before,
-.dbootstrap .dgrid.clickable-table .collapsable.expanded > div > .dgrid-row-table .dgrid-cell:first-child:before,
-.dbootstrap .dijitTitlePane .dijitTitlePaneTitle .dijitTitlePaneTextNode:before,
-.dbootstrap .dijitTitlePane .dijitTitlePaneTitle .dijitTitlePaneTextNodeParent > *:before,
-.dbootstrap .chzn-container .chzn-single div b:before,
-.dbootstrap .chzn-container .chzn-single div b:before {
-  content: "\e6be";
-}
-.dbootstrap .dijitUpArrowButton .dijitArrowButtonInner:before,
-.dbootstrap .dgrid-sort-up .dgrid-sort-arrow:before {
-  content: "\e6bf";
-}
-.dbootstrap .dijitPopup .dijitCalendar .dijitCalendarIncrementControl + span:before,
-.dbootstrap .popover .dijitCalendar .dijitCalendarIncrementControl + span:before {
-  content: "\e6c0";
-}
-.dbootstrap .dijitMenuArrowCell .dijitMenuExpand:before,
-.dbootstrap .dijitTitlePane .dijitClosed .dijitArrowNode:before,
-.dbootstrap .dgrid.table-selectable .collapsable > .dgrid-row-table .dgrid-cell:first-child:before,
-.dbootstrap .dgrid.table-clickable .collapsable > .dgrid-row-table .dgrid-cell:first-child:before,
-.dbootstrap .dgrid.clickable-table .collapsable > .dgrid-row-table .dgrid-cell:first-child:before,
-.dbootstrap .dgrid.table-selectable .collapsable > div > .dgrid-row-table .dgrid-cell:first-child:before,
-.dbootstrap .dgrid.table-clickable .collapsable > div > .dgrid-row-table .dgrid-cell:first-child:before,
-.dbootstrap .dgrid.clickable-table .collapsable > div > .dgrid-row-table .dgrid-cell:first-child:before,
-.dbootstrap .dijitPopup .dijitCalendar .dijitCalendarIncrementControl.dijitCalendarIncrease + span:before,
-.dbootstrap .popover .dijitCalendar .dijitCalendarIncrementControl.dijitCalendarIncrease + span:before,
-.dbootstrap .dijitTitlePane .dijitTitlePaneTitle.dijitClosed .dijitTitlePaneTextNode:before,
-.dbootstrap .dijitTitlePane .dijitTitlePaneTitle.dijitFixedClosed .dijitTitlePaneTextNode:before,
-.dbootstrap .dijitTreeContainer .dijitTreeRow.branch .dijitTreeExpando:before,
-.dbootstrap .dijitTitlePane .dijitTitlePaneTitle.dijitClosed .dijitTitlePaneTextNodeParent > *:before,
-.dbootstrap .dijitTitlePane .dijitTitlePaneTitle.dijitFixedClosed .dijitTitlePaneTextNodeParent > *:before {
-  content: "\e6c1";
-}
-.dbootstrap .dgrid .dgrid-header-scroll .dgrid-hider-toggle:before {
-  content: "\e6c2";
-}
-.dbootstrap .dijitButton .dijitArrowButtonChar:before,
-.dbootstrap .dijitDropDownButton .dijitArrowButtonChar:before,
-.dbootstrap .dijitComboButton .dijitArrowButtonChar:before,
-.dbootstrap .dijitTreeContainer .dijitTreeRow.branch .dijitTreeExpando.dijitTreeExpandoOpened:before {
-  content: "\e6c4";
-}
-.dbootstrap .dijitIconMail:before {
-  content: "\e6c6";
-}
-.dbootstrap .dijitMenuTable .dijitMenuItem .dijitSelectedMenuItemIconChar:before {
-  content: "\e6f0";
-}
-.dbootstrap .dijitTreeExpandoLoading:before,
-.dbootstrap .dijitIconLoading:before,
-.dbootstrap div[id^=dojox_widget_Standby_] div[dojoattachpoint=_underlayNode]:before,
-.dbootstrap div[id^=_basicStandby] div[dojoattachpoint=_underlayNode]:before,
-.dbootstrap div.standby div[dojoattachpoint=_underlayNode]:before,
-.dbootstrap .sport-standby:after,
-.dbootstrap .mpp-standby:after,
-.dbootstrap .dijitTreeContainer .dijitTreeRow.branch .dijitTreeExpando.dijitTreeExpandoLoading + .dijitExpandoText:before {
-  content: "\e6f3";
-}
-.dbootstrap .dijitMenuPopup .list-dotted .dijitMenuItem:not(.empty) .dijitMenuItemIconCell:before,
-.dbootstrap .dijitMenuTable .dijitMenuItem.factorsMenuItemSelected .dijitSelectedMenuItemIconChar:before,
-.dbootstrap .dijitCheckBox.dijitRadioChecked:before,
-.dbootstrap .dijitRadio.dijitRadioChecked:before {
-  content: "\e6f4";
-}
-.dbootstrap .dijitLeaf:before,
-.dbootstrap .dijitIconFile:before,
-.dbootstrap .dijitEditorIconNewPage:before {
-  content: "\e738";
-}
-.dbootstrap .dijitEditorIconDelete:before {
-  content: "\e613";
-}
-.dbootstrap .dijitEditorIconBold:before {
-  content: "\e62f";
-}
-.dbootstrap .dijitEditorIconItalic:before {
-  content: "\e630";
-}
-.dbootstrap .dijitEditorIconJustifyLeft:before {
-  content: "\e633";
-}
-.dbootstrap .dijitEditorIconJustifyCenter:before {
-  content: "\e634";
-}
-.dbootstrap .dijitTabStripSlideLeftIcon:before {
-  content: "\e64e";
-}
-.dbootstrap .dijitTabStripSlideRightIcon:before {
-  content: "\e64f";
-}
-.dbootstrap .dijitIconError:before {
-  content: "\e664";
-}
-.dbootstrap .dijitEditorIconListNumIndent:before,
-.dbootstrap .dijitEditorIconListNumOutdent:before,
-.dbootstrap .dijitEditorIconInsertOrderedList:before {
-  content: "\e6b3";
-}
-.dbootstrap .dijitEditorIconStrikethrough:before {
-  content: "\e6b4";
-}
-.dbootstrap .dijitEditorIconUnderline:before {
-  content: "\e6b5";
-}
-.dbootstrap .dijitIconTable:before,
-.dbootstrap .dijitEditorIconInsertTable:before {
-  content: "\e6b6";
-}
-.dbootstrap .dijitIconPaste:before,
-.dbootstrap .dijitEditorIconPaste:before {
-  content: "\e6d0";
-}
-.dbootstrap .dijitCheckBox.dijitCheckBoxChecked:before,
-.dbootstrap .dijitRadio.dijitRadioChecked:before {
-  content: "\e60c";
-}
-.dbootstrap .dijitIconDelete:before {
-  content: "\e60d";
-}
-.dbootstrap .dijitIconConfigure:before {
-  content: "\f013";
-}
-.dbootstrap .dijitEditorIconListBulletIndent:before,
-.dbootstrap .dijitEditorIconListBulletOutdent:before,
-.dbootstrap .dijitEditorIconInsertUnorderedList:before {
-  content: "\e6b2";
-}
-.dbootstrap .dijitEditorIconRedo:before {
-  content: "\e61d";
-}
-.dbootstrap .dijitIconUndo:before,
-.dbootstrap .dijitEditorIconUndo:before {
-  content: "\e6c8";
-}
-.dbootstrap .dijitEditorIconFullScreen:before {
-  content: "\f0b2";
-}
-.dbootstrap .dijitEditorIconCancel:before {
-  content: "\e65e";
-}
-.dbootstrap .dijitTreeExpandoClosed:before {
-  content: "\e650";
-}
-.dbootstrap .dijitEditorIconOutdent:before {
-  content: "\e783";
-}
-.dbootstrap fieldset,
 .dbootstrap .dijitTitlePane .dijitTitlePaneContentOuter {
   min-height: 20px;
   padding: 19px;
@@ -354,41 +229,6 @@
   border: 1px solid #e3e3e3;
   border-radius: 4px;
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
-}
-.dbootstrap .dijitCalendarMonthMenu .dijitCalendarMonthLabel {
-  font-weight: normal;
-  color: #333333;
-  white-space: nowrap;
-  padding: 6px 20px;
-}
-.dbootstrap .dijitMenuItemSelected,
-.dbootstrap .dijitCalendarMonthMenu .dijitCalendarMonthLabelHover {
-  text-decoration: none;
-  color: #ffffff;
-  background-color: #0088cc;
-  background-image: linear-gradient(top, #0088cc, #0077b3);
-}
-.dbootstrap .dijitComboBox .dijitButtonNode,
-.dbootstrap .dijitSpinnerButtonContainer.dijitButtonNode,
-.dbootstrap .dijitSelect .dijitButtonNode {
-  display: block;
-  padding: 6px 14px;
-  margin-bottom: 0;
-  font-size: 14px;
-  text-align: center;
-  vertical-align: middle;
-  cursor: pointer;
-  color: #333333;
-  text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75);
-  background-color: #e6e6e6;
-  background-image: linear-gradient(top, #ffffff, #e6e6e6);
-  background-repeat: repeat-x;
-  border-color: #e6e6e6 #e6e6e6 #bfbfbf;
-  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) fade-in(rgba(0, 0, 0, 0.1), 15%);
-  border: 1px solid #bbbbbb;
-  border-bottom-color: #a2a2a2;
-  border-radius: 4px;
-  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
 }
 .dbootstrap .dijitButton.primary .dijitButtonNode,
 .dbootstrap .dijitDropDownButton.primary .dijitButtonNode,
@@ -432,34 +272,9 @@
   border-color: #51a351 #51a351 #387038;
   border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) fade-in(rgba(0, 0, 0, 0.1), 15%);
 }
-.dbootstrap .dijitDropDownButtonActive .dijitButtonNode {
-  text-decoration: none;
-  background-position: 0 -15px;
-  transition: background-position 0.1s linear;
-}
-.dbootstrap .dijitComboButton .dijitArrowButton.dijitHasDropDownOpen {
-  background-image: none;
-  outline: 0;
-  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05);
-}
-.dbootstrap .dijitComboBoxDisabled .dijitButtonNode,
-.dbootstrap .dijitSpinnerDisabled .dijitButtonNode,
-.dbootstrap .dijitSelectDisabled .dijitButtonNode {
-  cursor: not-allowed;
-  background-image: none;
-  opacity: 0.65;
-  box-shadow: none;
-}
 .dbootstrap .chzn-container .chzn-single > span {
   padding: 0 0.3em;
   text-align: center;
-}
-.dbootstrap .dijitComboBox .dijitButtonNode.dijitArrowButton,
-.dbootstrap .dijitSpinnerButtonContainer.dijitButtonNode,
-.dbootstrap .dijitSelect .dijitButtonNode.dijitArrowButton {
-  border-left-width: 0;
-  padding: 6px 10px;
-  border-radius: 0 4px 4px 0;
 }
 .dbootstrap .chzn-container .chzn-drop .chzn-search input {
   display: inline-block;
@@ -481,65 +296,9 @@
 .dbootstrap .chzn-container .chzn-single {
   padding: 4px 4px;
 }
-.dbootstrap .dijitSelect.dijitSelectDisabled .dijitButtonContents {
-  background-image: none;
-  box-shadow: none;
-  background-color: #dddddd;
-}
-.dbootstrap .dijitSelect.dijitSelectDisabled .dijitButtonContents {
-  color: #555555;
-}
-.dbootstrap .dijitSpinnerDisabled .dijitButtonNode,
-.dbootstrap .dijitSelectDisabled .dijitButtonNode {
-  background-color: #dddddd;
-}
 .dbootstrap .input-group .dijitTextBox.dijitTextBoxError + .input-group-addon {
   color: #b94a48;
   border-color: #b94a48;
-}
-.dbootstrap .dijitRadio {
-  border: 1px solid #999999;
-  box-shadow: inset 1px 1px 1px 0 rgba(1, 1, 1, 0.2);
-  text-align: center;
-  border-radius: 2px;
-  padding: 1px;
-  background-color: #ffffff;
-  position: relative;
-}
-.dbootstrap .dijitRadio input {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-}
-.dbootstrap .dijitRadio:before {
-  vertical-align: top;
-}
-.dbootstrap .dijitRadioDisabled {
-  opacity: .65;
-  background-color: #eeeeee;
-}
-.dbootstrap .dijitSliderBumperH {
-  border: none;
-  background-image: linear-gradient(center top, #f5f5f5, #f9f9f9);
-  box-shadow: inset 2px 1px 2px rgba(0, 0, 0, 0.1);
-}
-.dbootstrap .dijitSliderBumperH.dijitSliderLeftBumper {
-  border: none;
-  background-color: #049cdb;
-  background-image: linear-gradient(center top, #049cdb, #036690);
-  box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.15);
-}
-.dbootstrap .dijitSliderBumperV {
-  border: none;
-  background-image: linear-gradient(center top, #f5f5f5, #f9f9f9);
-  box-shadow: inset 2px -2px 2px rgba(0, 0, 0, 0.1);
-}
-.dbootstrap .dijitSliderBumperV.dijitSliderBottomBumper {
-  border: none;
-  background-image: linear-gradient(left center, #049cdb, #036690);
-  box-shadow: inset -1px 0 0 rgba(0, 0, 0, 0.15);
 }
 .dbootstrap .chzn-container .chzn-single,
 .dbootstrap .chzn-container .chzn-drop {
@@ -547,23 +306,10 @@
   color: #555555;
   transition: border linear 0.2s, box-shadow linear 0.2s;
 }
-.dbootstrap .dijitTimePickerItemSelected {
-  text-decoration: none;
-  color: #ffffff;
-  background-color: #0088cc;
-  background-image: linear-gradient(top, #0088cc, #0077b3);
-}
 .dbootstrap .dijitPopup .dijitCalendar .dijitCalendarDayLabelTemplate,
 .dbootstrap .popover .dijitCalendar .dijitCalendarDayLabelTemplate {
   padding: 3px 7px;
   background-color: #ffffff;
-}
-.dbootstrap .dijitProgressBarIndeterminate .dijitProgressBarFull {
-  background-size: 40px 40px;
-  background-image: linear-gradient(left bottom, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent) !important;
-}
-.dbootstrap .dijitProgressBarIndeterminate .dijitProgressBarFull {
-  animation: progress-bar-stripes 2s linear infinite;
 }
 .dbootstrap .dgrid.table-striped-reveresed .dgrid-row-odd,
 .dbootstrap .dgrid.table-striped-reveresed .dgrid-row-odd:hover,
@@ -602,6 +348,7 @@
   /* Adds the down arrow to the parent element because input elements do not support :before */
   /* Fix for a bug in internet explorer, making it not possible pressing enter in a form to submit it */
   /* Checkbox fix for displaying then in middle */
+  /* Change standard boostrap radio button */
   /* Add styling for segmented inputs and selectboxes */
   /* Button related style */
   /* Added scania theme based stuff, this should be picked from bootstrap theme later on */
@@ -844,7 +591,6 @@
   line-height: 30px;
 }
 .dbootstrap .well,
-.dbootstrap fieldset,
 .dbootstrap .dijitTitlePane .dijitTitlePaneContentOuter {
   padding: 15px;
   border: 0;
@@ -1337,8 +1083,7 @@
 .dbootstrap .otherLabel {
   background-color: #d9edf7;
 }
-.dbootstrap .dijitMenuItem,
-.dbootstrap .dijitCalendarMonthMenu .dijitCalendarMonthLabel {
+.dbootstrap .dijitMenuItem {
   padding: 4px 20px;
   line-height: 18px;
 }
@@ -1553,7 +1298,6 @@
   visibility: visible;
 }
 .dbootstrap .dijitCheckBox,
-.dbootstrap .dijitRadio,
 .dbootstrap .dijitRadio {
   line-height: normal;
   border-radius: 0;
@@ -1565,10 +1309,8 @@
   border-color: #ddd;
   background-color: #f0f0f0;
   color: #418bca;
-  /* Change standard boostrap radio button checked icon */
 }
 .dbootstrap .dijitCheckBox input,
-.dbootstrap .dijitRadio input,
 .dbootstrap .dijitRadio input {
   height: auto;
   margin: 0;
@@ -1584,7 +1326,6 @@
   border-color: #bce8f1;
 }
 .dbootstrap .dijitCheckBox:before,
-.dbootstrap .dijitRadio:before,
 .dbootstrap .dijitRadio:before {
   line-height: 12px;
   font-size: 10px;
@@ -1594,6 +1335,12 @@
 .dbootstrap .dijitCheckBox.dijitRadioDisabled,
 .dbootstrap .dijitRadio.dijitRadioDisabled {
   opacity: .50;
+}
+.dbootstrap .dijitRadio {
+  border-radius: 6px;
+}
+.dbootstrap .dijitRadio.dijitRadioChecked:before {
+  font-size: 8px;
 }
 .dbootstrap div.checkbox label {
   line-height: 20px;
@@ -1652,6 +1399,7 @@
   -o-transition: none;
   -ms-transition: none;
   transition: none;
+  padding: 4px 12px;
   /*&.dijitSearchEmpty .dijitInputField {
         text-align: right;
         padding-right: 20px;
@@ -1665,6 +1413,9 @@
             line-height: 24px;
         }
     }*/
+}
+.dbootstrap .dijitTextBox > .dijitReset {
+  padding: 0 !important;
 }
 .dbootstrap .dijitTextBox.dijitTextBoxDisabled {
   background-color: #eee;
@@ -1774,7 +1525,7 @@
 }
 .dbootstrap .form-group .dijitTextBox,
 .dbootstrap .chzn-container .chzn-drop .chzn-search input {
-  width: 100% !important;
+  width: 100%;
   position: relative;
   /*.dijitArrowButton {
             position: absolute;
@@ -1795,7 +1546,6 @@
   transition: none;
   box-shadow: none;
   line-height: inherit;
-  border-right-width: 0;
 }
 .dbootstrap .input-group .dijitTextBox.dijitTextBoxFocused + .input-group-addon,
 .dbootstrap .input-group .dijitTextBox.dijitTextBoxFocused.form-control {
@@ -1807,6 +1557,19 @@
 .dbootstrap .input-group .dijitTextBox .dijitSpinnerButtonContainer {
   z-index: auto;
   padding: 7px 12px !important;
+}
+.dbootstrap .input-group .input-group-addon,
+.dbootstrap .input-group .input-group-btn {
+  display: table-cell;
+  width: 1%;
+}
+.dbootstrap .input-group .input-group-addon .dijitInputField .dijitInputInner,
+.dbootstrap .input-group .input-group-btn .dijitInputField .dijitInputInner {
+  width: auto !important;
+}
+.dbootstrap .input-group .input-group-addon:last-child > .dijitTextBox,
+.dbootstrap .input-group .input-group-btn:last-child > .dijitTextBox {
+  margin-left: -1px;
 }
 .dbootstrap .input-group .input-group-btn {
   cursor: pointer;
@@ -2059,23 +1822,14 @@
 }
 .dbootstrap .dijitButton .dijitButtonNode,
 .dbootstrap .dijitDropDownButton .dijitButtonNode,
-.dbootstrap .dijitComboButton .dijitButtonNode,
-.dbootstrap .dijitComboBox .dijitButtonNode,
-.dbootstrap .dijitSpinnerButtonContainer.dijitButtonNode,
-.dbootstrap .dijitSelect .dijitButtonNode {
+.dbootstrap .dijitComboButton .dijitButtonNode {
   text-transform: none;
   line-height: inherit;
   box-shadow: none;
   text-shdow: none !important;
   background-color: #fafafa;
   border-color: #ccc;
-  padding: 6px 12px;
   min-width: 27px;
-}
-.dbootstrap .dijitButton .dijitButtonNode > .dijitButtonContents,
-.dbootstrap .dijitDropDownButton .dijitButtonNode > .dijitButtonContents,
-.dbootstrap .dijitComboButton .dijitButtonNode > .dijitButtonContents {
-  line-height: 1;
 }
 .dbootstrap .dijitButton .dijitButtonNode:hover,
 .dbootstrap .dijitDropDownButton .dijitButtonNode:hover,
@@ -2542,6 +2296,13 @@
 .dbootstrap .dgrid.table-scrollable .dgrid-scroller .dgrid-cell:last-child {
   padding-right: 24px;
 }
+.dbootstrap .dgrid.table-noscroll .dgrid-scroller {
+  max-height: none;
+  overflow-y: auto;
+}
+.dbootstrap .dgrid.table-noscroll .dgrid-scroller .dgrid-cell:last-child {
+  padding-right: 24px;
+}
 .dbootstrap .dgrid.table-sm,
 .dbootstrap .dgrid.table-md,
 .dbootstrap .dgrid.table-lg {
@@ -2587,6 +2348,19 @@
 .dbootstrap .dgrid.table-hs .dgrid-cell {
   width: 110px;
 }
+.dbootstrap .dgrid.table-data .dgrid-header th {
+  padding-bottom: 0;
+}
+.dbootstrap .dgrid.table-data .dgrid-header th h1,
+.dbootstrap .dgrid.table-data .dgrid-header th h2,
+.dbootstrap .dgrid.table-data .dgrid-header th h3,
+.dbootstrap .dgrid.table-data .dgrid-header th h4,
+.dbootstrap .dgrid.table-data .dgrid-header th h5,
+.dbootstrap .dgrid.table-data .dgrid-header th h6 {
+  padding: 0;
+  border: 0;
+  text-transform: none;
+}
 .dbootstrap .dgrid.table-data .dgrid-row:last-child td.dgrid-cell,
 .dbootstrap .dgrid.table-data .dgrid-row:last-child:hover td.dgrid-cell {
   border-bottom: 0;
@@ -2601,8 +2375,11 @@
   font-weight: normal;
 }
 .dbootstrap .dgrid.table-data .dgrid-row:hover td.dgrid-cell:first-child,
-.dbootstrap .dgrid.table-data .dgrid-row td.dgrid-cell:first-child {
+.dbootstrap .dgrid.table-data .dgrid-row td.dgrid-cell:first-child,
+.dbootstrap .dgrid.table-data .dgrid-row:hover td.dgrid-cell.th,
+.dbootstrap .dgrid.table-data .dgrid-row td.dgrid-cell.th {
   background-color: #fff;
+  text-align: left;
 }
 .dbootstrap .dgrid.table-data .dgrid-row:hover td.dgrid-cell.divider-right,
 .dbootstrap .dgrid.table-data .dgrid-row td.dgrid-cell.divider-right {
@@ -3044,7 +2821,6 @@
 }
 .dbootstrap .chzn-container .chzn-single div {
   width: auto;
-  padding: 6px 10px;
   line-height: 21px;
 }
 .dbootstrap .chzn-container .chzn-single div b {
