@@ -8,40 +8,52 @@ table { //This is to override the Boostrap standard of "collapse" on all table e
 
 .table{ //This is to set the border-collapse back to "collapse" for all Bootstrap-tables (.table)
   border-collapse: collapse;
-}
 
-.table thead>tr>th, 
-.table tbody>tr>th, 
-.table tfoot>tr>th, 
-.table thead>tr>td, 
-.table tbody>tr>td, 
-.table tfoot>tr>td {
-  padding: @table-cell-padding;
+  thead>tr>th, 
+  tbody>tr>th, 
+  tfoot>tr>th, 
+  thead>tr>td, 
+  tbody>tr>td, 
+  tfoot>tr>td {
+    padding: @table-cell-padding;
+  }
+  thead > tr > th {
+    vertical-align: bottom;
+    border-bottom: 2px solid #dddddd;
+    font-size: 10px;
+    color: @text-label-color;
+    text-transform: uppercase;
+  }
+  tbody > tr > td {
+    vertical-align: middle;
+  }
+  i {
+    white-space: nowrap;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    border-bottom: 0;
+    padding: 0;
+    margin: 0;
+    text-transform: none;
   }
 
-.table thead > tr > th {
-  vertical-align: bottom;
-  border-bottom: 2px solid #dddddd;
-  font-size: 10px;
-  color: @text-label-color;
-  text-transform: uppercase;
-}
+  &.table-striped thead>tr>th, 
+  &.table-striped tbody>tr>th, 
+  &.table-striped tfoot>tr>th, 
+  &.table-striped thead>tr>td, 
+  &.table-striped tbody>tr>td, 
+  &.table-striped tfoot>tr>td {
+    border-top: 0;
+  }
 
-.table tbody > tr > td {
-  vertical-align: middle;
-}
-
-.table.table-striped thead>tr>th, 
-.table.table-striped tbody>tr>th, 
-.table.table-striped tfoot>tr>th, 
-.table.table-striped thead>tr>td, 
-.table.table-striped tbody>tr>td, 
-.table.table-striped tfoot>tr>td {
-  border-top: 0;
-}
-
-.table-striped>tbody>tr:nth-child(odd)>td, .table-striped>tbody>tr:nth-child(odd)>th {
-  background-color: #f6f6f6;
+  &.table-striped>tbody>tr:nth-child(odd)>td, .table-striped>tbody>tr:nth-child(odd)>th {
+    background-color: #f6f6f6;
+  }
 }
 
 //Striped table inside well
@@ -56,11 +68,36 @@ table { //This is to override the Boostrap standard of "collapse" on all table e
   background-color: #e3e3e3;
 }
 
-.table i {
-  white-space: nowrap;
-}
-
 .popover-content .table tbody>tr>td {
   font-size: 85%;
 }
 
+// Data table table-layout: 
+.table-data tbody tr {
+  > th {
+    font-size: 10px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #949494;
+  }
+  > td {
+    background-color: #f5f5f5;
+    font-weight: bold;
+    font-size: 12px;
+    font-family: 'Open Sans';
+    white-space: nowrap;
+    text-align: center;
+    padding: 0 20px;
+        
+    small {
+      font-weight: normal;
+    }
+
+    &.divider-right {
+      border-right: 2px solid #fff;
+    }
+    &.divider-left {
+      border-left: 2px solid #fff;
+    }
+  }
+}

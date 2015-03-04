@@ -1,6 +1,6 @@
 @import url("/resources/fonts/corporate-icons/style.css");
 .compiled_at {
-  content: "Fri Dec 19 2014 12:10:39 GMT+0100 (W. Europe Standard Time)";
+  content: "Mon Jan 12 2015 14:52:27 GMT+0100 (W. Europe Standard Time)";
 }
 .bootstrap .loading:after,
 .bootstrap .table-selectable > tbody > tr.expandable > td:first-child:before,
@@ -733,6 +733,20 @@ body.bootstrap {
 .bootstrap .table tbody > tr > td {
   vertical-align: middle;
 }
+.bootstrap .table i {
+  white-space: nowrap;
+}
+.bootstrap .table h1,
+.bootstrap .table h2,
+.bootstrap .table h3,
+.bootstrap .table h4,
+.bootstrap .table h5,
+.bootstrap .table h6 {
+  border-bottom: 0;
+  padding: 0;
+  margin: 0;
+  text-transform: none;
+}
 .bootstrap .table.table-striped thead > tr > th,
 .bootstrap .table.table-striped tbody > tr > th,
 .bootstrap .table.table-striped tfoot > tr > th,
@@ -741,8 +755,8 @@ body.bootstrap {
 .bootstrap .table.table-striped tfoot > tr > td {
   border-top: 0;
 }
-.bootstrap .table-striped > tbody > tr:nth-child(odd) > td,
-.bootstrap .table-striped > tbody > tr:nth-child(odd) > th {
+.bootstrap .table.table-striped > tbody > tr:nth-child(odd) > td,
+.bootstrap .table .table-striped > tbody > tr:nth-child(odd) > th {
   background-color: #f6f6f6;
 }
 .bootstrap .well .table-striped > tbody > tr:nth-child(odd) > td,
@@ -755,11 +769,32 @@ body.bootstrap {
 .bootstrap .well .table-hover > tbody > tr:hover > th {
   background-color: #e3e3e3;
 }
-.bootstrap .table i {
-  white-space: nowrap;
-}
 .bootstrap .popover-content .table tbody > tr > td {
   font-size: 85%;
+}
+.bootstrap .table-data tbody tr > th {
+  font-size: 10px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #949494;
+}
+.bootstrap .table-data tbody tr > td {
+  background-color: #f5f5f5;
+  font-weight: bold;
+  font-size: 12px;
+  font-family: 'Open Sans';
+  white-space: nowrap;
+  text-align: center;
+  padding: 0 20px;
+}
+.bootstrap .table-data tbody tr > td small {
+  font-weight: normal;
+}
+.bootstrap .table-data tbody tr > td.divider-right {
+  border-right: 2px solid #fff;
+}
+.bootstrap .table-data tbody tr > td.divider-left {
+  border-left: 2px solid #fff;
 }
 .bootstrap .badge {
   cursor: default;
@@ -4234,7 +4269,7 @@ body.goshow {
 }
 .bootstrap .chosen-container-single .chosen-single abbr {
   position: absolute;
-  top: 6px;
+  top: 10px;
   right: 26px;
   display: block;
   width: 12px;
@@ -4337,19 +4372,19 @@ body.goshow {
   display: list-item;
   background: #f4f4f4;
 }
-.bootstrap .chosen-container .chosen-results li.group-result {
+.bootstrap select + .chosen-container .chosen-results li.group-result {
   display: list-item;
   font-weight: bold;
   cursor: default;
 }
-.bootstrap .chosen-container .chosen-results li.group-option {
-  padding-left: 15px;
+.bootstrap select + .chosen-container .chosen-results li.group-option {
+  padding-left: 20px;
 }
-.bootstrap .chosen-container .chosen-results li em {
+.bootstrap select + .chosen-container .chosen-results li em {
   font-style: normal;
   text-decoration: underline;
 }
-.bootstrap .chosen-container-multi .chosen-choices {
+.bootstrap select + .chosen-container-multi .chosen-choices {
   position: relative;
   overflow: hidden;
   -webkit-box-sizing: border-box;
@@ -4369,16 +4404,16 @@ body.goshow {
   background-image: linear-gradient(#eeeeee 1%, #ffffff 15%);
   cursor: text;
 }
-.bootstrap .chosen-container-multi .chosen-choices li {
+.bootstrap select + .chosen-container-multi .chosen-choices li {
   float: left;
   list-style: none;
 }
-.bootstrap .chosen-container-multi .chosen-choices li.search-field {
+.bootstrap select + .chosen-container-multi .chosen-choices li.search-field {
   margin: 0;
   padding: 0;
   white-space: nowrap;
 }
-.bootstrap .chosen-container-multi .chosen-choices li.search-field input[type="text"] {
+.bootstrap select + .chosen-container-multi .chosen-choices li.search-field input[type="text"] {
   margin: 1px 0;
   padding: 5px;
   height: 15px;
@@ -4392,10 +4427,10 @@ body.goshow {
   line-height: normal;
   border-radius: 0;
 }
-.bootstrap .chosen-container-multi .chosen-choices li.search-field .default {
+.bootstrap select + .chosen-container-multi .chosen-choices li.search-field .default {
   color: #999;
 }
-.bootstrap .chosen-container-multi .chosen-choices li.search-choice {
+.bootstrap select + .chosen-container-multi .chosen-choices li.search-choice {
   position: relative;
   margin: 3px 0 3px 5px;
   padding: 3px 20px 3px 5px;
@@ -4413,7 +4448,7 @@ body.goshow {
   line-height: 13px;
   cursor: default;
 }
-.bootstrap .chosen-container-multi .chosen-choices li.search-choice .search-choice-close {
+.bootstrap select + .chosen-container-multi .chosen-choices li.search-choice .search-choice-close {
   position: absolute;
   top: 4px;
   right: 3px;
@@ -4423,10 +4458,10 @@ body.goshow {
   background: url('chosen-sprite.png') -42px 1px no-repeat;
   font-size: 1px;
 }
-.bootstrap .chosen-container-multi .chosen-choices li.search-choice .search-choice-close:hover {
+.bootstrap select + .chosen-container-multi .chosen-choices li.search-choice .search-choice-close:hover {
   background-position: -42px -10px;
 }
-.bootstrap .chosen-container-multi .chosen-choices li.search-choice-disabled {
+.bootstrap select + .chosen-container-multi .chosen-choices li.search-choice-disabled {
   padding-right: 5px;
   border: 1px solid #ccc;
   background-color: #e4e4e4;
@@ -4437,26 +4472,26 @@ body.goshow {
   background-image: linear-gradient(top, #f4f4f4 20%, #f0f0f0 50%, #e8e8e8 52%, #eeeeee 100%);
   color: #666;
 }
-.bootstrap .chosen-container-multi .chosen-choices li.search-choice-focus {
+.bootstrap select + .chosen-container-multi .chosen-choices li.search-choice-focus {
   background: #d4d4d4;
 }
-.bootstrap .chosen-container-multi .chosen-choices li.search-choice-focus .search-choice-close {
+.bootstrap select + .chosen-container-multi .chosen-choices li.search-choice-focus .search-choice-close {
   background-position: -42px -10px;
 }
-.bootstrap .chosen-container-multi .chosen-results {
+.bootstrap select + .chosen-container-multi .chosen-results {
   margin: 0;
   padding: 0;
 }
-.bootstrap .chosen-container-multi .chosen-drop .result-selected {
+.bootstrap select + .chosen-container-multi .chosen-drop .result-selected {
   display: list-item;
   color: #ccc;
   cursor: default;
 }
-.bootstrap .chosen-container-active .chosen-single {
+.bootstrap select + .chosen-container-active .chosen-single {
   border: 1px solid #5897fb;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
 }
-.bootstrap .chosen-container-active.chosen-with-drop .chosen-single {
+.bootstrap select + .chosen-container-active.chosen-with-drop .chosen-single {
   border: 1px solid #aaa;
   -moz-border-radius-bottomright: 0;
   border-bottom-right-radius: 0;
@@ -4469,18 +4504,18 @@ body.goshow {
   background-image: linear-gradient(#eeeeee 20%, #ffffff 80%);
   box-shadow: 0 1px 0 #fff inset;
 }
-.bootstrap .chosen-container-active.chosen-with-drop .chosen-single div {
+.bootstrap select + .chosen-container-active.chosen-with-drop .chosen-single div {
   border-left: none;
   background: transparent;
 }
-.bootstrap .chosen-container-active.chosen-with-drop .chosen-single div b {
+.bootstrap select + .chosen-container-active.chosen-with-drop .chosen-single div b {
   background-position: -18px 2px;
 }
-.bootstrap .chosen-container-active .chosen-choices {
+.bootstrap select + .chosen-container-active .chosen-choices {
   border: 1px solid #5897fb;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
 }
-.bootstrap .chosen-container-active .chosen-choices li.search-field input[type="text"] {
+.bootstrap select + .chosen-container-active .chosen-choices li.search-field input[type="text"] {
   color: #111 !important;
 }
 .bootstrap .chosen-disabled {
@@ -4539,7 +4574,7 @@ body.goshow {
   padding: 0 4px 0 0;
 }
 .bootstrap .chosen-rtl .chosen-results li.group-option {
-  padding-right: 15px;
+  padding-right: 20px;
   padding-left: 0;
 }
 .bootstrap .chosen-rtl.chosen-container-active.chosen-with-drop .chosen-single div {
@@ -4574,11 +4609,11 @@ body.goshow {
     background-repeat: no-repeat !important;
   }
 }
-.bootstrap select.form-control + .chosen-container {
+.bootstrap select + .chosen-container {
   width: 100%;
   text-align: left;
 }
-.bootstrap select.form-control + .chosen-container.chosen-container-single .chosen-single {
+.bootstrap select + .chosen-container.chosen-container-single .chosen-single {
   display: block;
   width: 100%;
   height: 34px;
@@ -4594,22 +4629,22 @@ body.goshow {
   transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
   background-image: none;
 }
-.bootstrap table select.form-control + .chosen-container {
+.bootstrap table select + .chosen-container {
   text-transform: none;
   font-weight: normal;
 }
-.bootstrap table select.form-control + .chosen-container.chosen-container-single .chosen-single {
+.bootstrap table select + .chosen-container.chosen-container-single .chosen-single {
   height: 27px;
   padding: 4px 12px;
 }
-.bootstrap table select.form-control + .chosen-container-single .chosen-single div b {
+.bootstrap table select + .chosen-container-single .chosen-single div b {
   background-position: 0px 0px;
 }
-.bootstrap select.form-control + .chosen-container.chosen-container-single .chosen-single div {
+.bootstrap select + .chosen-container.chosen-container-single .chosen-single div {
   top: 4px;
   color: #000;
 }
-.bootstrap select.form-control + .chosen-container .chosen-drop {
+.bootstrap select + .chosen-container .chosen-drop {
   background-color: #FFF;
   border: 1px solid #CCC;
   border: 1px solid rgba(0, 0, 0, 0.15);
@@ -4621,7 +4656,7 @@ body.goshow {
   width: auto;
   min-width: 100%;
 }
-.bootstrap select.form-control + .chosen-container .chosen-search input[type=text] {
+.bootstrap select + .chosen-container .chosen-search input[type=text] {
   display: block;
   width: 100%;
   height: 34px;
@@ -4639,7 +4674,7 @@ body.goshow {
   transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
   background-image: none;
 }
-.bootstrap select.form-control + .chosen-container .chosen-results {
+.bootstrap select + .chosen-container .chosen-results {
   margin: 2px 0 0;
   padding: 5px 0;
   font-size: 12px;
@@ -4647,8 +4682,8 @@ body.goshow {
   background-color: #fff;
   margin-bottom: 5px;
 }
-.bootstrap select.form-control + .chosen-container .chosen-results li,
-.bootstrap select.form-control + .chosen-container .chosen-results li.active-result {
+.bootstrap select + .chosen-container .chosen-results li,
+.bootstrap select + .chosen-container .chosen-results li.active-result {
   display: block;
   padding: 3px 20px;
   clear: both;
@@ -4658,15 +4693,15 @@ body.goshow {
   white-space: nowrap;
   background-image: none;
 }
-.bootstrap select.form-control + .chosen-container .chosen-results li:hover,
-.bootstrap select.form-control + .chosen-container .chosen-results li.active-result:hover,
-.bootstrap select.form-control + .chosen-container .chosen-results li.highlighted {
+.bootstrap select + .chosen-container .chosen-results li:hover,
+.bootstrap select + .chosen-container .chosen-results li.active-result:hover,
+.bootstrap select + .chosen-container .chosen-results li.highlighted {
   color: #FFF;
   text-decoration: none;
   background-color: #428BCA;
   background-image: none;
 }
-.bootstrap select.form-control + .chosen-container-multi .chosen-choices {
+.bootstrap select + .chosen-container-multi .chosen-choices {
   display: block;
   width: 100%;
   min-height: 34px;
@@ -4684,11 +4719,11 @@ body.goshow {
   transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
   background-image: none;
 }
-.bootstrap select.form-control + .chosen-container-multi .chosen-choices li.search-field input[type="text"] {
+.bootstrap select + .chosen-container-multi .chosen-choices li.search-field input[type="text"] {
   height: auto;
   padding: 5px 0;
 }
-.bootstrap select.form-control + .chosen-container-multi .chosen-choices li.search-choice {
+.bootstrap select + .chosen-container-multi .chosen-choices li.search-choice {
   background-image: none;
   padding: 3px 24px 3px 5px;
   margin: 0 6px 0 0;
@@ -4705,32 +4740,32 @@ body.goshow {
   background-color: #FFF;
   border-color: #CCC;
 }
-.bootstrap select.form-control + .chosen-container-multi .chosen-choices li.search-choice .search-choice-close {
+.bootstrap select + .chosen-container-multi .chosen-choices li.search-choice .search-choice-close {
   top: 6px;
   right: 6px;
 }
-.bootstrap select.form-control + .chosen-container-multi.chosen-container-active .chosen-choices,
-.bootstrap select.form-control + .chosen-container.chosen-container-single.chosen-container-active .chosen-single,
-.bootstrap select.form-control + .chosen-container .chosen-search input[type=text]:focus {
+.bootstrap select + .chosen-container-multi.chosen-container-active .chosen-choices,
+.bootstrap select + .chosen-container.chosen-container-single.chosen-container-active .chosen-single,
+.bootstrap select + .chosen-container .chosen-search input[type=text]:focus {
   border-color: #66AFE9;
   outline: 0;
   -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(102, 175, 233, 0.6);
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(102, 175, 233, 0.6);
 }
-.bootstrap select.form-control + .chosen-container-multi .chosen-results li.result-selected {
+.bootstrap select + .chosen-container-multi .chosen-results li.result-selected {
   display: list-item;
   color: #ccc;
   cursor: default;
   background-color: white;
 }
-.bootstrap select.form-control + .chosen-container.chosen-container-single .chosen-single.chosen-default span {
+.bootstrap select + .chosen-container.chosen-container-single .chosen-single.chosen-default span {
   color: #aaa;
 }
 .bootstrap .chosen-container a:hover,
-.bootstrap .bootstrap a:focus {
+.bootstrap .chosen-container a:focus {
   text-decoration: none;
 }
-.bootstrap .input-group select.form-control + .chosen-container .chosen-single:first-child {
+.bootstrap .input-group select + .chosen-container .chosen-single:first-child {
   border-right: 0;
   box-shadow: none;
   border-left: 1px solid #ccc;

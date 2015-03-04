@@ -1,6 +1,6 @@
 @import url('/vendors/frameworks/dojo/1.7.4/dijit/themes/dijit.css');
 .compiled_at {
-  content: "Mon Dec 08 2014 13:55:31 GMT+0100 (W. Europe Standard Time)";
+  content: "Mon Jan 12 2015 20:39:44 GMT+0100 (W. Europe Standard Time)";
 }
 .dbootstrap .dijitTreeExpandoLoading,
 .dbootstrap .dijitIconLoading:before,
@@ -2046,6 +2046,11 @@ ol {
   border-color: #ccc;
   padding: 6px 12px;
   min-width: 27px;
+}
+.dbootstrap .dijitButton .dijitButtonNode > .dijitButtonContents,
+.dbootstrap .dijitDropDownButton .dijitButtonNode > .dijitButtonContents,
+.dbootstrap .dijitComboButton .dijitButtonNode > .dijitButtonContents {
+  line-height: 1;
 }
 .dbootstrap .dijitButton .dijitButtonNode:hover,
 .dbootstrap .dijitDropDownButton .dijitButtonNode:hover,
