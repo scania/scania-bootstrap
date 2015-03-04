@@ -1,6 +1,6 @@
 @import url("/resources/fonts/corporate-icons/style.css");
 .compiled_at {
-  content: "Thu Dec 11 2014 16:37:24 GMT+0100 (W. Europe Standard Time)";
+  content: "Thu Dec 11 2014 16:59:29 GMT+0100 (W. Europe Standard Time)";
 }
 .bootstrap .loading:after,
 .bootstrap .table-selectable > tbody > tr.expandable > td:first-child:before,
@@ -3606,6 +3606,9 @@ body.goshow {
 }
 .bootstrap .navbar#global_header .dropdown-menu i {
   font-size: 1.1em;
+}
+.bootstrap .navbar#global_header .dropdown-menu li a:hover {
+  cursor: pointer;
 }
 .bootstrap .navbar#global_header .dropdown-menu li.disabled a {
   color: #999;
