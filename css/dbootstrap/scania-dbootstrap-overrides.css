@@ -1,6 +1,6 @@
 @import url('/vendors/frameworks/dojo/1.7.4/dijit/themes/dijit.css');
 .compiled_at {
-  content: "Mon Nov 24 2014 10:55:55 GMT+0100 (W. Europe Standard Time)";
+  content: "Wed Dec 03 2014 17:10:38 GMT+0100 (W. Europe Standard Time)";
 }
 .dbootstrap .dijitTreeExpandoLoading,
 .dbootstrap .dijitIconLoading:before,
@@ -29,7 +29,6 @@
 .dbootstrap .dijitTreeExpando:before,
 .dbootstrap .dijitTitlePane .dijitArrowNode:before,
 .dbootstrap .dgrid-sort-arrow:before,
-.dbootstrap .pageIdNode:before,
 .dbootstrap .dijitMenuPopup .list-dotted .dijitMenuItem:not(.empty) .dijitMenuItemIconCell:before,
 .dbootstrap .dijitComboButton .dijitArrowButton:before,
 .dbootstrap .dijitComboBox .dijitArrowButton:before,
@@ -226,9 +225,6 @@
 }
 .dbootstrap .dijitIconMail:before {
   content: "\e6c6";
-}
-.dbootstrap .pageIdNode:before {
-  content: "\e6df";
 }
 .dbootstrap .dijitMenuTable .dijitMenuItem .dijitSelectedMenuItemIconChar:before {
   content: "\e6f0";
@@ -1475,54 +1471,6 @@ ol {
 }
 .dbootstrap ul.list-tree > li.disabled:after {
   border-color: #666;
-}
-.dbootstrap .dijitDialogContainer .dijitDialog.documentWidgetDialog {
-  max-width: 900px;
-}
-.dbootstrap .dijitDialogContainer .dijitDialog.documentWidgetDialog .dijitDialogPaneContent .dgrid .dgrid-scroller {
-  max-height: 100%;
-  overflow: hidden;
-}
-.dbootstrap .dijitDialogContainer .dijitDialog.documentWidgetDialog .dijitTabPaneWrapper > li:first-child .dgrid .dgrid-row,
-.dbootstrap .dijitDialogContainer .dijitDialog.documentWidgetDialog .dijitTabPaneWrapper > li:first-child:hover .dgrid-cell {
-  background-color: #fff;
-}
-.dbootstrap .dijitDialogContainer .dijitDialog.documentWidgetDialog .dijitTabPaneWrapper > li:first-child .dgrid-cell {
-  width: 10%;
-  vertical-align: top;
-  background: #fff;
-}
-.dbootstrap .dijitDialogContainer .dijitDialog.documentWidgetDialog .dijitTabPaneWrapper > li:first-child .dgrid-cell .dijitCheckBox {
-  margin-top: 24px;
-}
-.dbootstrap .dijitDialogContainer .dijitDialog.documentWidgetDialog .dijitTabPaneWrapper > li:first-child .dgrid-cell:first-child {
-  width: 90%;
-}
-.dbootstrap .dijitDialogContainer .dijitDialog.documentWidgetDialog .dijitTabPaneWrapper > li:first-child .dgrid-cell:first-child .documentItemHeader {
-  font-weight: bold;
-  font-size: 13px;
-}
-.dbootstrap .dijitDialogContainer .dijitDialog.documentWidgetDialog .dijitTabPaneWrapper > li:first-child .dgrid-cell:first-child textarea {
-  width: 100% !important;
-  font-size: 12px;
-  padding: 8px;
-  margin-top: 4px;
-}
-.dbootstrap .dijitDialogContainer .dijitDialog.documentWidgetDialog div[data-dojo-attach-point=documentButtons] {
-  margin: 15px -20px -20px;
-  padding: 19px 20px 20px;
-  text-align: right;
-  border-top: 1px solid #e5e5e5;
-}
-.dbootstrap .dijitDialogContainer .dijitDialog.documentWidgetDialog div[data-dojo-attach-point=documentButtons] .dijitButton:first-child > span {
-  background-color: #418bca;
-  border-color: #357ebd;
-  color: #fff;
-  text-shadow: none;
-}
-.dbootstrap .dijitDialogContainer .dijitDialog.documentWidgetDialog div[data-dojo-attach-point=documentButtons] .dijitButton:first-child > span:hover {
-  background-color: #69a3d5;
-  border-color: #5597d0;
 }
 .dbootstrap .dijitMenuPopup .dijitMenuItem td a {
   color: #666;
@@ -3439,6 +3387,9 @@ ol {
 .dbootstrap .panel-tree .dijitTreeContainer .dijitTreeNode.readRoleTreeNode > .dijitTreeRow {
   color: #bbb;
 }
+.dbootstrap .panel-tree .dijitTreeContainer .dijitTreeNode.readRoleTreeNode > .dijitTreeRow small {
+  font-style: italic;
+}
 .dbootstrap .panel-tree .dijitTreeContainer .dijitTreeNode.readRoleTreeNode > .dijitTreeRow .label {
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
   /* IE 8 */
@@ -3449,40 +3400,37 @@ ol {
   opacity: 0.5;
   /* "Good browsers" */
 }
-.dbootstrap .panel-tree .dijitTreeContainer .dijitTreeNode.readRoleTreeNode > .dijitTreeRow small {
-  font-style: italic;
-}
-.dbootstrap .panel-tree .dijitTreeContainer .dijitTreeNode > .dijitTreeRow.dijitTreeRowHover {
+.dbootstrap .panel-tree .dijitTreeContainer .dijitTreeNode.readRoleTreeNode > .dijitTreeRow.dijitTreeRowHover {
   background-color: transparent;
 }
-.dbootstrap .panel-tree .dijitTreeContainer .dijitTreeNode > .dijitTreeRow.branch {
+.dbootstrap .panel-tree .dijitTreeContainer .dijitTreeNode.readRoleTreeNode > .dijitTreeRow.branch {
   background: #f4f4f4;
   margin-bottom: 10px;
 }
-.dbootstrap .panel-tree .dijitTreeContainer .dijitTreeNode > .dijitTreeRow.branch a:hover {
+.dbootstrap .panel-tree .dijitTreeContainer .dijitTreeNode.readRoleTreeNode > .dijitTreeRow.branch a:hover {
   text-decoration: none;
 }
-.dbootstrap .panel-tree .dijitTreeContainer .dijitTreeNode > .dijitTreeRow.branch > .pull-right {
+.dbootstrap .panel-tree .dijitTreeContainer .dijitTreeNode.readRoleTreeNode > .dijitTreeRow.branch > .pull-right {
   line-height: 24px;
   font-size: 16px;
 }
-.dbootstrap .panel-tree .dijitTreeContainer .dijitTreeNode > .dijitTreeRow.branch > .pull-right a {
+.dbootstrap .panel-tree .dijitTreeContainer .dijitTreeNode.readRoleTreeNode > .dijitTreeRow.branch > .pull-right a {
   vertical-align: middle;
 }
-.dbootstrap .panel-tree .dijitTreeContainer .dijitTreeNode > .dijitTreeRow.branch:hover,
-.dbootstrap .panel-tree .dijitTreeContainer .dijitTreeNode > .dijitTreeRow.branch.dijitTreeRowSelected {
+.dbootstrap .panel-tree .dijitTreeContainer .dijitTreeNode.readRoleTreeNode > .dijitTreeRow.branch:hover,
+.dbootstrap .panel-tree .dijitTreeContainer .dijitTreeNode.readRoleTreeNode > .dijitTreeRow.branch.dijitTreeRowSelected {
   background-color: #d9edf7;
 }
-.dbootstrap .panel-tree .dijitTreeContainer .dijitTreeNode > .dijitTreeRow.branch + div .dijitTreeRow.branch:before {
+.dbootstrap .panel-tree .dijitTreeContainer .dijitTreeNode.readRoleTreeNode > .dijitTreeRow.branch + div .dijitTreeRow.branch:before {
   width: 10px;
   height: 10px;
   left: -18px;
   top: 8px;
 }
-.dbootstrap .panel-tree .dijitTreeContainer .dijitTreeNode > .dijitTreeRow.branch + div .dijitTreeRow.branch + div .branch + .dijitTreeContainer {
+.dbootstrap .panel-tree .dijitTreeContainer .dijitTreeNode.readRoleTreeNode > .dijitTreeRow.branch + div .dijitTreeRow.branch + div .branch + .dijitTreeContainer {
   margin-bottom: 10px;
 }
-.dbootstrap .panel-tree .dijitTreeContainer .dijitTreeNode > .dijitTreeRow.leaf {
+.dbootstrap .panel-tree .dijitTreeContainer .dijitTreeNode.readRoleTreeNode > .dijitTreeRow.leaf {
   border-top: 1px solid #ddd;
   padding: 5px 0;
   width: auto;
@@ -3492,7 +3440,7 @@ ol {
   left: 0;
   top: 0;
 }
-.dbootstrap .panel-tree .dijitTreeContainer .dijitTreeNode > .dijitTreeRow .dijitTreeLabel {
+.dbootstrap .panel-tree .dijitTreeContainer .dijitTreeNode.readRoleTreeNode > .dijitTreeRow .dijitTreeLabel {
   line-height: 26px;
 }
 .dbootstrap .panel-tree .dijitTreeContainer .dijitTreeNode:first-child > .dijitTreeRow.leaf {
@@ -3805,4 +3753,3 @@ ol {
     display: none !important;
   }
 }
-/*# sourceMappingURL=scania-dbootstrap-overrides.css.map */
