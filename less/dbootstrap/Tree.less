@@ -23,6 +23,7 @@
 					color: #555;
 					opacity: 1;
 					font-size: 14px;
+					visibility: visible;
 				}
 				&.dijitTreeExpandoOpened:before {
 					&:extend(.icon-sort-down:before);
@@ -80,7 +81,7 @@
 
 		.dijitTreeNode {
 
-			&.readRoleTreeNode > .dijitTreeRow { //Added by Jernberg 2014-03-24 - to style text and child-elements on a read-only role-line in the tree.
+			> .dijitTreeRow {
 				color: #bbb;
 				//overflow: hidden;
 

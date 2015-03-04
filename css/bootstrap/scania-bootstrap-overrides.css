@@ -1,6 +1,6 @@
 @import url("/resources/fonts/corporate-icons/style.css");
 .compiled_at {
-  content: "Thu Nov 27 2014 15:24:04 GMT+0100 (W. Europe Standard Time)";
+  content: "Thu Dec 04 2014 15:56:21 GMT+0100 (W. Europe Standard Time)";
 }
 .bootstrap .loading:after,
 .bootstrap .table-selectable > tbody > tr.expandable > td:first-child:before,
@@ -3370,6 +3370,12 @@ h6.portlet-header {
   font-size: 10px;
   font-family: "Arial", sans-serif;
 }
+.portlet-application .content-panel,
+.bootstrap-app .content-panel,
+.bootstrap-wcm .bootstrap-app .content-panel,
+.bootstrap .bootstrap-app .content-panel {
+  padding: 15px;
+}
 @media (min-width: 1600px) {
   .portlet-application .container,
   .bootstrap-app .container,
@@ -4718,3 +4724,4 @@ body.goshow {
   border-top-right-radius: 0;
   border-bottom-right-radius: 0;
 }
+/*# sourceMappingURL=scania-bootstrap-overrides.css.map */
