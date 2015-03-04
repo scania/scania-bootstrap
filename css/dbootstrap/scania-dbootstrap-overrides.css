@@ -1,6 +1,6 @@
 @import url('/vendors/frameworks/dojo/1.7.4/dijit/themes/dijit.css');
 .compiled_at {
-  content: "Mon Jan 12 2015 20:39:44 GMT+0100 (W. Europe Standard Time)";
+  content: "Mon Jan 19 2015 14:50:38 GMT+0100 (W. Europe Standard Time)";
 }
 .dbootstrap .dijitTreeExpandoLoading,
 .dbootstrap .dijitIconLoading:before,
@@ -1596,6 +1596,9 @@ ol {
 }
 .dbootstrap div.checkbox label .dijitCheckBox:before {
   line-height: 14px;
+}
+.dbootstrap .form-inline div.checkbox label .dijitCheckBox {
+  margin-left: 0;
 }
 .dbootstrap .label > input {
   position: relative;

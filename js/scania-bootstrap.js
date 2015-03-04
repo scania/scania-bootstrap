@@ -78,7 +78,7 @@ var albatrossMode = function() {
     var parameter = "albatross",
         albatross = getUrlParameter(parameter) || readCookie(parameter);
 
-    if (albatross == "true") {
+    if (albatross && albatross == "true") {
         var body        = document.getElementsByTagName("body")[0],
             bodyClass   = body.getAttribute("class"),
             classes     = bodyClass.split(","),
@@ -88,7 +88,7 @@ var albatrossMode = function() {
             body.setAttribute("class", bodyClass + " " + parameter);
             createCookie(parameter, "true", 30);
         }
-    } else if (albatross == "false") {
+    } else if (!albatross || albatross == "false") {
         eraseCookie(parameter);
     }
 }

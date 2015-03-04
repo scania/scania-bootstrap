@@ -1,6 +1,6 @@
 @import url("/resources/fonts/corporate-icons/style.css");
 .compiled_at {
-  content: "Mon Jan 12 2015 14:52:27 GMT+0100 (W. Europe Standard Time)";
+  content: "Thu Jan 15 2015 16:21:51 GMT+0100 (W. Europe Standard Time)";
 }
 .bootstrap .loading:after,
 .bootstrap .table-selectable > tbody > tr.expandable > td:first-child:before,
@@ -163,11 +163,10 @@ body.bootstrap {
   position: absolute;
   top: 0;
   left: 0;
-  z-index: 1070;
+  z-index: 1050;
   width: 100%;
   height: 100%;
   background-color: rgba(255, 255, 255, 0.6);
-  cursor: wait;
 }
 .bootstrap .loading:after {
   position: absolute;
@@ -176,7 +175,7 @@ body.bootstrap {
   font-size: 30px;
   margin-left: -15px;
   margin-top: -15px;
-  z-index: 1000;
+  z-index: 1051;
 }
 .bootstrap .scroller-container-xs,
 .bootstrap .scroller-container-sm,

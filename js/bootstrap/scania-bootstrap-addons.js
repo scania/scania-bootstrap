@@ -19,10 +19,29 @@ function getMaximizeCookie(i) {
     return null
 }
 
+function chartResize() {
+    if(!!$.prototype.highcharts) {
+        $(".highcharts-container").parent().each(function() {
+            var chart = $(this).highcharts(); // target the chart itself
+            chart.reflow() // reflow that chart
+        });
+    }
+}
+
 function init() {
     var cookie_scaniaBootstrap_maximize = getMaximizeCookie("scaniaBootstrap_maximize");
-    cookie_scaniaBootstrap_maximize === "maximized" && ($("body").addClass("maximized"), $("#maximize-icon").toggleClass("icon-fullscreen icon-resize-small")), $("#maximize-button").click(function() {
-        $(this).children("#maximize-icon").toggleClass("icon-fullscreen icon-resize-small"), $("body").toggleClass("maximized"), $("body").hasClass("maximized") ? setMaximizeCookie("scaniaBootstrap_maximize", "maximized", 30) : setMaximizeCookie("scaniaBootstrap_maximize", "minimized", 30)
+    if(cookie_scaniaBootstrap_maximize === "maximized"){
+        $("body").addClass("maximized");
+        $("#maximize-icon").toggleClass("icon-fullscreen icon-resize-small");
+        chartResize();
+    }
+    $("#maximize-button").click(function() {
+        $(this).children("#maximize-icon").toggleClass("icon-fullscreen icon-resize-small")
+        $("body").toggleClass("maximized");
+
+        chartResize();
+
+        $("body").hasClass("maximized") ? setMaximizeCookie("scaniaBootstrap_maximize", "maximized", 30) : setMaximizeCookie("scaniaBootstrap_maximize", "minimized", 30)
     });
 }
 
