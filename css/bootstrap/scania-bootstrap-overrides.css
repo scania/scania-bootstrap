@@ -1,6 +1,6 @@
 @import url("/resources/fonts/corporate-icons/style.css");
 .compiled_at {
-  content: "Thu Dec 04 2014 15:56:21 GMT+0100 (W. Europe Standard Time)";
+  content: "Thu Dec 11 2014 16:37:24 GMT+0100 (W. Europe Standard Time)";
 }
 .bootstrap .loading:after,
 .bootstrap .table-selectable > tbody > tr.expandable > td:first-child:before,
@@ -3412,7 +3412,7 @@ body.goshow {
   /* / Submenu */
 }
 .bootstrap .navbar#global_header .navbar-brand {
-  background-image: url("../../../..//css/global/images/logos/Scania_Black_X-Small.gif");
+  background-image: url("../../images/header_logo.gif");
   background-repeat: no-repeat;
   background-position: left top;
   height: 35px;
@@ -3606,9 +3606,6 @@ body.goshow {
 }
 .bootstrap .navbar#global_header .dropdown-menu i {
   font-size: 1.1em;
-}
-.bootstrap .navbar#global_header .dropdown-menu li a:hover {
-  color: #fff;
 }
 .bootstrap .navbar#global_header .dropdown-menu li.disabled a {
   color: #999;
@@ -3807,7 +3804,7 @@ body.goshow {
 .bootstrap .navbar#global_header ul#agora .agora-messages-wrapper .panel .panel-body {
   padding: 0;
   width: 400px;
-  background-image: url("../../../../css/global/images/content-bg-agora.png");
+  background-image: url("../../images/agora-pattern.png");
 }
 .bootstrap .navbar#global_header ul#agora .agora-messages-wrapper .item {
   height: 600px;
@@ -3852,6 +3849,10 @@ body.goshow {
 .bootstrap .navbar#global_header ul#agora .agora-messages-wrapper .agora-message .agora-message-content p {
   margin-bottom: 5px;
 }
+.bootstrap .navbar#global_header ul#agora .agora-messages-wrapper .agora-message .agora-message-content p a:hover {
+  color: #2a6496;
+  text-decoration: underline !important;
+}
 .bootstrap .navbar#global_header ul#agora .agora-messages-wrapper .agora-message .message-replies > * {
   margin-left: 10px;
 }
@@ -3884,6 +3885,11 @@ body.goshow {
 }
 .bootstrap .navbar#global_header ul#agora .agora-messages-wrapper .agora-message .message-replies .reply .reply-text {
   word-break: break-word;
+  word-wrap: break-word;
+}
+.bootstrap .navbar#global_header ul#agora .agora-messages-wrapper .agora-message .message-replies .reply .reply-text p a:hover {
+  color: #2a6496;
+  text-decoration: underline !important;
 }
 .bootstrap .navbar#global_header ul#agora .agora-messages-wrapper .agora-message .message-replies .reply .counter {
   display: inline-block;

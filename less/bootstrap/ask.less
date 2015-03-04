@@ -29,7 +29,7 @@ body > .container {
     .panel-body {
       padding: 0;
       width: 400px;
-      background-image: url("@{root_path}css/global/images/content-bg-agora.png");
+      background-image: url("../../images/agora-pattern.png");
     }
   }
   .item {
@@ -64,6 +64,12 @@ body > .container {
       }
       p {
         margin-bottom: 5px;
+        a {
+          &:hover {
+            color: #2a6496;
+            text-decoration: underline !important;
+          }
+        }
       }
     }
     .message-replies {
@@ -86,6 +92,15 @@ body > .container {
         }
         .reply-text {
           word-break: break-word;
+          word-wrap: break-word;
+          p {
+            a {
+              &:hover {
+                color: #2a6496;
+                text-decoration: underline !important;
+              }
+            }
+          }
         }
         .counter {
           display: inline-block;

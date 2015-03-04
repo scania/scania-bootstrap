@@ -18,7 +18,14 @@ function getMaximizeCookie(i) {
     }
     return null
 }
-var cookie_scaniaBootstrap_maximize = getMaximizeCookie("scaniaBootstrap_maximize");
-cookie_scaniaBootstrap_maximize === "maximized" && ($("body").addClass("maximized"), $("#maximize-icon").toggleClass("icon-fullscreen icon-resize-small")), $("#maximize-button").click(function() {
-    $(this).children("#maximize-icon").toggleClass("icon-fullscreen icon-resize-small"), $("body").toggleClass("maximized"), $("body").hasClass("maximized") ? setMaximizeCookie("scaniaBootstrap_maximize", "maximized", 30) : setMaximizeCookie("scaniaBootstrap_maximize", "minimized", 30)
-});
+
+function init() {
+    var cookie_scaniaBootstrap_maximize = getMaximizeCookie("scaniaBootstrap_maximize");
+    cookie_scaniaBootstrap_maximize === "maximized" && ($("body").addClass("maximized"), $("#maximize-icon").toggleClass("icon-fullscreen icon-resize-small")), $("#maximize-button").click(function() {
+        $(this).children("#maximize-icon").toggleClass("icon-fullscreen icon-resize-small"), $("body").toggleClass("maximized"), $("body").hasClass("maximized") ? setMaximizeCookie("scaniaBootstrap_maximize", "maximized", 30) : setMaximizeCookie("scaniaBootstrap_maximize", "minimized", 30)
+    });
+}
+
+$(function() {
+    init();
+})
