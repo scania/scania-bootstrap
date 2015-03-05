@@ -1,0 +1,21 @@
+{
+  "name": "scania-ui",
+  "version": "1.3.8",
+  "homepage": "https://github.com/scania-bootstrap/scania-ui",
+  "description": "Scania Bootstrap CSS and JS-framework",
+  "main": "scania-bootstrap.less",
+  "keywords": [
+    "scania-ui"
+  ],
+  "authors": [
+    "Scania"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
